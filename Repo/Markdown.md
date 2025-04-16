@@ -37,3 +37,6 @@ _kursive_ als auch ~~durchgestrichene~~ Wörter benutzen.
 name = "Karim" 
 echo = "Hello $name!"
 ```
+
+# Blockzitate
+> "Es ist nichts beständiger als die Unbeständigkeit.", ---**Immanuel Kant.** 
