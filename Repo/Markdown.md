@@ -30,3 +30,10 @@ _kursive_ als auch ~~durchgestrichene~~ Wörter benutzen.
 		+ Zwiebeln
 		+ Gewürze
 		+ Fleich 
+
+# Codeblock
+
+``` bash
+name = "Karim" 
+echo = "Hello $name!"
+```
