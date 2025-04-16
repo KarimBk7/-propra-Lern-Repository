@@ -1,0 +1,7 @@
+root@DESKTOP-J4GQQ0C:/tmp# uname -a; cat /etc/os-release|grep PRETTY; python -V; pip -V
+Linux DESKTOP-J4GQQ0C 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+Python 3.11.0rc1
+pip 25.0.1 from /usr/local/lib/python3.11/dist-packages/pip (python 3.11)
+root@DESKTOP-J4GQQ0C:/tmp# uname -a; cat /etc/os-release|grep PRETTY; python -V; pip -V
+Linux DESKTOP-J4GQQ0C 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
