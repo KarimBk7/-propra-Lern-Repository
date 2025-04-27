@@ -1,7 +1,7 @@
-Einreichungen: CHECK
-Git101: CHECK
-Kommandoprotokolle: CHECK
-Markdown: CHECK
-Sedrila-einrichten: CHECK
-Shellprompt: CHECK
-Zeiterfassung: CHECK
+Einreichungen: NONCHECK
+Git101: NONCHECK
+Kommandoprotokolle: NONCHECK
+Markdown: NONCHECK
+Sedrila-einrichten: NONCHECK
+Shellprompt: NONCHECK
+Zeiterfassung: NONCHECK
