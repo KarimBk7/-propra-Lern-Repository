@@ -1,0 +1,4 @@
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ python -u "/mnt/c/Users/abdil/ws/propra/Basis/IDE/IDE-First-Steps.py"
+Hello World
+['FUB', 'FBU', 'UFB', 'UBF', 'BUF', 'BFU']
+HelloWorld
