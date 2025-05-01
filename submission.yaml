@@ -9,4 +9,5 @@ Sedrila-einrichten: CHECK
 Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
+apt: NONCHECK
 requires-assumes: CHECK
