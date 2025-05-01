@@ -1,0 +1,2645 @@
+root@DESKTOP-J4GQQ0C/root $ apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  bind9-dnsutils bind9-host bind9-libs binutils binutils-common binutils-x86-64-linux-gnu cloud-init curl
+  distro-info-data dmidecode dmsetup gir1.2-packagekitglib-1.0 git git-man landscape-client landscape-common
+  libbinutils libc-bin libc-dev-bin libc-devtools libc6 libc6-dbg libc6-dev libcap2 libcap2-bin libcryptsetup12
+  libctf-nobfd0 libctf0 libcurl3-gnutls libcurl4 libdebuginfod-common libdebuginfod1 libdevmapper1.02.1 libdw1
+  libegl-mesa0 libelf1 libexpat1 libfreetype6 libgbm1 libgd3 libgl1-mesa-dri libglapi-mesa libglib2.0-0 libglib2.0-bin
+  libglib2.0-data libglx-mesa0 libgnutls30 libgssapi-krb5-2 libgstreamer1.0-0 libharfbuzz0b libk5crypto3 libkrb5-3
+  libkrb5support0 libldap-2.5-0 libldap-common libnss-systemd libpackagekit-glib2-18 libpam-cap libpam-modules
+  libpam-modules-bin libpam-runtime libpam-systemd libpam0g libperl5.34 libseccomp2 libssl3 libsystemd0 libtasn1-6
+  libudev1 libxml2 linux-libc-dev locales nano openssh-client openssl packagekit packagekit-tools pci.ids perl
+  perl-base perl-modules-5.34 python3-jinja2 python3-twisted python3-urllib3 rsync snapd systemd systemd-sysv
+  systemd-timesyncd tzdata udev vim vim-common vim-runtime vim-tiny xxd
+96 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+62 standard LTS security updates
+Need to get 115 MB of archives.
+After this operation, 5843 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libperl5.34 amd64 5.34.0-3ubuntu1.4 [4820 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl amd64 5.34.0-3ubuntu1.4 [232 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl-base amd64 5.34.0-3ubuntu1.4 [1759 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl-modules-5.34 all 5.34.0-3ubuntu1.4 [2977 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libfreetype6 amd64 2.11.1+dfsg-1ubuntu0.3 [388 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgd3 amd64 2.3.0-2ubuntu2.3 [129 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-devtools amd64 2.35-0ubuntu3.9 [29.0 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.9 [2100 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.9 [20.3 kB]
+Ign:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-136.147
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dbg amd64 2.35-0ubuntu3.9 [13.8 MB]
+Err:10 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-136.147
+  404  Not Found [IP: 91.189.91.82 80]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6 amd64 2.35-0ubuntu3.9 [3235 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-bin amd64 2.35-0ubuntu3.9 [706 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam0g amd64 1.4.0-11ubuntu2.5 [59.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-modules-bin amd64 1.4.0-11ubuntu2.5 [37.4 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-modules amd64 1.4.0-11ubuntu2.5 [280 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 systemd-timesyncd amd64 249.11-0ubuntu3.15 [31.2 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsystemd0 amd64 249.11-0ubuntu3.15 [317 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnss-systemd amd64 249.11-0ubuntu3.15 [133 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 systemd-sysv amd64 249.11-0ubuntu3.15 [10.5 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-systemd amd64 249.11-0ubuntu3.15 [203 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 systemd amd64 249.11-0ubuntu3.15 [4581 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 udev amd64 249.11-0ubuntu3.15 [1557 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libudev1 amd64 249.11-0ubuntu3.15 [76.6 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcap2 amd64 1:2.44-1ubuntu0.22.04.2 [18.3 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-runtime all 1.4.0-11ubuntu2.5 [40.2 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdevmapper1.02.1 amd64 2:1.02.175-2.1ubuntu5 [139 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssl3 amd64 3.0.2-0ubuntu1.19 [1905 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcryptsetup12 amd64 2:2.4.3-1ubuntu1.3 [211 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtasn1-6 amd64 4.18.0-4ubuntu0.1 [43.5 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgnutls30 amd64 3.7.3-4ubuntu1.6 [969 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libseccomp2 amd64 2.5.3-2ubuntu3~22.04.1 [47.4 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 rsync amd64 3.2.7-0ubuntu0.22.04.4 [437 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdebuginfod-common all 0.186-1ubuntu0.1 [7996 B]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libk5crypto3 amd64 1.19.2-2ubuntu0.6 [86.5 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkrb5support0 amd64 1.19.2-2ubuntu0.6 [32.5 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkrb5-3 amd64 1.19.2-2ubuntu0.6 [357 kB]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgssapi-krb5-2 amd64 1.19.2-2ubuntu0.6 [145 kB]
+Err:39 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 distro-info-data all 0.52ubuntu0.8
+  404  Not Found [IP: 91.189.91.82 80]
+Get:40 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dmsetup amd64 2:1.02.175-2.1ubuntu5 [81.7 kB]
+Get:41 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-cap amd64 1:2.44-1ubuntu0.22.04.2 [7930 B]
+Get:42 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcap2-bin amd64 1:2.44-1ubuntu0.22.04.2 [26.0 kB]
+Get:43 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.18+dfsg-0ubuntu0.22.04.3 [183 kB]
+Get:44 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl3-gnutls amd64 7.81.0-1ubuntu1.20 [284 kB]
+Get:45 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdebuginfod1 amd64 0.186-1ubuntu0.1 [12.8 kB]
+Get:46 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdw1 amd64 0.186-1ubuntu0.1 [251 kB]
+Get:47 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libelf1 amd64 0.186-1ubuntu0.1 [51.1 kB]
+Get:48 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1 amd64 2.4.7-1ubuntu0.6 [92.1 kB]
+Get:49 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglib2.0-data all 2.72.4-0ubuntu2.4 [4582 B]
+Get:50 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglib2.0-bin amd64 2.72.4-0ubuntu2.4 [80.9 kB]
+Get:51 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglib2.0-0 amd64 2.72.4-0ubuntu2.4 [1465 kB]
+Ign:52 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.6
+Get:53 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 locales all 2.35-0ubuntu3.9 [4248 kB]
+Err:52 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.6
+  404  Not Found [IP: 91.189.91.82 80]
+Get:54 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.19 [1186 kB]
+Get:55 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 tzdata all 2025b-0ubuntu0.22.04 [347 kB]
+Get:56 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 xxd amd64 2:8.2.3995-1ubuntu2.24 [51.4 kB]
+Get:57 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim amd64 2:8.2.3995-1ubuntu2.24 [1728 kB]
+Get:58 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim-tiny amd64 2:8.2.3995-1ubuntu2.24 [707 kB]
+Get:59 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim-runtime all 2:8.2.3995-1ubuntu2.24 [6833 kB]
+Get:60 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim-common all 2:8.2.3995-1ubuntu2.24 [81.5 kB]
+Get:61 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 bind9-dnsutils amd64 1:9.18.30-0ubuntu0.22.04.2 [158 kB]
+Get:62 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 bind9-host amd64 1:9.18.30-0ubuntu0.22.04.2 [52.6 kB]
+Get:63 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 bind9-libs amd64 1:9.18.30-0ubuntu0.22.04.2 [1259 kB]
+Get:64 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dmidecode amd64 3.3-3ubuntu0.2 [68.5 kB]
+Get:65 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 nano amd64 6.2-1ubuntu0.1 [280 kB]
+Get:66 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git-man all 1:2.34.1-1ubuntu1.12 [955 kB]
+Get:67 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.12 [3165 kB]
+Ign:68 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssh-client amd64 1:8.9p1-3ubuntu0.11
+Get:69 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 pci.ids all 0.0~2022.01.22-1ubuntu0.1 [251 kB]
+Get:70 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf-nobfd0 amd64 2.38-4ubuntu2.8 [108 kB]
+Get:71 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf0 amd64 2.38-4ubuntu2.8 [103 kB]
+Err:68 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 openssh-client amd64 1:8.9p1-3ubuntu0.11
+  404  Not Found [IP: 91.189.91.82 80]
+Get:72 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.38-4ubuntu2.8 [2324 kB]
+Get:73 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-common amd64 2.38-4ubuntu2.8 [223 kB]
+Get:74 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils amd64 2.38-4ubuntu2.8 [3196 B]
+Get:75 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libbinutils amd64 2.38-4ubuntu2.8 [661 kB]
+Get:76 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.20 [194 kB]
+Get:77 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.20 [289 kB]
+Get:78 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpackagekit-glib2-18 amd64 1.2.5-2ubuntu3 [124 kB]
+Get:79 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gir1.2-packagekitglib-1.0 amd64 1.2.5-2ubuntu3 [25.3 kB]
+Get:80 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-twisted all 22.1.0-2ubuntu2.6 [2007 kB]
+Get:81 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 landscape-client amd64 23.02-0ubuntu1~22.04.4 [113 kB]
+Get:82 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 landscape-common amd64 23.02-0ubuntu1~22.04.4 [88.8 kB]
+Get:83 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.3 [118 kB]
+Get:84 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgbm1 amd64 23.2.1-1ubuntu3.1~22.04.3 [33.5 kB]
+Get:85 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgl1-mesa-dri amd64 23.2.1-1ubuntu3.1~22.04.3 [8860 kB]
+Get:86 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglx-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.3 [158 kB]
+Get:87 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglapi-mesa amd64 23.2.1-1ubuntu3.1~22.04.3 [35.4 kB]
+Get:88 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgstreamer1.0-0 amd64 1.20.3-0ubuntu1.1 [984 kB]
+Get:89 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libharfbuzz0b amd64 2.7.4-1ubuntu3.2 [353 kB]
+Get:90 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.18+dfsg-0ubuntu0.22.04.3 [15.8 kB]
+Get:91 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 packagekit-tools amd64 1.2.5-2ubuntu3 [28.8 kB]
+Get:92 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 packagekit amd64 1.2.5-2ubuntu3 [442 kB]
+Get:93 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-jinja2 all 3.0.3-1ubuntu0.4 [108 kB]
+Get:94 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-urllib3 all 1.26.5-1~exp1ubuntu0.2 [98.3 kB]
+Get:95 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 snapd amd64 2.67.1+22.04 [27.8 MB]
+Get:96 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cloud-init all 24.4.1-0ubuntu0~22.04.2 [566 kB]
+Fetched 112 MB in 13s (8901 kB/s)
+
+root@DESKTOP-J4GQQ0C/root $ apt search mc
+Sorting... Done
+Full Text Search... Done
+alsa-oss/jammy 1.1.8-1 amd64
+  ALSA wrapper for OSS applications
+
+amule-emc/jammy 0.5.2-4build1 amd64
+  lists ed2k links inside emulecollection files
+
+ap-utils/jammy 1.5-5 amd64
+  Access Point SNMP Utils for Linux
+
+apel/jammy 10.8+0.20201106-1 all
+  portable library for emacsen
+
+apport-valgrind/jammy-updates 2.20.11-0ubuntu82.6 all
+  valgrind wrapper that first downloads debug symbols
+
+appstream/jammy 0.15.2-2 amd64
+  Software component metadata management
+
+appstream-compose/jammy 0.15.2-2 amd64
+  Compose metadata collections from directory trees
+
+ardour/jammy 1:6.9.0+ds0-1build1 amd64
+  the digital audio workstation
+
+auto-07p/jammy 0.9.2+dfsg-3build2 amd64
+  software for continuation and bifurcation problems in ODE
+
+auto-multiple-choice/jammy 1.5.2-1willsync1 amd64
+  Auto Multiple Choice - multiple choice papers management
+
+auto-multiple-choice-common/jammy 1.5.2-1willsync1 all
+  Auto Multiple Choice - architecture independent files
+
+auto-multiple-choice-doc/jammy 1.5.2-1willsync1 all
+  Auto Multiple Choice - HTML documentation
+
+auto-multiple-choice-doc-pdf/jammy 1.5.2-1willsync1 all
+  Auto Multiple Choice - PDF documentation
+
+bali-phy/jammy 3.6.1+dfsg-1 amd64
+  Bayesian Inference of Alignment and Phylogeny
+
+bamclipper/jammy 1.0.0-2 all
+  Remove gene-specific primer sequences from SAM/BAM alignments
+
+beast-mcmc/jammy 1.10.4+dfsg-3 all
+  Bayesian MCMC phylogenetic inference
+
+beast-mcmc-examples/jammy 1.10.4+dfsg-3 all
+  Bayesian MCMC phylogenetic inference - example data
+
+beast2-mcmc/jammy 2.6.6+dfsg-2 all
+  Bayesian MCMC phylogenetic inference
+
+beast2-mcmc-doc/jammy 2.6.6+dfsg-2 all
+  Bayesian MCMC phylogenetic inference - documentation
+
+beast2-mcmc-examples/jammy 2.6.6+dfsg-2 all
+  Bayesian MCMC phylogenetic inference - example data
+
+biobambam2/jammy 2.0.183+ds-1 amd64
+  tools for early stage alignment file processing
+
+bumps-private-libs/jammy 0.8.1-1 amd64
+  data fitting and Bayesian uncertainty modeling for inverse problems (libraries)
+
+bve-train-br-class-323/jammy 4.0.1809-0ubuntu3 all
+  British Rail Class 323 EMU train (for OpenBVE rail simulator)
+
+cbmc/jammy 5.12-5 amd64
+  bounded model checker for C and C++ programs
+
+cbmconvert/jammy 2.1.4-1 amd64
+  Create and convert Commodore 8-bit binary file archives
+
+cccc/jammy 1:3.1.4+dfsg1-1 amd64
+  C and C++ Code Counter, a software metrics tool
+
+centreon-plugins/jammy 0.0~20220113-1 all
+  Collection of Nagios plugins to monitor OS, services and network devices
+
+cif-tools/jammy 1.0.1b-1 amd64
+  Suite of tools to manipulate, validate and query mmCIF files
+
+cl-babel/jammy 20200719.gitf892d05-2 all
+  charset encoding/decoding library for Common Lisp
+
+cl-trivial-backtrace/jammy 20200511.git6eb65bd-1 all
+  generate a Common Lisp backtrace portably
+
+cl-uffi/jammy 2.1.2-1.1 all
+  Universal Foreign Function Library for Common Lisp
+
+claws-mail-spam-report/jammy 4.0.0-3 amd64
+  Spam reporting plugin for Claws Mail
+
+clonalframeml/jammy 1.12-2 amd64
+  Efficient Inference of Recombination in Whole Bacterial Genomes
+
+cohomcalg/jammy 0.32+ds-5 amd64
+  sheaf cohomology of line bundles on toric varieties
+
+cohomcalg-common/jammy 0.32+ds-5 all
+  sheaf cohomology of line bundles on toric varieties (common files)
+
+collectd-core/jammy-updates 5.12.0-10ubuntu0.1 amd64
+  statistics collection and monitoring daemon (core system)
+
+colortest/jammy 20110624-9 all
+  utilities to test color capabilities of terminal
+
+comgt/jammy 0.32-3 amd64
+  Option GlobeTrotter and Vodafone datacard control tool
+
+complexity/jammy 1.13-1 amd64
+  tool for analyzing the complexity of C program functions
+
+complexity-doc/jammy 1.13-1 all
+  tool for analyzing the complexity of C program (documentation)
+
+cp2k/jammy 9.1-2 amd64
+  Ab Initio Molecular Dynamics
+
+cppcheck/jammy 2.7-1 amd64
+  tool for static C/C++ code analysis (CLI)
+
+cppcheck-gui/jammy 2.7-1 amd64
+  tool for static C/C++ code analysis (GUI)
+
+cpuid/jammy 20211210-1 amd64
+  tool to dump x86 CPUID information about the CPU(s)
+
+ctop/jammy 1.0.0-2.1 all
+  Command line / text based Linux Containers monitoring tool
+
+ddcutil/jammy 1.2.2-1 amd64
+  Control monitor settings - Standalone command line application
+
+density-fitness/jammy 1.0.3-1 amd64
+  Calculates per-residue electron density scores
+
+discover-data/jammy 2.2013.01.13 all
+  Data lists for Discover hardware detection system
+
+disktype/jammy 9-11 amd64
+  detection of content format of a disk or disk image
+
+dose-distcheck/jammy 7.0.0-1build1 amd64
+  Checks whether dependencies of packages can be satisfied
+
+dotmcp/jammy 0.2.2.1-3build1 amd64
+  mcp for s3d
+
+draai/jammy 20201215-2 all
+  Command-line music player for MPD
+
+dreamchess/jammy 0.3.0-1build1 amd64
+  3D chess game
+
+dreamchess-data/jammy 0.3.0-1build1 all
+  data files for dreamchess
+
+dssp/jammy 4.0.4-1 amd64
+  protein secondary structure assignment based on 3D structure
+
+dtv-scan-tables/jammy 0+git20190925.6d01903-0.1 all
+  Digital Video Broadcasting (DVB) initial scan files
+
+dv4l/jammy 1.0-5build1 amd64
+  Redirect V4L API to access a camcorder from a V4L program
+
+dvbackup/jammy 1:0.0.4-9 amd64
+  backup tool using MiniDV camcorders
+
+dvgrab/jammy 3.5+git20160707.1.e46042e-1build1 amd64
+  grab digital video data via IEEE1394 and USB links
+
+dwww/jammy 1.14 amd64
+  Read all on-line documentation with a WWW browser
+
+ea-utils/jammy 1.1.2+dfsg-9build1 amd64
+  command-line tools for processing biological sequencing data
+
+elpa-systemd/jammy 1.6-2.1 all
+  major mode for editing systemd units
+
+emscripten/jammy 3.1.5~dfsg-3ubuntu1 all
+  LLVM-to-JavaScript Compiler
+
+f2fs-tools/jammy 1.14.0-2build1 amd64
+  Tools for Flash-Friendly File System
+
+fence-agents-extra/jammy-updates 4.7.1-1ubuntu8.1 amd64
+  Fence Agents for Red Hat Cluster
+
+flake8/jammy 4.0.1-2 all
+  code checker using pycodestyle and pyflakes
+
+flashrom/jammy 1.2-5build1 amd64
+  Identify, read, write, erase, and verify BIOS/ROM/flash chips
+
+fomp/jammy 1.2.2-1 amd64
+  collection of LV2 audio plugins
+
+fonts-ldco/jammy 1.0.0.part3-1.1 all
+  set of Hebrew fonts by Louis Davis & Co.
+
+fonts-lg-aboriginal/jammy 1.0-6.1 all
+  unicode fonts for North-American Aboriginal languages
+
+fonts-mlym/jammy 2:1.3 all
+  Meta package to install all Malayalam fonts
+
+fonts-mmcedar/jammy 20101113a-5.1 all
+  MMCedar - combined Motoya L Cedar and M+fonts
+
+fonts-noto-extra/jammy 20201225-1build1 all
+  "No Tofu" font families with large Unicode coverage (extra)
+
+fonts-noto-ui-extra/jammy 20201225-1build1 all
+  "No Tofu" font families with large Unicode coverage (UI extra)
+
+fonts-smc/jammy 1:7.2 all
+  Metapackage for various TrueType fonts for Malayalam Language
+
+fonts-smc-anjalioldlipi/jammy 7.1.2-2 all
+  AnjaliOldLipi malayalam font
+
+fonts-smc-chilanka/jammy 1.540-1 all
+  Chilanka malayalam font
+
+fonts-smc-dyuthi/jammy 3.0.2-2 all
+  Dyuthi malayalam font
+
+fonts-smc-gayathri/jammy 1.110-2-1 all
+  Gayathri Malayalam font
+
+fonts-smc-karumbi/jammy 1.1.2-2 all
+  Karumbi malayalam font
+
+fonts-smc-keraleeyam/jammy 3.0.2-2 all
+  Keraleeyam malayalam font
+
+fonts-smc-manjari/jammy 2.000-3 all
+  Manjari malayalam font
+
+fonts-smc-meera/jammy 7.0.3-1 all
+  Meera malayalam font
+
+fonts-smc-rachana/jammy 7.0.2-1build1 all
+  Rachana malayalam font
+
+fonts-smc-raghumalayalamsans/jammy 2.2.1-1 all
+  RaghuMalayalamSans malayalam font
+
+fonts-smc-suruma/jammy 3.2.3-1 all
+  Suruma malayalam font
+
+fonts-smc-uroob/jammy 2.0.2-1 all
+  Uroob malayalam font
+
+fonts-yanone-kaffeesatz/jammy 0.20151005-3 all
+  Font in four weights, reminiscent of 1920s coffee house typography
+
+forensics-extra/jammy 2.35 all
+  Forensics Environment - extra console components (metapackage)
+
+forked-daapd/jammy 26.4+dfsg1-2 amd64
+  DAAP/DACP (iTunes) server, support for AirPlay and Roku devices
+
+freeipmi-bmc-watchdog/jammy-updates 1.6.9-2ubuntu0.22.04.2 amd64
+  GNU implementation of the IPMI protocol - BMC watchdog
+
+freeipmi-ipmiseld/jammy-updates 1.6.9-2ubuntu0.22.04.2 amd64
+  GNU IPMI - IPMI system event log daemon
+
+freeipmi-tools/jammy-updates 1.6.9-2ubuntu0.22.04.2 amd64
+  GNU implementation of the IPMI protocol - tools
+
+freeradius-memcached/jammy-updates 3.0.26~dfsg~git20220223.1.00ed0241fa-0ubuntu3.4 amd64
+  Memcached module for FreeRADIUS server
+
+fuse-emulator-gtk/jammy 1.6.0+dfsg1-2 amd64
+  The Free Unix Spectrum Emulator (GTK version)
+
+fuse-emulator-sdl/jammy 1.6.0+dfsg1-2 amd64
+  The Free Unix Spectrum Emulator (SDL version)
+
+gambas3-gb-memcached/jammy 3.16.3-3 all
+  Gambas memcached client
+
+gammu/jammy 1.42.0-5 amd64
+  mobile phone management utility
+
+gammu-smsd/jammy 1.42.0-5 amd64
+  SMS message daemon
+
+gcu-bin/jammy 0.14.17-6.1 amd64
+  GNOME chemistry utils (helper applications)
+
+gem-plugin-dv4l/jammy 1:0.94-7 amd64
+  Graphics Environment for Multimedia - DV support
+
+gemma/jammy 0.98.5+dfsg-1build1 amd64
+  Genome-wide Efficient Mixed Model Association
+
+gemmi/jammy 0.5.3+ds-2 amd64
+  library for structural biology - executable
+
+gemmi-dev/jammy 0.5.3+ds-2 amd64
+  library for structural biology
+
+ghdl/jammy 1.0.0+dfsg-6 amd64
+  VHDL compiler/simulator
+
+ghdl-mcode/jammy 1.0.0+dfsg-6 amd64
+  VHDL compiler/simulator (mcode backend)
+
+gir1.2-appstreamcompose-1.0/jammy 0.15.2-2 amd64
+  Building blocks to compose AppStream metadata (introspection data)
+
+gnupg-utils/jammy-updates,jammy-security,now 2.2.27-3ubuntu2.3 amd64 [installed,automatic]
+  GNU privacy guard - utility programs
+
+golang-github-adrianmo-go-nmea-dev/jammy 1.4.0-1 all
+  Go library for the NMEA 0183 protocol
+
+golang-github-bep-tmc-dev/jammy 0.5.1-2 all
+  provides round-trip serialization of typed Go maps
+
+golang-github-bradfitz-gomemcache-dev/jammy 0.0~git20141109-3 all
+  Go memcached client library
+
+golang-github-dimchansky-utfbom-dev/jammy 1.1.1-1 all
+  Detection of the BOM and removing as necessary
+
+golang-github-go-macaron-session-dev/jammy 0.0~git20151014.0.66031fc-2 all
+  session management middleware for Macaron
+
+golang-github-golang-groupcache-dev/jammy 0.0~git20200121.8c9f03a-1 all
+  caching and cache-filling library, a replacement for memcached
+
+golang-github-hansrodtang-randomcolor-dev/jammy 0.0~git20160512.d27108b-3 all
+  random color generator
+
+golang-github-leemcloughlin-gofarmhash-dev/jammy 0.0~git20160919.0.0a055c5-5 all
+  Implements Google's Farmhash in Golang
+
+golang-github-leemcloughlin-jdn-dev/jammy 0.0~git20201102.6f88db6-2 all
+  Julian Day Numbers for Go (library)
+
+golang-github-mcuadros-go-gin-prometheus-dev/jammy 0.1.0+git20190723.c7374e9-5 all
+  Gin Web Framework Prometheus metrics exporter
+
+golang-github-mcuadros-go-lookup-dev/jammy 0.0~git20171110.5650f26-2 all
+  Small library on top of reflect for make lookups to any Structs or Maps
+
+golang-github-mcuadros-go-version-dev/jammy 1.0.0-3 all
+  version normalizer and comparison library for Go
+
+golang-github-mmcdole-gofeed-dev/jammy 1.1.3-1 all
+  Parse RSS and Atom feeds in Go (library)
+
+golang-github-mmcdole-goxpp-dev/jammy 0.0~git20200921.2f3784f-1 all
+  Go XML Pull Parser
+
+golang-github-mmcloughlin-avo-dev/jammy 0.0~git20200523.4439b6b-6build1 all
+  Generate x86 Assembly with Go (library)
+
+golang-github-packer-community-winrmcp-dev/jammy-updates,jammy-security 0.0~git20180921.c76d91c-1ubuntu0.22.04.3 all
+  copy files to remote hosts using WinRM (Go library)
+
+golang-github-patrickmn-go-cache-dev/jammy 2.1.0-1.1 all
+  in-memory key:value store/cache (similar to Memcached)
+
+golang-github-pmylund-go-cache-dev/jammy 0.0~git20150304-2 all
+  Go library for in-memory key/value store similar to memcached
+
+golang-github-robfig-go-cache-dev/jammy 0.0.0+git20130306.9fc39e0-3 all
+  in-memory key:value store/cache library for Go
+
+golang-github-siddontang-goredis-dev/jammy 0.0~git20150324.0.760763f-5 all
+  Redis client implementation in Go
+
+golang-github-tklauser-numcpus-dev/jammy 0.3.0-2 all
+  Go module to get the number of CPUs (library)
+
+golang-github-tmc-grpc-websocket-proxy-dev/jammy 0.0~git20200427.3cfed13-2 all
+  proxy to upgrade grpc-gateway streaming endpoints to use websockets
+
+golang-github-tmc-scp-dev/jammy 0.0+20170825-1.1 all
+  basic implementation of scp for go
+
+golang-github-valyala-gozstd-dev/jammy 1.14.2+ds-1 all
+  go wrapper for zstd (library)
+
+golang-github-xordataexchange-crypt/jammy 0.0.2+git20170626.21.b2862e3-3 amd64
+  Store/retrieve encrypted configs from etcd or Consul (CLI tool)
+
+golang-gopkg-mcuadros-go-syslog.v2-dev/jammy 2.2.1-1 all
+  syslog server library for Golang
+
+golang-lukechampine-blake3-dev/jammy 1.1.6-1 all
+  Pure-Go implementation of BLAKE3 cryptographic hash
+
+googletest/jammy 1.11.0-3 all
+  Google's C++ test framework sources
+
+gr-rds/jammy 3.10-1build1 amd64
+  GNU Radio FM RDS/TMC Transceiver
+
+gramophone2/jammy 0.8.13a-3.1ubuntu1 amd64
+  GRAMophone II is an algorithmic music generator
+
+gscanbus/jammy 0.8-2 amd64
+  scan IEEE1394 (firewire/i.link) bus
+
+gxemul/jammy 0.7.0+dfsg-1 amd64
+  machine emulator for multiple architectures
+
+hdapsd/jammy 1:20141203-2build1 amd64
+  HDAPS daemon for various laptops with motion sensors
+
+heaptrack/jammy 1.3.0-1ubuntu1 amd64
+  heap memory profiler for Linux
+
+heaptrack-gui/jammy 1.3.0-1ubuntu1 amd64
+  heap memory profiler for Linux
+
+hepmc3-doc/jammy 3.1.2-2build1 all
+  Event Record for Monte Carlo Generators (docs)
+
+ipmctl/jammy 03.00.00.0423-1 amd64
+  utility for configuring and managing Intel Optane DC persistent memory modules
+
+ipmitool/jammy-updates 1.8.18-11ubuntu2.1 amd64
+  utility for IPMI control with kernel driver or LAN interface (daemon)
+
+ircii/jammy 20210328-2build1 amd64
+  Internet Relay Chat client
+
+jack-midi-clock/jammy 0.4.3-1 amd64
+  JACK client that sends MIDI beat clock pulses
+
+jags/jammy 4.3.0-3build1 amd64
+  Just Another Gibbs Sampler for Bayesian MCMC - binary
+
+joe/jammy 4.6-1build2 amd64
+  user friendly full screen text editor
+
+jupp/jammy 3.1.40-1 amd64
+  user friendly full screen text editor
+
+kamailio-memcached-modules/jammy 5.5.4-1 amd64
+  interface to the memcached server, for the Kamailio SIP server
+
+kamcli/jammy 2.0.0-1 all
+  Kamailio Command Line Interface Control Tool
+
+kdump-tools/jammy-updates 1:1.6.10ubuntu2.2 amd64
+  scripts and tools for automating kdump (Linux crash dumps)
+
+kicad-packages3d/jammy 6.0.2-1 all
+  3D models for 3D viewer in KiCad's Pcbnew and Footprint Editor
+
+kildclient/jammy 3.2.0-2build5 amd64
+  powerful MUD client with a built-in Perl interpreter
+
+kildclient-doc/jammy 3.2.0-2build5 all
+  powerful MUD client with a built-in Perl interpreter - manual
+
+kino/jammy 1.3.4+dfsg0-1.1 amd64
+  Non-linear editor for Digital Video data
+
+kmc/jammy 3.2.1+dfsg-1 amd64
+  count kmers in genomic sequences
+
+kodi/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (executable binaries)
+
+kodi-addons-dev-common/jammy 2:19.4+dfsg1-2 all
+  Open Source Home Theatre (architecture-independent addon development package)
+
+kodi-audiodecoder-fluidsynth/jammy 19.0.1+ds1-1build1 amd64
+  Fluidsynth audio decoder for Kodi
+
+kodi-audiodecoder-sidplay/jammy 19.0.1+ds1-1 amd64
+  SidPlay audio decoder for Kodi
+
+kodi-audioencoder-flac/jammy 19.0.0+ds1-1 amd64
+  FLAC audio encoder add-on for Kodi
+
+kodi-audioencoder-lame/jammy 19.1.0+ds1-1 amd64
+  LAME (mp3) audio encoder add-on for Kodi
+
+kodi-audioencoder-vorbis/jammy 19.0.0+ds1-1 amd64
+  Vorbis audio encoder add-on for Kodi
+
+kodi-audioencoder-wav/jammy 19.0.0-1 amd64
+  WAV audio encoder add-on for Kodi
+
+kodi-bin/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (architecture-dependent files)
+
+kodi-data/jammy 2:19.4+dfsg1-2 all
+  Open Source Home Theatre (arch-independent data package)
+
+kodi-eventclients-common/jammy 2:19.4+dfsg1-2 all
+  Open Source Home Theatre (Event Client Common package)
+
+kodi-eventclients-dev/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client virtual dev package)
+
+kodi-eventclients-dev-common/jammy 2:19.4+dfsg1-2 all
+  Open Source Home Theatre (Event Client common dev package)
+
+kodi-eventclients-kodi-send/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client Kodi-SEND package)
+
+kodi-eventclients-ps3/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client PS3 package)
+
+kodi-eventclients-python/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client Python package)
+
+kodi-eventclients-wiiremote/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client WII Remote support package)
+
+kodi-eventclients-zeroconf/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (Event Client ZeroConf script package)
+
+kodi-imagedecoder-heif/jammy 19.0.0+ds1-1 amd64
+  HEIF image decoder for Kodi
+
+kodi-imagedecoder-raw/jammy 19.0.0+ds1-1 amd64
+  RAW image decoder for Kodi
+
+kodi-peripheral-xarcade/jammy 19.0.0-1 amd64
+  X-Arcade Tankstick driver for Kodi
+
+kodi-pvr-dvblink/jammy 19.0.0+ds1-1 amd64
+  DVBLink PVR Client for Kodi
+
+kodi-pvr-dvbviewer/jammy 19.0.1+ds1-1 amd64
+  DVBViewer Kodi PVR Addon
+
+kodi-pvr-njoy/jammy 19.0.0+ds1-1 amd64
+  NJOY PVR Addon for Kodi
+
+kodi-pvr-octonet/jammy 19.0.0+ds1-1build1 amd64
+  Digital Devices Octopus NET PVR for Kodi
+
+kodi-pvr-sledovanitv-cz/jammy 4.5.0+ds1-4build1 amd64
+  sledovanitv.cz PVR for Kodi
+
+kodi-pvr-stalker/jammy 19.0.0+ds1-1build1 amd64
+  Stalker Middleware PVR client addon for Kodi
+
+kodi-pvr-teleboy/jammy 19.8.2+ds1-1 amd64
+  Teleboy PVR for Kodi
+
+kodi-pvr-vbox/jammy 19.0.0+ds1-1 amd64
+  VBox Home TV Gateway addon for Kodi
+
+kodi-pvr-waipu/jammy 19.0.1+ds1-1 amd64
+  waipu PVR for Kodi
+
+kodi-pvr-wmc/jammy 19.0.1-1 amd64
+  WMC PVR Addon for Kodi
+
+kodi-pvr-zattoo/jammy 19.7.10+ds1-2 amd64
+  Zattoo PVR for Kodi
+
+kodi-repository-kodi/jammy 2:19.4+dfsg1-2 all
+  Open Source Home Theatre (official addons repository feed)
+
+kodi-screensaver-asteroids/jammy 19.0.0+ds1-1 amd64
+  Asteroids screensaver for Kodi
+
+kodi-screensaver-biogenesis/jammy 19.0.0-1 amd64
+  BioGenesis screensaver for Kodi
+
+kodi-screensaver-greynetic/jammy 19.0.0+ds1-1 amd64
+  Greynetic screensaver for Kodi
+
+kodi-screensaver-pingpong/jammy 19.0.0+ds1-1 amd64
+  Pingpong screensaver for Kodi
+
+kodi-screensaver-pyro/jammy 19.0.0-1 amd64
+  Pyro screensaver for Kodi
+
+kodi-screensaver-shadertoy/jammy 19.0.0+ds1-1 amd64
+  Shadertoy screensaver for Kodi
+
+kodi-tools-texturepacker/jammy 2:19.4+dfsg1-2 amd64
+  Open Source Home Theatre (TexturePacker skin development tool)
+
+kodi-visualization-fishbmc/jammy 19.0.0+ds1-1 amd64
+  Fishbmc audio visualization addon for Kodi
+
+kodi-visualization-pictureit/jammy 19.0.0+ds1-1 amd64
+  pictureit visualizer for Kodi
+
+kodi-visualization-shadertoy/jammy 19.1.1+ds1-1build1 amd64
+  Shadertoy audio visualization for Kodi
+
+kodi-visualization-shadertoy-data/jammy 19.1.1+ds1-1build1 all
+  Shadertoy audio visualization for Kodi (common data)
+
+kodi-visualization-spectrum/jammy 19.0.0+ds1-2 amd64
+  Spectrum visualizer addon for Kodi
+
+kodi-visualization-waveform/jammy 19.0.1+ds1-1 amd64
+  Waveform audio visualization addon for Kodi
+
+leela-zero/jammy 0.17-1build3 amd64
+  Go engine with no human-provided knowledge, modeled after the AlphaGo Zero paper
+
+libace-rmcast-7.0.6/jammy 7.0.6+dfsg-2 amd64
+  ACE reliable multicast library
+
+libace-rmcast-dev/jammy 7.0.6+dfsg-2 amd64
+  ACE reliable multicast library - development files
+
+libace-tmcast-7.0.6/jammy 7.0.6+dfsg-2 amd64
+  ACE transactional multicast library
+
+libace-tmcast-dev/jammy 7.0.6+dfsg-2 amd64
+  ACE transactional multicast library - development files
+
+libam7xxx-dev/jammy 0.1.7-1build1 amd64
+  library for accessing am7xxx devices - development files
+
+libam7xxx0.1/jammy 0.1.7-1build1 amd64
+  library for accessing am7xxx based devices
+
+libam7xxx0.1-bin/jammy 0.1.7-1build1 amd64
+  library for accessing am7xxx devices - utilities
+
+libam7xxx0.1-doc/jammy 0.1.7-1build1 all
+  library for accessing am7xxx devices - documentation
+
+libanyevent-memcached-perl/jammy 0.08-1 all
+  AnyEvent memcached client
+
+libanyevent-redis-perl/jammy 0.24-2 all
+  Perl module that implements a non-blocking Redis client
+
+libapache-mod-jk-doc/jammy-updates,jammy-security 1:1.2.48-1ubuntu0.1 all
+  Documentation of libapache2-mod-jk package
+
+libapache-session-memcached-perl/jammy 0.03-3 all
+  Perl module for storing persistent data using memcached
+
+libapache2-mod-jk/jammy-updates,jammy-security 1:1.2.48-1ubuntu0.1 amd64
+  Apache 2 connector for the Tomcat Java servlet engine
+
+libapp-termcast-perl/jammy 0.13-3 all
+  termcasting module and client
+
+libapr-memcache-dev/jammy 0.7.0-3build1 amd64
+  memcache client - development libraries
+
+libapr-memcache0/jammy 0.7.0-3build1 amd64
+  memcache client - shared library
+
+libarmci-mpi-dev/jammy 0.3.1~beta-1 amd64
+  ARMCI-MPI (Development version)
+
+libavc1394-0/jammy 0.5.4-5build2 amd64
+  control IEEE 1394 audio/video devices
+
+libavc1394-dev/jammy 0.5.4-5build2 amd64
+  control IEEE 1394 audio/video devices (development files)
+
+libavc1394-tools/jammy 0.5.4-5build2 amd64
+  control IEEE 1394 audio/video devices (utilities)
+
+libbambamc-dev/jammy 0.0.50-6 amd64
+  Development files for reading and writing BAM (genome alignment) files
+
+libbambamc0/jammy 0.0.50-6 amd64
+  Runtime library for reading and writing BAM (genome alignment) files
+
+libblosc-dev/jammy 1.21.1+ds2-2 amd64
+  high performance meta-compressor optimized for binary data (development files)
+
+libblosc1/jammy 1.21.1+ds2-2 amd64
+  high performance meta-compressor optimized for binary data
+
+libcache-memcached-fast-perl/jammy 0.27-4build1 amd64
+  Perl client for memcached, in C language
+
+libcache-memcached-getparserxs-perl/jammy 0.01-2build3 amd64
+  C/XS implementation of Cache::Memcached::GetParser
+
+libcache-memcached-libmemcached-perl/jammy 0.04001-2 all
+  cache interface to Memcached::libmemcached
+
+libcache-memcached-managed-perl/jammy 0.26-1 all
+  API for managing cached information
+
+libcache-memcached-perl/jammy 1.30-1.1 all
+  Perl module for using memcached servers
+
+libcbf-dev/jammy 0.9.6+dfsg1-3build1 amd64
+  development files for CBFlib
+
+libccid/jammy 1.5.0-2 amd64
+  PC/SC driver for USB CCID smart card readers
+
+libcdio-utils/jammy-updates,jammy-security 2.1.0-3ubuntu0.2 amd64
+  sample applications based on the CDIO libraries
+
+libcgi-session-driver-memcached-perl/jammy 0.04-2.1 all
+  Perl module to allow CGI sessions to be stored in memcache
+
+libcglm-dev/jammy 0.8.4-3 amd64
+  Development files for the cglm library
+
+libchewing3/jammy 0.5.1-4build2 amd64
+  intelligent phonetic input method library
+
+libchewing3-data/jammy 0.5.1-4build2 all
+  intelligent phonetic input method library - data files
+
+libchewing3-dev/jammy 0.5.1-4build2 amd64
+  intelligent phonetic input method library (developer version)
+
+libchi-driver-memcached-perl/jammy 0.16-1 all
+  Memcached driver for CHI, the unified cache handling interface
+
+libchi-memoize-perl/jammy 0.07-2 all
+  memoization implementation backed by CHI
+
+libchi-perl/jammy 0.61-1 all
+  Unified Cache Handling Interface
+
+libcifpp-data/jammy 2.0.5-1build1 all
+  Data files for libcifpp
+
+libcifpp-dev/jammy 2.0.5-1build1 amd64
+  Development files for libcifpp
+
+libcifpp2/jammy 2.0.5-1build1 amd64
+  Library files for libcifpp
+
+libcimcclient0/jammy 2.2.8-0ubuntu2 amd64
+  small footprint CIM client libraries
+
+libcimcclient0-dev/jammy 2.2.8-0ubuntu2 amd64
+  small footprint CIM client development headers
+
+libclass-dbi-fromcgi-perl/jammy 1.00-5.1 all
+  Perl module to update Class::DBI data using CGI::Untaint
+
+libclutter-imcontext-0.1-0/jammy 0.1.4-3.1 amd64
+  Open GL based interactive canvas library IMContext framework
+
+libclutter-imcontext-0.1-0-dbg/jammy 0.1.4-3.1 amd64
+  Open GL based interactive canvas library IMContext framework (debug files)
+
+libclutter-imcontext-0.1-bin/jammy 0.1.4-3.1 amd64
+  Open GL based interactive canvas library IMContext framework
+
+libclutter-imcontext-0.1-dev/jammy 0.1.4-3.1 amd64
+  Open GL based interactive canvas library IMContext framework (dev. files)
+
+libclutter-imcontext-0.1-doc/jammy 0.1.4-3.1 all
+  Open GL based interactive canvas library IMContext framework (document)
+
+libcneartree-dev/jammy 5.1.1+dfsg1-1 amd64
+  Library and headers for solving the Nearest Neighbor Problem
+
+libcneartree7/jammy 5.1.1+dfsg1-1 amd64
+  Library for solving the Nearest Neighbor Problem
+
+libcombblas-dev/jammy 1.6.2-8 amd64
+  an extensible parallel graph library for graph analytics
+
+libcombblas-docs/jammy 1.6.2-8 all
+  an extensible parallel graph library for graph analytics (docs)
+
+libcombblas1.16.0/jammy 1.6.2-8 amd64
+  an extensible parallel graph library for graph analytics
+
+libcpu-features-dev/jammy 0.6.0-3 amd64
+  cross platform C99 library to get cpu features
+
+libcrmcluster29/jammy-updates 2.1.2-1ubuntu3.1 amd64
+  cluster resource manager cluster library
+
+libcrmcommon34/jammy-updates 2.1.2-1ubuntu3.1 amd64
+  cluster resource manager common library
+
+libcryptx-perl/jammy 0.076-1build1 amd64
+  Perl module that provides a self-contained cryptographic toolkit
+
+libcyrus-imap-perl/jammy-updates 3.4.3-3ubuntu0.1 amd64
+  Interface to Cyrus imap client imclient library
+
+libdancer-session-memcached-perl/jammy 0.2020-2.1 all
+  Memcached-based session backend for Dancer
+
+libdata-table-perl/jammy 1.78-1 all
+  module to manipulate data tables in perl (as in R)
+
+libdbix-class-htmlwidget-perl/jammy 0.16-6 all
+  DBIx::Class::HTMLWidget perl module
+
+libddcutil-dev/jammy 1.2.2-1 amd64
+  Control monitor settings - development files
+
+libddcutil4/jammy 1.2.2-1 amd64
+  Control monitor settings - shared library
+
+libdiscover-dev/jammy 2.1.2-10 amd64
+  hardware identification library development files
+
+libdiscover2/jammy 2.1.2-10 amd64
+  hardware identification library
+
+libdlmcontrol-dev/jammy 4.1.1-1build1 amd64
+  Distributed Lock Manager control library development
+
+libdlmcontrol3/jammy 4.1.1-1build1 amd64
+  Distributed Lock Manager control library
+
+libdmrconf-dev/jammy 0.10.1-2 amd64
+  Header files for libdmrconf
+
+libdv-bin/jammy 1.0.0-14build1 amd64
+  software library for DV format digital video (sample apps)
+
+libdv4/jammy 1.0.0-14build1 amd64
+  software library for DV format digital video (runtime lib)
+
+libdv4-dev/jammy 1.0.0-14build1 amd64
+  software library for DV format digital video (devel files)
+
+libf2fs-dev/jammy 1.14.0-2build1 amd64
+  Core library for Flash-Friendly File System - Development files
+
+libf2fs-format-dev/jammy 1.14.0-2build1 amd64
+  Format library for Flash-Friendly File System - Development files
+
+libfile-chmod-perl/jammy 0.42-1 all
+  chmod() override with symbolic and ls-style modes
+
+libgammu-dev/jammy 1.42.0-5 amd64
+  mobile phone management library (development files)
+
+libgammu-i18n/jammy 1.42.0-5 all
+  mobile phone management library (i18n files)
+
+libgammu8/jammy 1.42.0-5 amd64
+  mobile phone management library
+
+libgdcm-tools/jammy 3.0.10-1build2 amd64
+  Grassroots DICOM tools and utilities
+
+libghc-newtype-generics-dev/jammy 0.5.4-1build2 amd64
+  Typeclass and set of functions for working with newtypes
+
+libghc-newtype-generics-doc/jammy 0.5.4-1build2 all
+  Typeclass and set of functions for working with newtypes; documentation
+
+libghc-newtype-generics-prof/jammy 0.5.4-1build2 amd64
+  Typeclass and set of functions for working with newtypes; profiling libraries
+
+libghc-patience-dev/jammy 0.3-1build2 amd64
+  Haskell implementation of the Patience Diff algorithm
+
+libghc-patience-doc/jammy 0.3-1build2 all
+  Haskell implementation of the Patience Diff algorithm; documentation
+
+libghc-patience-prof/jammy 0.3-1build2 amd64
+  Haskell implementation of the Patience Diff algorithm; profiling libraries
+
+libghc-stm-chans-dev/jammy 3.0.0.4-9build2 amd64
+  additional types of channels for STM
+
+libghc-stm-chans-doc/jammy 3.0.0.4-9build2 all
+  additional types of channels for STM; documentation
+
+libghc-stm-chans-prof/jammy 3.0.0.4-9build2 amd64
+  additional types of channels for STM; profiling libraries
+
+libghc-store-dev/jammy 0.7.6-1build2 amd64
+  Fast binary serialization
+
+libghc-store-doc/jammy 0.7.6-1build2 all
+  Fast binary serialization; documentation
+
+libghc-store-prof/jammy 0.7.6-1build2 amd64
+  Fast binary serialization; profiling libraries
+
+libghc-yi-misc-modes-dev/jammy 0.19.0-1 amd64
+  Yi editor miscellaneous modes
+
+libghc-yi-misc-modes-doc/jammy 0.19.0-1 all
+  Yi editor miscellaneous modes; documentation
+
+libghc-yi-misc-modes-prof/jammy 0.19.0-1 amd64
+  Yi editor miscellaneous modes; profiling libraries
+
+libglobalarrays-dev/jammy 5.8.1-5 amd64
+  Distributed Shared-Memory Programming Environment (development)
+
+libgme-dev/jammy 0.6.3-2 amd64
+  Playback library for video game music files - development files
+
+libgme0/jammy 0.6.3-2 amd64
+  Playback library for video game music files - shared library
+
+libgmock-dev/jammy 1.11.0-3 amd64
+  Google's framework for writing C++ tests
+
+libgnuradio-rds1/jammy 3.10-1build1 amd64
+  GNU Radio FM RDS/TMC Transceiver (library)
+
+libgringotts-dev/jammy 1:1.2.1-16 amd64
+  development files for the gringotts data encapsulation library
+
+libgringotts2/jammy 1:1.2.1-16 amd64
+  gringotts data encapsulation and encryption library
+
+libgsmsd8/jammy 1.42.0-5 amd64
+  SMS daemon helper library
+
+libhamcrest-java/jammy 1.3-9 all
+  library of matchers for building test expressions
+
+libhamcrest-java-doc/jammy 1.3-9 all
+  library of matchers for building test expressions - documentation
+
+libhamcrest1.2-java/jammy 1.2-0ubuntu1 all
+  library of matchers for building test expressions
+
+libhamcrest1.2-java-doc/jammy 1.2-0ubuntu1 all
+  library of matchers for building test expressions - documentation
+
+libhashkit-dev/jammy 1.0.18-4.2ubuntu4 amd64
+  libmemcached hashing functions and algorithms (development files)
+
+libhashkit2/jammy 1.0.18-4.2ubuntu4 amd64
+  libmemcached hashing functions and algorithms
+
+libheaptrack/jammy 1.3.0-1ubuntu1 amd64
+  heap memory profiler for Linux
+
+libhepmc3/jammy 3.1.2-2build1 amd64
+  Event Record for Monte Carlo Generators
+
+libhepmc3-dev/jammy 3.1.2-2build1 amd64
+  Event Record for Monte Carlo Generators - development files
+
+libhepmc3-search/jammy 3.1.2-2build1 amd64
+  Monte Carlo event record FIO library -  search engine
+
+libhepmc3-search-dev/jammy 3.1.2-2build1 amd64
+  Event Record for Monte Carlo Generators - development files for search engine
+
+libipc-pubsub-perl/jammy 0.29-2 all
+  Interprocess Publish/Subscribe channels
+
+libipmctl-common/jammy 03.00.00.0423-1 all
+  library for managing Intel Optane DC persistent memory modules
+
+libipmctl-dev/jammy 03.00.00.0423-1 amd64
+  library for managing Intel Optane DC persistent memory modules - devel
+
+libipmctl5/jammy 03.00.00.0423-1 amd64
+  library for managing Intel Optane DC persistent memory modules
+
+libjctools-java/jammy 2.0.2-1 all
+  Java Concurrency Tools for the JVM
+
+libjnlp-servlet-java/jammy 20120126-4 all
+  simple and convenient packaging format for JNLP applications
+
+libkf5alarmcalendar-data/jammy 4:21.12.3-0ubuntu1 all
+  library for handling kalarm calendar data
+
+libkf5alarmcalendar-dev/jammy 4:21.12.3-0ubuntu1 amd64
+  library for handling kalarm calendar data - development files
+
+libkf5alarmcalendar5abi2/jammy 4:21.12.3-0ubuntu1 amd64
+  library for handling kalarm calendar data
+
+libkf5pimcommon-data/jammy 4:21.12.3-0ubuntu1 all
+  Common library for KDE PIM - data files
+
+libkf5pimcommon-dev/jammy 4:21.12.3-0ubuntu1 amd64
+  Common library for KDE PIM - devel files
+
+libkf5pimcommon-plugins/jammy 4:21.12.3-0ubuntu1 amd64
+  Common library for KDE PIM - plugins
+
+libkf5pimcommon5abi3/jammy 4:21.12.3-0ubuntu1 amd64
+  Common library for KDE PIM
+
+libkf5pimcommonakonadi5/jammy 4:21.12.3-0ubuntu1 amd64
+  Common library for KDE PIM Akonadi
+
+libkmc-dev/jammy 3.2.1+dfsg-1 amd64
+  library to access KMC k-mer count files
+
+libkpmcore-dev/jammy 21.12.3-0ubuntu1 amd64
+  KDE Partition Manager Core development files
+
+libkpmcore11/jammy 21.12.3-0ubuntu1 amd64
+  KDE Partition Manager Core
+
+liblingua-en-namecase-perl/jammy 1.21-1 all
+  Perl module to fix the case of people's names
+
+liblms7compact-dev/jammy 0.0.1+git20190125.bfd5418-1 amd64
+  Compact LMS7002 library suitable for MCU: development
+
+liblms7compact0/jammy 0.0.1+git20190125.bfd5418-1 amd64
+  Compact LMS7002 library suitable for MCU
+
+liblogback-java/jammy 1:1.2.10-1 all
+  flexible logging library for Java
+
+liblogback-java-doc/jammy 1:1.2.10-1 all
+  flexible logging library for Java - documentation
+
+liblzf-dev/jammy 3.6-3 amd64
+  Very small data compression library - development headers
+
+liblzf1/jammy 3.6-3 amd64
+  Very small data compression library
+
+libmaloc-dev/jammy 1.5-1 amd64
+  Object-oriented Abstraction Layer for C (development files)
+
+libmaloc1/jammy 1.5-1 amd64
+  Object-oriented Abstraction Layer for C
+
+libmccs-ocaml/jammy 1.1+13-1build2 amd64
+  stripped-down MCCS CUDF solver for OCaml
+
+libmccs-ocaml-dev/jammy 1.1+13-1build2 amd64
+  stripped-down MCCS CUDF solver for OCaml -- development files
+
+libmce-perl/jammy 1.876-1 all
+  Many-Core Engine for Perl providing parallel processing capabilities
+
+libmckoisqldb-java/jammy 1.0.6-4 all
+  Mckoi SQL Database (MckoiSQLDB)
+
+libmckoisqldb-java-doc/jammy 1.0.6-4 all
+  Documentation for Mckoi SQL Database (MckoiSQLDB)
+
+libmcl-ocaml-dev/jammy 1:14-137+ds-9build2 amd64
+  library providing bindings between mcl and OCaml
+
+libmcpl-dev/jammy 1.3.2-3 amd64
+  Monte Carlo Particle Lists - development files
+
+libmcpl1/jammy 1.3.2-3 amd64
+  Monte Carlo Particle Lists - library
+
+libmcpp-dev/jammy 2.7.2-5 amd64
+  Alternative C/C++ preprocessor (development files)
+
+libmcpp0/jammy 2.7.2-5 amd64
+  Alternative C/C++ preprocessor (shared library)
+
+libmcrypt-dev/jammy 2.5.8-7 amd64
+  De-/Encryption Library development files
+
+libmcrypt4/jammy 2.5.8-7 amd64
+  De-/Encryption Library
+
+libmemcached-dbg/jammy 1.0.18-4.2ubuntu4 amd64
+  Debug Symbols for libmemcached
+
+libmemcached-dev/jammy 1.0.18-4.2ubuntu4 amd64
+  C and C++ client library to the memcached server (development files)
+
+libmemcached-libmemcached-perl/jammy 1.001801+dfsg-2build6 amd64
+  thin, fast, full interface to the libmemcached client API
+
+libmemcached-tools/jammy 1.0.18-4.2ubuntu4 amd64
+  Commandline tools for talking to memcached via libmemcached
+
+libmemcached11/jammy 1.0.18-4.2ubuntu4 amd64
+  C and C++ client library to the memcached server
+
+libmemcachedutil2/jammy 1.0.18-4.2ubuntu4 amd64
+  library implementing connection pooling for libmemcached
+
+libmemoize-memcached-perl/jammy 0.04-1 all
+  implementation of Memoize using memcached for storage
+
+libmkl-mc/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL: Kernel library for Intel® SSSE3 enabled processors
+
+libmkl-mc3/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL: Kernel library for Intel® SSE4.2 enabled processors
+
+libmkl-vml-mc/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL : VM/VS/DF for Intel® SSSE3 enabled processors
+
+libmkl-vml-mc2/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL : VM/VS/DF for 45nm Hi-k Core2 and Xeon processor
+
+libmkl-vml-mc3/jammy 2020.4.304-2ubuntu3 amd64
+  Intel® MKL : VM/VS/DF for Intel® SSE4.2 enabled processors
+
+libmmdb2-0/jammy 2.0.20-1 amd64
+  macromolecular coordinate library - runtime
+
+libmmdb2-dev/jammy 2.0.20-1 amd64
+  macromolecular coordinate library - development files
+
+libmodule-compile-perl/jammy 0.38-1 all
+  Perl module providing a system to compile Perl modules
+
+libmrtd-dev/jammy 0.1.6-3build1 amd64
+  Development files for libmrtd0
+
+libmrtd0/jammy 0.1.6-3build1 amd64
+  MRTD - Machine-readable travel document library
+
+libnauty2/jammy 2.7r3+ds-1 amd64
+  library for graph automorphisms -- library package
+
+libnauty2-dev/jammy 2.7r3+ds-1 amd64
+  library for graph automorphisms -- development package
+
+libnet-remctl-perl/jammy 3.17-1build7 amd64
+  Perl client for Kerberos-authenticated command execution
+
+libnetsds-perl/jammy 1.301-4 all
+  Service Delivery Suite framework
+
+libnetty-tcnative-java/jammy 2.0.28-1build1 all
+  Tomcat native fork for Netty
+
+libnetty-tcnative-jni/jammy 2.0.28-1build1 amd64
+  Tomcat native fork for Netty (JNI library)
+
+libnfo1/jammy 1.0.1-3 amd64
+  NFO file parser/writer library
+
+libnucleotidelikelihoodcore0/jammy 1.10.4+dfsg-3 amd64
+  implementation of LikelihoodCore for nucleotides used by beast-mcmc
+
+liboasis3-0d/jammy 3.mct+dfsg.121022-16build1 amd64
+  Shared libraries for OASIS3 coupler
+
+liboasis3-dev/jammy 3.mct+dfsg.121022-16build1 amd64
+  Development files for OASIS3 climate model coupler
+
+liboasis3-doc/jammy 3.mct+dfsg.121022-16build1 all
+  Documentation and Examples for the OASIS climate model coupler
+
+libopenal1/jammy 1:1.19.1-2build3 amd64
+  Software implementation of the OpenAL audio API (shared library)
+
+libopentest4j-java/jammy 1.2.0-3 all
+  Open Test Alliance API
+
+libosmcomp5/jammy 3.3.23-2 amd64
+  InfiniBand subnet manager - component library
+
+libpcp-mmv-perl/jammy 5.3.6-1build1 amd64
+  Performance Co-Pilot Memory Mapped Value Perl module
+
+libperl-metrics-simple-perl/jammy 1.0.1-1 all
+  module to provide metrics of Perl code
+
+libphitsmcpl1/jammy 1.3.2-3 amd64
+  Monte Carlo Particle Lists - PHITS library
+
+librcsb-core-wrapper-doc/jammy 1.005-10build2 all
+  documentation for librcsb-core-wrapper0
+
+librcsb-core-wrapper0/jammy 1.005-10build2 amd64
+  C++ library providing OO API to information in mmCIF format
+
+librcsb-core-wrapper0-dev/jammy 1.005-10build2 amd64
+  development files for librcsb-core-wrapper0
+
+libredis-perl/jammy 2:1.9990-1 all
+  persistent key-value database with network interface (Perl client library)
+
+libremctl-dev/jammy 3.17-1build7 amd64
+  Development files for Kerberos-authenticated command execution
+
+libremctl1/jammy 3.17-1build7 amd64
+  Library for Kerberos-authenticated command execution
+
+librsl-dev/jammy 1.43-1.2build1 amd64
+  Development files for RSL
+
+librsl-doc/jammy 1.43-1.2build1 all
+  HTML documentation for RSL
+
+librsl1/jammy 1.43-1.2build1 amd64
+  TRMM Radar Software Library
+
+librte-bus-fslmc22/jammy-updates,jammy-security 21.11.6-0ubuntu0.22.04.2 amd64
+  Data Plane Development Kit (librte-bus-fslmc runtime library)
+
+librust-copyless-dev/jammy 0.1.5-1 amd64
+  Ways to eliminate memcpy calls when using the standard library - Rust source code
+
+librust-env-logger+termcolor-dev/jammy 0.9.0-1 amd64
+  Logging implementation for `log` which is configured via an environment variable - feature "termcolor"
+
+librust-env-logger-0.7+termcolor-dev/jammy 0.7.1-3 amd64
+  Logging implementation for `log` which is configured via an environment variable - feature "termcolor"
+
+librust-fwdansi-dev/jammy 1.1.0-1 amd64
+  Forwards a byte string with ANSI escape code to a termcolor terminal - Rust source code
+
+librust-memchr-dev/jammy 2.4.1-1 amd64
+  Safe interface to memchr - Rust source code
+
+librust-regex+memchr-dev/jammy-updates,jammy-security 1.5.4-1ubuntu0.1 amd64
+  Regular expressions for Rust - feature "memchr"
+
+librust-termcolor-dev/jammy 1.1.2-1 amd64
+  Simple cross platform library for writing colored text to a terminal - Rust source code
+
+libscscp-doc/jammy 1.0.3+ds-6build1 all
+  IMCCE SCSCP C Library -- reference manual
+
+libscscp1/jammy 1.0.3+ds-6build1 amd64
+  IMCCE SCSCP C Library -- library package
+
+libscscp1-dev/jammy 1.0.3+ds-6build1 amd64
+  IMCCE SCSCP C Library -- development package
+
+libsmc-dev/jammy 1.8.6-9 all
+  Robot OS 'bond' State Machine Compiler interface
+
+libspring-instrument-java/jammy 4.3.30-1 all
+  modular Java/J2EE application framework - Instrumentation
+
+libspymemcached-java/jammy 2.12.3+dfsg-2 all
+  simple, asynchronous, single-threaded memcached client
+
+libsswmcpl1/jammy 1.3.2-3 amd64
+  Monte Carlo Particle Lists - SSW library
+
+libstar-parser-perl/jammy 0.59-4 all
+  STAR compliant data file parser for Perl
+
+libstring-approx-perl/jammy 3.28-1build4 amd64
+  Perl extension for approximate matching (fuzzy matching)
+
+libswarmcache-java/jammy 1.0RC2+cvs20071027-7.1 all
+  SwarmCache - Distributed caching mechanism for Java
+
+libswupdate-dev/jammy 2021.11-1 amd64
+  Development files for swupdate framework
+
+libswupdate0.1/jammy 2021.11-1 amd64
+  Library for controlling the swupdate framework
+
+libsystemc/jammy 2.3.3-5.1 amd64
+  SystemC library
+
+libsystemc-dev/jammy 2.3.3-5.1 amd64
+  Development files for SystemC library
+
+libsystemc-doc/jammy 2.3.3-5.1 all
+  Documentation for SystemC library
+
+libtcnative-1/jammy 1.2.31-1build1 amd64
+  Tomcat native library using the Apache Portable Runtime
+
+libtelnet-dev/jammy 0.21-5 amd64
+  Small library for parsing the TELNET protocol - development files
+
+libtelnet-utils/jammy 0.21-5 amd64
+  Small library for parsing the TELNET protocol - utilities
+
+libtelnet2/jammy 0.21-5 amd64
+  Small library for parsing the TELNET protocol - shared library
+
+libtest-redisserver-perl/jammy 0.21-2 all
+  redis-server runner for tests
+
+libtest-valgrind-perl/jammy 1.19-3 all
+  module to test Perl code through valgrind
+
+libtomcat9-embed-java/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- embed libraries
+
+libtomcat9-java/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- core libraries
+
+libtomcatjss-java/jammy 8.0.0-2 all
+  JSSE implementation using JSS for Tomcat
+
+libtomcrypt-dev/jammy 1.18.2-5 amd64
+  static library, header files and documentation for libtomcrypt
+
+libtomcrypt1/jammy 1.18.2-5 amd64
+  public domain open source cryptographic toolkit
+
+libvidstab-dev/jammy 1.1.0-2 amd64
+  video stabilization library (development files)
+
+libvidstab1.1/jammy 1.1.0-2 amd64
+  video stabilization library (shared library)
+
+libvmemcache-dev/jammy 0.8.1-4 amd64
+  buffer-based LRU cache
+
+libvmemcache0/jammy 0.8.1-4 amd64
+  buffer-based LRU cache
+
+libwvstreams4.6-base/jammy 4.6.1-15build1 amd64
+  C++ network libraries for rapid application development
+
+libx11-protocol-other-perl/jammy 31-1 all
+  miscellaneous X11::Protocol helpers
+
+libxcb-xvmc0/jammy 1.14-3ubuntu3 amd64
+  X C Binding, xvmc extension
+
+libxcb-xvmc0-dev/jammy 1.14-3ubuntu3 amd64
+  X C Binding, xvmc extension, development files
+
+libxdmcp-dev/jammy 1:1.1.3-0ubuntu5 amd64
+  X11 authorisation library (development headers)
+
+libxdmcp6/jammy,now 1:1.1.3-0ubuntu5 amd64 [installed,automatic]
+  X11 Display Manager Control Protocol library
+
+libxdmcp6-dbg/jammy 1:1.1.3-0ubuntu5 amd64
+  X11 authorisation library (debug package)
+
+libxineliboutput-sxfe/jammy 2.2.0+git20211212-2.1 amd64
+  Local X-Server frontend for the xineliboutput plugin
+
+libxml-libxml-simple-perl/jammy 1.01-1 all
+  Perl module that uses the XML::LibXML parser for XML structures
+
+libxray-absorption-perl/jammy 3.0.1-3 all
+  x-ray absorption data for the elements
+
+libxvmc-dev/jammy 2:1.0.12-2build2 amd64
+  X11 Video extension library (development headers)
+
+libxvmc1/jammy 2:1.0.12-2build2 amd64
+  X11 Video extension library
+
+linux-crashdump/jammy-updates,jammy-security 5.15.0.136.134 amd64
+  Linux kernel crashdump setup for the latest generic kernel
+
+linux-wlan-ng/jammy 0.2.9+dfsg-6 amd64
+  utilities for wireless prism2 cards
+
+linux-wlan-ng-doc/jammy 0.2.9+dfsg-6 all
+  documentation for wlan-ng
+
+linux-wlan-ng-firmware/jammy 0.2.9+dfsg-6 all
+  firmware files used by the linux-wlan-ng driver
+
+loki/jammy 2.4.7.4-10 amd64
+  MCMC linkage analysis on general pedigrees
+
+loki-doc/jammy 2.4.7.4-10 all
+  MCMC linkage analysis on general pedigrees (PS manual)
+
+lua-nginx-memcached/jammy 0.14-1.1 all
+  Pure Lua memcached client driver for the nginx embedded Lua language
+
+lua-swupdate/jammy 2021.11-1 amd64
+  swupdate bindings for the Lua language
+
+madwimax/jammy 0.1.1-1ubuntu3 amd64
+  user-space driver for mWiMAX equipment based on Samsung CMC-730
+
+makedumpfile/jammy-updates 1:1.7.0-1ubuntu0.1 amd64
+  VMcore extraction tool
+
+mame-tools/jammy 0.242+dfsg.1-1 amd64
+  Tools for MAME
+
+man2html/jammy 1.6g-14 amd64
+  browse man pages in your web browser
+
+mblaze/jammy 1.1-1 amd64
+  UNIX utilities to deal with Maildir
+
+mbpfan/jammy 2.2.1-1 amd64
+  fan control daemon for Apple Macbooks
+
+mc/jammy 3:4.8.27-1 amd64
+  Midnight Commander - a powerful file manager
+
+mc-data/jammy 3:4.8.27-1 all
+  Midnight Commander - a powerful file manager -- data files
+
+mcabber/jammy 1.1.2-2 amd64
+  small Jabber (XMPP) console client
+
+mcaller/jammy 1.0.3+git20210624.b415090-1 all
+  find methylation in nanopore reads
+
+mccs/jammy 1:1.1-9 amd64
+  multi-criteria CUDF solver
+
+mce-dev/jammy 1.15.0+15.10.20150929-0ubuntu1 all
+  development files for mce
+
+mce-doc/jammy 1.15.0+15.10.20150929-0ubuntu1 all
+  Documentation files for mce D-Bus API
+
+mcl/jammy 1:14-137+ds-9build2 amd64
+  Markov Cluster algorithm
+
+mcl-doc/jammy 1:14-137+ds-9build2 all
+  documentation for mcl
+
+mcollective/jammy 2.12.5+dfsg-1 all
+  Marionette Collective clustering framework - server
+
+mcollective-client/jammy 2.12.5+dfsg-1 all
+  Marionette Collective clustering framework - clients
+
+mcollective-common/jammy 2.12.5+dfsg-1 all
+  Marionette Collective clustering framework - common files
+
+mcollective-doc/jammy 2.12.5+dfsg-1 all
+  Marionette Collective clustering framework - documentation
+
+mcollective-plugins-centralrpclog/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for central rpc log management
+
+mcollective-plugins-facts-facter/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for collecting facts via facter
+
+mcollective-plugins-filemgr/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for file management
+
+mcollective-plugins-iptables/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for iptables
+
+mcollective-plugins-logstash/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for log stashing
+
+mcollective-plugins-nettest/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for nettest
+
+mcollective-plugins-nrpe/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for nagios nrpe
+
+mcollective-plugins-package/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for package management using puppet
+
+mcollective-plugins-process/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for process management
+
+mcollective-plugins-provisioner/jammy 0.0.1~git20110120-0ubuntu6 all
+  mcollective Server Provisioner plugin
+
+mcollective-plugins-puppetca/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for puppet CA management
+
+mcollective-plugins-puppetd/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for puppet clients
+
+mcollective-plugins-puppetral/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for puppet ralsh
+
+mcollective-plugins-registration-monitor/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for registration monitoring
+
+mcollective-plugins-service/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for service management using puppet
+
+mcollective-plugins-stomputil/jammy 0.0.0~git20120507.df2fa81-0ubuntu2 all
+  mcollective plugin for the stomp protocol
+
+mcollective-provisioner-common/jammy 0.0.1~git20110120-0ubuntu6 all
+  mcollective Server Provisioner common files
+
+mcollective-server-provisioner/jammy 0.0.1~git20110120-0ubuntu6 all
+  mcollective Server Provisioner
+
+mcomix/jammy 1.2.1mcomix3+git20200206-1 all
+  GTK+ image viewer for comic books
+
+mcp-plugins/jammy 0.4.0-6build1 amd64
+  LADSPA plugins designed for Alsa Modular Synth
+
+mcpdisp/jammy 0.1.2-0ubuntu1 amd64
+  Mackie Control Protocol Display Program.
+
+mcpl/jammy 1.3.2-3 amd64
+  Monte Carlo Particle Lists - libraries and tools
+
+mcpp/jammy 2.7.2-5 amd64
+  Alternative C/C++ preprocessor
+
+mcpp-doc/jammy 2.7.2-5 all
+  Alternative C/C++ preprocessor (manual)
+
+mcron/jammy 1.0.8-1.1 amd64
+  Guile-based program for running jobs at regular times
+
+mcrypt/jammy 2.6.8-6 amd64
+  Replacement for old unix crypt(1)
+
+mcstrans/jammy 3.3-1 amd64
+  SELinux core policy utilities (mcstrans utilities)
+
+mcu8051ide/jammy 1.4.9-2 all
+  Graphical Integrated Development Environment for 8051
+
+memcached/jammy-updates,jammy-security 1.6.14-1ubuntu0.1 amd64
+  High-performance in-memory object caching system
+
+metacity-themes/jammy 1.0.13 all
+  Themes for the Gtk2 metacity window manager
+
+micropolis/jammy 0.0.20071228-10 amd64
+  real-time city management simulator
+
+milkytracker/jammy 1.03.00+dfsg-2build1 amd64
+  music creation tool inspired by Fast Tracker 2
+
+minidlna/jammy-updates,jammy-security 1.3.0+dfsg-2.1ubuntu0.1 amd64
+  lightweight DLNA/UPnP-AV server targeted at embedded systems
+
+mmc-utils/jammy 0+git20191004.73d6c59-2 amd64
+  Userspace tools for MMC/SD devices
+
+monitoring-plugins-contrib/jammy 37.20211217ubuntu1 amd64
+  Plugins for nagios compatible monitoring systems
+
+mono-mcs/jammy 6.8.0.105+dfsg-3.2 all
+  Mono C# 2.0 / 3.0 / 4.0 / 5.0  compiler for CLI 2.0 / 4.0 / 4.5
+
+mptp/jammy 0.2.4-3build1 amd64
+  single-locus species delimitation
+
+mrbayes/jammy 3.2.7a-5 amd64
+  Bayesian Inference of Phylogeny
+
+mrbayes-doc/jammy 3.2.7a-5 all
+  Bayesian Inference of Phylogeny - manual
+
+mrbayes-mpi/jammy 3.2.7a-5 amd64
+  Bayesian Inference of Phylogeny - mpi version
+
+msc-generator/jammy 7.1-2 amd64
+  Draws signalling charts from textual description
+
+msort/jammy 8.53-2.3build1 amd64
+  utility for sorting records in complex ways
+
+msp430mcu/jammy 20120406-2.1 all
+  Spec files, headers and linker scripts for TI's MSP430 targets
+
+mspdebug/jammy 0.22-2build2 amd64
+  debugging tool for MSP430 microcontrollers
+
+muse/jammy 4.0.0-1build1 amd64
+  Qt-based audio/MIDI sequencer
+
+nauty/jammy 2.7r3+ds-1 amd64
+  library for graph automorphisms -- interface and tools
+
+nauty-doc/jammy 2.7r3+ds-1 all
+  library for graph automorphisms -- user guide
+
+nginx-core/jammy-updates,jammy-security 1.18.0-6ubuntu14.6 amd64
+  nginx web/proxy server (standard version)
+
+nginx-extras/jammy-updates,jammy-security 1.18.0-6ubuntu14.6 amd64
+  nginx web/proxy server (extended version)
+
+nginx-full/jammy-updates,jammy-security 1.18.0-6ubuntu14.6 amd64
+  nginx web/proxy server (standard version with 3rd parties)
+
+node-ci-info/jammy 3.2.0+~cs4.2.0-4 all
+  Get details about the current Continuous Integration environment
+
+nordugrid-arc-plugins-globus/jammy 6.14.0-2 all
+  ARC Globus plugins (transitional package)
+
+nordugrid-arc-plugins-gridftp/jammy 6.14.0-2 amd64
+  ARC Globus dependent DMCs
+
+nordugrid-arc-plugins-needed/jammy 6.14.0-2 amd64
+  ARC base plugins
+
+numconv/jammy 2.7-1.1ubuntu2 amd64
+  utility for conversion numbers as Unicode strings
+
+nutcracker/jammy 0.4.1+dfsg-1 amd64
+  Fast, light-weight proxy for memcached and Redis
+
+nwchem/jammy 7.0.2-3 all
+  High-performance computational chemistry software (default MPI)
+
+nwchem-mpich/jammy 7.0.2-3 amd64
+  High-performance computational chemistry software (MPICH build)
+
+nwchem-openmpi/jammy 7.0.2-3 amd64
+  High-performance computational chemistry software (OpenMPI build)
+
+octave-instrument-control/jammy 0.7.1-1 amd64
+  instrument control for Octave
+
+opencity/jammy 0.0.6.5stable-5 amd64
+  3D city simulator game
+
+openctm-tools/jammy 1.0.3+dfsg1-2.1build2 amd64
+  Tools for compression of 3D triangle meshes
+
+openhpi-plugin-ipmidirect/jammy 3.8.0-2.1build5 amd64
+  OpenHPI plugin module for direct IPMI over LAN (RMCP) or SMI
+
+openmcdf/jammy 1.5.4-3 all
+  Structured Storage Explorer
+
+openscad-mcad/jammy 2019.05-1 all
+  library for the OpenSCAD 3D modeling software
+
+osmcoastline/jammy 2.3.1-1build2 amd64
+  Extract coastline data from OpenStreetMap planet file
+
+osmctools/jammy 0.9-3 amd64
+  Some tools to manipulate OpenStreetMap files
+
+osmo-pcu/jammy 0.8.0-3ubuntu1 amd64
+  Osmocom GPRS/EDGE Packet Control Unit (PCU)
+
+overlayroot/jammy 0.47ubuntu1 all
+  use an overlayfs on top of a read-only root filesystem
+
+pandora-build/jammy 0.171.1-0ubuntu2 all
+  autotools made better, faster stronger
+
+pcmciautils/jammy 018-13build1 amd64
+  PCMCIA utilities for Linux 2.6
+
+pcp-import-collectl2pcp/jammy 5.3.6-1build1 amd64
+  Tool for importing data from collectl into PCP archive logs
+
+pcp-import-ganglia2pcp/jammy 5.3.6-1build1 all
+  Tool for importing data from ganglia into PCP archive logs
+
+pcp-import-iostat2pcp/jammy 5.3.6-1build1 all
+  Tool for importing data from iostat into PCP archive logs
+
+pcp-import-mrtg2pcp/jammy 5.3.6-1build1 all
+  Tool for importing data from MRTG into PCP archive logs
+
+pcp-import-sar2pcp/jammy 5.3.6-1build1 all
+  Tool for importing data from sar into PCP archive logs
+
+pcp-import-sheet2pcp/jammy 5.3.6-1build1 all
+  Tool for importing data from a spreadsheet into PCP archive logs
+
+pftools/jammy 3.2.11-2 amd64
+  build and search protein and DNA generalized profiles
+
+php-apcu/jammy 5.1.21+4.0.11-7ubuntu1 amd64
+  APC User Cache for PHP
+
+php-apcu-all-dev/jammy 5.1.21+4.0.11-7ubuntu1 all
+  APC User Cache for PHP
+
+php-dapphp-radius/jammy 2.5.8-1ubuntu1 all
+  pure PHP RADIUS client based on the SysCo/al implementation
+
+php-doctrine-cache/jammy 2.1.1-3ubuntu1 all
+  cache library - Doctrine component
+
+php-hamcrest/jammy 2.0.1-2 all
+  This is the PHP port of Hamcrest Matchers
+
+php-igbinary/jammy 3.2.6+2.0.8-7ubuntu1 amd64
+  igbinary PHP serializer
+
+php-igbinary-all-dev/jammy 3.2.6+2.0.8-7ubuntu1 all
+  igbinary PHP serializer
+
+php-malkusch-lock/jammy 2.2+ds.1-2ubuntu1 all
+  mutex library for exclusive code execution
+
+php-memcache/jammy 8.0+4.0.5.2+3.0.9~20170802.e702b5f9+-7 amd64
+  memcache extension module for PHP
+
+php-memcache-all-dev/jammy 8.0+4.0.5.2+3.0.9~20170802.e702b5f9+-7 all
+  memcache extension module for PHP
+
+php-memcached/jammy 3.1.5+2.2.0-14.1 amd64
+  memcached extension module for PHP, uses libmemcached
+
+php-memcached-all-dev/jammy 3.1.5+2.2.0-14.1 all
+  memcached extension module for PHP, uses libmemcached
+
+php-remctl/jammy 3.17-1build7 amd64
+  PECL module for Kerberos-authenticated command execution
+
+php-symfony-dom-crawler/jammy 5.4.4+dfsg-1ubuntu8 all
+  ease DOM navigation for HTML and XML documents
+
+php8.1-apcu/jammy 5.1.21+4.0.11-7ubuntu1 amd64
+  APC User Cache for PHP
+
+php8.1-igbinary/jammy 3.2.6+2.0.8-7ubuntu1 amd64
+  igbinary PHP serializer
+
+php8.1-memcache/jammy 8.0+4.0.5.2+3.0.9~20170802.e702b5f9+-7 amd64
+  memcache extension module for PHP
+
+php8.1-memcached/jammy 3.1.5+2.2.0-14.1 amd64
+  memcached extension module for PHP, uses libmemcached
+
+phyx/jammy 1.01+ds-2build1 amd64
+  UNIX-style phylogenetic analyses on trees and sequences
+
+pmccabe/jammy 2.8-2 amd64
+  McCabe-style function complexity and line counting for C and C++
+
+postgresql-14-pgmemcache/jammy 2.3.0-10 amd64
+  PostgreSQL interface to memcached
+
+printer-driver-oki/jammy 1.0.1-1.1 all
+  printer driver for OKI Data printers
+
+prometheus-ipmi-exporter/jammy-updates,jammy-security 1.4.0+ds-3ubuntu0.1 amd64
+  Prometheus exporter for IPMI devices
+
+puppet-module-puppet-community-mcollective/jammy 0.6.2-4 all
+  Puppet module for mcollective to handle and install clusters
+
+puppet-module-saz-memcached/jammy 3.1.0-1 all
+  Puppet module for memcached
+
+pyfai/jammy 0.21.1+dfsg1-1build1 all
+  Fast Azimuthal Integration scripts
+
+pylama/jammy 7.4.3-3 all
+  code audit tool for Python in Python3
+
+pymca/jammy 5.7.1+dfsg-1build1 all
+  Applications and toolkit for X-ray fluorescence analysis -- scripts
+
+pymca-data/jammy 5.7.1+dfsg-1build1 all
+  Architecture independent data files for PyMca
+
+pymca-doc/jammy 5.7.1+dfsg-1build1 all
+  Documentation files for PyMca
+
+python-blosc-doc/jammy 1.9.2+ds1-3build2 all
+  Python bindings for the Blosc meta-compressor (docs)
+
+python-bumps-doc/jammy 0.8.1-1 all
+  data fitting and Bayesian uncertainty modeling for inverse problems (docs)
+
+python-cachelib-doc/jammy 0.4.1-2 all
+  collection of cache libraries using the same API (documentation)
+
+python-limits-doc/jammy 1.5.1-1 all
+  Rate limiting utilities for Python - Documentation
+
+python-magnumclient-doc/jammy 3.5.0-0ubuntu3 all
+  client library for Magnum API - doc
+
+python-mbed-host-tests-doc/jammy 1.4.4-6 all
+  module and utilities to flash, reset and test Mbed Enabled devices (docs)
+
+python-oslo.cache-doc/jammy 2.9.0-0ubuntu1 all
+  cache storage for Openstack projects - doc
+
+python-pyfai-doc/jammy 0.21.1+dfsg1-1build1 all
+  Fast Azimuthal Integration scripts - Documentation
+
+python-pylibmc-doc/jammy 1.5.2-3build4 all
+  libmemcached wrapper (Documentation)
+
+python-radon-doc/jammy 5.1.0-1 all
+  Python tool to compute code metrics (common documentation)
+
+python-rediscluster-doc/jammy 2.0.0-1 all
+  Python interface to a cluster of Redis key-value stores - Documentation
+
+python-scciclient-doc/jammy 0.11.1-0ubuntu1 all
+  Python ServerView Common Command Interface (SCCI) Client Library - doc
+
+python-sushy-cli-doc/jammy 0.4.0-2 all
+  Redfish CLI tool based on sushy Redfish client library - doc
+
+python-sushy-doc/jammy 4.0.0-0ubuntu1 all
+  small library to communicate with Redfish based systems - doc
+
+python-xkcd-doc/jammy 2.4.2-3 all
+  Python library for accessing xkcd.com (common documentation)
+
+python3-ajpy/jammy 0.0.4-2.1 all
+  Python module to craft AJP requests
+
+python3-beaker/jammy 1.11.0-1.1 all
+  cache and session library for Python 3
+
+python3-binary-memcached/jammy 0.30.0+dfsg1-2 all
+  pure python module to access memcached via its binary protocol - Python 3.x
+
+python3-blosc/jammy 1.9.2+ds1-3build2 amd64
+  Python 3 bindings for the Blosc meta-compressor
+
+python3-bumps/jammy 0.8.1-1 all
+  data fitting and Bayesian uncertainty modeling for inverse problems (Python 3)
+
+python3-cachelib/jammy 0.4.1-2 all
+  collection of cache libraries using the same API (Python 3)
+
+python3-cachy/jammy 0.3.0-4 all
+  Provide a simple yet effective caching library (Python 3)
+
+python3-colormath/jammy 3.0.0-2 all
+  Abstracts common color math operations (Python 3 version)
+
+python3-corepywrap/jammy 1.005-10build2 amd64
+  library that exports C++ mmCIF accessors to Python3
+
+python3-crccheck/jammy 1.0-3 all
+  implementation of 170+ CRC algorithms for Python 3
+
+python3-django-redis/jammy 5.2.0-1 all
+  Redis cache backend for Django (Python 3)
+
+python3-emcee/jammy 3.1.1-1 all
+  Affine-invariant ensemble MCMC sampling for Python 3
+
+python3-flake8/jammy 4.0.1-2 all
+  code checker using pycodestyle and pyflakes - Python 3.x
+
+python3-gemmi/jammy 0.5.3+ds-2 amd64
+  library for structural biology - Python module
+
+python3-hamcrest/jammy,now 2.0.2-2 all [installed,automatic]
+  Hamcrest framework for matcher objects (Python 3)
+
+python3-ibmcclient/jammy 0.2.5.1-0ubuntu1 all
+  Python library to communicate with HUAWEI iBMC based systems.
+
+python3-limits/jammy 1.5.1-1 all
+  Rate limiting utilities for Python
+
+python3-magnumclient/jammy 3.5.0-0ubuntu3 all
+  client library for Magnum API - Python 3.x
+
+python3-mbed-host-tests/jammy 1.4.4-6 all
+  module and utilities to flash, reset and test Mbed Enabled devices
+
+python3-mccabe/jammy 0.6.1-3 all
+  Python code complexity checker (Python 3)
+
+python3-memcache/jammy 1.59-5 all
+  pure Python memcached client - Python 3.x
+
+python3-minecraftpi/jammy 0.22-3 all
+  Raspberry PI Minecraft API Python client library
+
+python3-numcodecs/jammy 0.9.1+ds-2build1 amd64
+  buffer compression and transformation codecs for Python
+
+python3-olefile/jammy 0.46-3 all
+  Python module to read/write MS OLE2 files
+
+python3-oslo.cache/jammy 2.9.0-0ubuntu1 all
+  cache storage for Openstack projects - Python 3.x
+
+python3-pil/jammy-updates,jammy-security 9.0.1-1ubuntu0.3 amd64
+  Python Imaging Library (Python3)
+
+python3-project-generator/jammy 0.11.1-1 all
+  project generators for various embedded tools (IDE)
+
+python3-project-generator-definitions/jammy 0.2.43-1 all
+  collection of target/MCU definitions for progen
+
+python3-pyfai/jammy 0.21.1+dfsg1-1build1 amd64
+  Fast Azimuthal Integration scripts - Python3
+
+python3-pyipmi/jammy 0.4.2-2 all
+  Pure Python IPMI library
+
+python3-pylama/jammy 7.4.3-3 all
+  code audit library for Python in Python3
+
+python3-pylibmc/jammy 1.5.2-3build4 amd64
+  libmemcached wrapper (Python3 version)
+
+python3-pymca5/jammy 5.7.1+dfsg-1build1 amd64
+  Applications and toolkit for X-ray fluorescence analysis -- Python 3
+
+python3-pymemcache/jammy 3.5.0-2 all
+  comprehensive, fast, pure Python memcached client - Python 3.x
+
+python3-pynauty/jammy 1.0.2+ds-2build1 amd64
+  isomorphism testing and automorphisms of graphs
+
+python3-pyremctl/jammy 3.17-1build7 amd64
+  Python 3 extension for Kerberos-authenticated command execution
+
+python3-pystemd/jammy 0.7.0-5build1 amd64
+  systemd binding for Python
+
+python3-redis/jammy 3.5.3-2 all
+  Persistent key-value database with network interface (Python 3 library)
+
+python3-rediscluster/jammy 2.0.0-1 all
+  Python interface to a cluster of Redis key-value stores
+
+python3-scciclient/jammy 0.11.1-0ubuntu1 all
+  Python ServerView Common Command Interface (SCCI) Client Library - Python 3.x
+
+python3-smclib/jammy 1.8.6-9 all
+  Robot OS 'bond' State Machine Compiler Python 3 package
+
+python3-sushy/jammy 4.0.0-0ubuntu1 all
+  small library to communicate with Redfish based systems - Python 3.x
+
+python3-sushy-cli/jammy 0.4.0-2 all
+  Redfish CLI tool based on sushy Redfish client library - Python 3.x
+
+python3-sushy-oem-idrac/jammy 3.0.1-0ubuntu1 all
+  Python client library to communicate with Redfish based BMC.
+
+python3-termcolor/jammy 1.1.0-3 all
+  ANSII Color formatting for output in terminal - Python 3.x
+
+python3-terminaltables/jammy 3.1.0-3 all
+  Python library for printing tables to the console
+
+python3-timeline/jammy 0.0.7-3 all
+  Timeline module for modelling a series of actions (Python 3)
+
+python3-uhashring/jammy 2.1-2 all
+  full featured consistent hashing python library compatible with ketama
+
+python3-xkcd/jammy 2.4.2-3 all
+  Python3 library for accessing xkcd.com
+
+python3-xmodem/jammy 0.4.6+dfsg-4 all
+  xmodem file transfer protocol library (Python 3)
+
+python3-xtermcolor/jammy 1.2.1-2.1 all
+  Python3 module to print coloured text on terminals
+
+python3-zhmcclient/jammy 0.31.0-0ubuntu3 all
+  library for the IBM Z HMC Web Services API
+
+python3-zvmcloudconnector/jammy 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 all
+  z/VM Development SDK for managing z/VM - Python 3
+
+qmc/jammy 0.94-4 amd64
+  Quine McClusky Simplification Tool
+
+r-bioc-fmcsr/jammy 1.36.0+dfsg-1 amd64
+  GNU R mismatch tolerant maximum common substructure searching
+
+r-cran-alakazam/jammy 1.2.0-1 amd64
+  Immunoglobulin Clonal Lineage and Diversity Analysis
+
+r-cran-bayesfm/jammy 0.1.5-1 amd64
+  GNU R Bayesian inference for factor modeling
+
+r-cran-bayesm/jammy 3.1-4+dfsg-1build2 amd64
+  GNU R package for Bayesian inference
+
+r-cran-bayesplot/jammy 1.8.1-1 all
+  GNU R plotting for bayesian models
+
+r-cran-bms/jammy 0.3.4-6build1 all
+  GNU R package for Bayesian model averaging for linear models
+
+r-cran-clubsandwich/jammy 0.5.5-1 all
+  GNU R cluster-robust (Sandwich) variance estimators with small-sample
+
+r-cran-coda/jammy 0.19-4-1 all
+  Output analysis and diagnostics for MCMC simulations in R
+
+r-cran-ctmcd/jammy 1.4.1-2 amd64
+  GNU R estimating the parameters of a continuous-time Markov chain from
+
+r-cran-domc/jammy 1.3.8-1 all
+  GNU R parallel excution backend for %dopar% using multicore
+
+r-cran-dosefinding/jammy 1.0-2-1 amd64
+  Planning and Analyzing Dose Finding experiments
+
+r-cran-dqrng/jammy 0.3.0+dfsg-1 amd64
+  GNU R fast pseudo random number generators
+
+r-cran-eco/jammy 4.0-1-4 amd64
+  GNU R routines for Bayesian ecological inference
+
+r-cran-factoextra/jammy 1.0.7-2 all
+  GNU R extract and visualize multivariate data analyses
+
+r-cran-factominer/jammy 2.4-2 all
+  Multivariate Exploratory Data Analysis and Data Mining
+
+r-cran-learnbayes/jammy 2.15.1-4build1 all
+  GNU R functions for learning bayesian inference
+
+r-cran-mclust/jammy 5.4.9-1 amd64
+  Gaussian Mixture Modelling for Model-Based Clustering
+
+r-cran-mclustcomp/jammy 0.3.3-1 amd64
+  Measures for Comparing Clusters
+
+r-cran-mcmc/jammy 0.9-7-1build1 amd64
+  GNU R package for Markov Chain Monte Carlo simulations
+
+r-cran-mcmcpack/jammy 1.6-0-1 amd64
+  R routines for Markov chain Monte Carlo model estimation
+
+r-cran-mnp/jammy 3.1-2-1 amd64
+  GNU R package for fitting multinomial probit (MNP) models
+
+r-cran-multcompview/jammy 0.1-8-2build1 all
+  GNU R visualizations of paired comparisons
+
+r-cran-pbmcapply/jammy 1.5.0-2 amd64
+  GNU R tracking the progress of Mc*pply with progress bar
+
+r-cran-raschsampler/jammy 0.8-8-3 amd64
+  GNU R package for sampling binary matrices with fixed margins
+
+r-cran-rms/jammy 6.2-0-1build1 amd64
+  GNU R regression modeling strategies by Frank Harrell
+
+r-cran-rstantools/jammy 2.1.1-1build1 all
+  tools for developing GNU R packages interfacing with 'Stan'
+
+r-cran-rtdists/jammy 0.11-5-1 amd64
+  GNU R response time distributions
+
+r-cran-semplot/jammy 1.1.4-1 all
+  path Diagrams and visual analysis of various SEM GNU R packages
+
+r-cran-shazam/jammy 1.1.0-1 all
+  Immunoglobulin Somatic Hypermutation Analysis
+
+r-cran-shinystan/jammy 2.5.0-4 all
+  GNU R interactive diagnostics and analysis for Bayesian models
+
+r-cran-smcfcs/jammy 1.6.0-2 all
+  GNU R multiple imputation of Covariates by substantive model
+
+r-cran-spam/jammy 2.8-0-1 amd64
+  GNU R functions for sparse matrix algebra
+
+r-cran-spatialreg/jammy 1.2-1+dfsg-1 amd64
+  GNU R spatial regression analysis
+
+r-cran-trimcluster/jammy 0.1-5-2 all
+  GNU R cluster analysis with trimming
+
+r-cran-uwot/jammy 0.1.11-1 amd64
+  GNU R uniform manifold approximation and projection (UMAP)
+
+radon/jammy 5.1.0-1 all
+  Python tool to compute code metrics (Python3)
+
+rasmol/jammy 2.7.6.0-2 amd64
+  visualization of biological macromolecules
+
+redis/jammy 5:6.0.16-1ubuntu1 all
+  Persistent key-value database with network interface (metapackage)
+
+redis-sentinel/jammy 5:6.0.16-1ubuntu1 amd64
+  Persistent key-value database with network interface (monitoring)
+
+redis-server/jammy 5:6.0.16-1ubuntu1 amd64
+  Persistent key-value database with network interface
+
+redis-tools/jammy 5:6.0.16-1ubuntu1 amd64
+  Persistent key-value database with network interface (client)
+
+remctl-client/jammy 3.17-1build7 amd64
+  Client for Kerberos-authenticated command execution
+
+remctl-server/jammy 3.17-1build7 amd64
+  Server for Kerberos-authenticated command execution
+
+resource-agents-extra/jammy-updates 1:4.7.0-1ubuntu7.3 amd64
+  Cluster Resource Agents
+
+rsyslog-hiredis/jammy-updates,jammy-security 8.2112.0-2ubuntu2.2 amd64
+  Redis output plugin for rsyslog
+
+ruby-dalli/jammy 3.0.6-1 all
+  memcached client library for Ruby
+
+ruby-diff-lcs/jammy 1.4.4-1 all
+  McIlroy-Hunt longest common subsequence algorithm implementation
+
+ruby-em-redis/jammy 0.3.0+gh-3 all
+  eventmachine-based implementation of the Redis protocol
+
+ruby-remcached/jammy 0.4.1-3 all
+  Ruby EventMachine memcached client
+
+ruby-remctl/jammy 3.17-1build7 amd64
+  Ruby extension for Kerberos-authenticated command execution
+
+ruby-spamcheck/jammy 0.1.0+git20210519.2084b44-2 all
+  Auto-generated gRPC client for SpamCheck
+
+ruby-xml-simple/jammy 1.1.5-3 all
+  Simple Ruby API for reading and writing XML
+
+s51dude/jammy 0.3.1-1.1build1 amd64
+  In-System Programmer for 8051 MCUs using usbtiny
+
+samclip/jammy 0.4.0-3 all
+  filter SAM file for soft and hard clipped alignments
+
+sblim-wbemcli/jammy 1.6.3-2build1 amd64
+  WBEM Command Line Interface for CIMOM access
+
+sdcc/jammy 4.0.0+dfsg-2 amd64
+  Small Device C Compiler
+
+sdcc-doc/jammy 4.0.0+dfsg-2 all
+  Small Device C Compiler (documentation)
+
+sdcc-libraries/jammy 4.0.0+dfsg-2 all
+  Small Device C Compiler (libraries)
+
+sdcc-ucsim/jammy 4.0.0+dfsg-2 amd64
+  Micro-controller simulator for SDCC
+
+selinux-policy-default/jammy 2:2.20210203-10 all
+  Strict and Targeted variants of the SELinux policy
+
+sendmail-doc/jammy 8.15.2-22ubuntu3 all
+  powerful, efficient, and scalable Mail Transport Agent (documentation)
+
+sfcb-test/jammy 1.4.9-0ubuntu7 all
+  Small Footprint CIM Broker test tools
+
+sispmctl/jammy 3.1-1build1 amd64
+  Control Gembird SIS-PM programmable power outlet strips
+
+slurm-wlm-emulator/jammy 21.08.5-2ubuntu1 amd64
+  SLURM emulator
+
+slurmctld/jammy 21.08.5-2ubuntu1 amd64
+  SLURM central management daemon
+
+smc-tools/jammy-updates 1.7.0-0ubuntu1.1 amd64
+  enables SMC socket usage on Linux
+
+smcroute/jammy 2.5.5-1 amd64
+  static multicast router daemon
+
+smem/jammy 1.5-1.1 all
+  memory reporting tool
+
+smemcap/jammy 1.5-1.1 amd64
+  data collection tool for memory reporting
+
+spamass-milter/jammy 0.4.0-2 amd64
+  milter for filtering mail through spamassassin
+
+spamassassin/jammy-updates 3.4.6-1ubuntu0.22.04.1 all
+  Perl-based spam filter using text analysis
+
+spamc/jammy-updates 3.4.6-1ubuntu0.22.04.1 amd64
+  Client for SpamAssassin spam filtering daemon
+
+spampd/jammy 2.53-1.1 all
+  spamassassin based SMTP/LMTP proxy daemon
+
+sumatra/jammy 1.0.36+ds-1 amd64
+  fast and exact comparison and clustering of sequences
+
+sumtrees/jammy 4.5.2-1 all
+  Phylogenetic Tree Summarization and Annotation
+
+swupdate/jammy 2021.11-1 amd64
+  Software update framework for embedded systems
+
+swupdate-doc/jammy 2021.11-1 all
+  Documentation for swupdate framework
+
+systemctl/jammy 1.4.4181-1.1 all
+  daemonless "systemctl" command to manage services without systemd
+
+tcl-memchan/jammy 2.3+dfsg-1 amd64
+  Tcl extension for in-memory channels - runtime library
+
+tcl-memchan-dev/jammy 2.3+dfsg-1 amd64
+  Tcl extension for in-memory channels - development files
+
+texlive-lang-cyrillic/jammy 2021.20220204-1 all
+  TeX Live: Cyrillic
+
+texlive-lang-german/jammy 2021.20220204-1 all
+  TeX Live: German
+
+texlive-latex-extra/jammy 2021.20220204-1 all
+  TeX Live: LaTeX additional packages
+
+texlive-metapost/jammy 2021.20220204-1 all
+  TeX Live: MetaPost and Metafont packages
+
+texlive-publishers/jammy 2021.20220204-1 all
+  TeX Live: Publisher styles, theses, etc.
+
+texlive-science/jammy 2021.20220204-1 all
+  TeX Live: Mathematics, natural sciences, computer science packages
+
+tf5/jammy 5.0beta8-10build1 amd64
+  text-based MU* and chatserver client
+
+tomcat-jakartaee-migration/jammy 0.2.0-1 all
+  Apache Tomcat migration tool for Jakarta EE
+
+tomcat9/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine
+
+tomcat9-admin/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- admin web applications
+
+tomcat9-common/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- common files
+
+tomcat9-docs/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- documentation
+
+tomcat9-examples/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- example web applications
+
+tomcat9-user/jammy-updates,jammy-security 9.0.58-1ubuntu0.2 all
+  Apache Tomcat 9 - Servlet and JSP engine -- tools to create user instances
+
+toppic/jammy 1.3.0+dfsg1-4build1 amd64
+  Top-down proteoform identification and characterization (programs)
+
+toppic-common/jammy 1.3.0+dfsg1-4build1 all
+  Top-down proteoform identification and characterization (common data)
+
+tuxfootball/jammy 0.3.1-7build1 amd64
+  great 2D soccer (sometimes called football) game
+
+twin/jammy 0.9.0-0ubuntu1 amd64
+  Twin - a Textmode WINdow environment
+
+ucspi-tcp/jammy 1:0.88-6 amd64
+  command-line tools for building TCP client-server applications
+
+ucspi-tcp-ipv6/jammy 1:0.88-6 amd64
+  command-line tools for building TCP client-server applications (IPv6)
+
+udfclient/jammy 0.8.11-2 amd64
+  userland implementation of the UDF filesystem
+
+uisp/jammy 20050207-4.5 amd64
+  Micro In-System Programmer for Atmel's AVR MCUs
+
+uml-utilities/jammy 20070815.4-1 amd64
+  User-mode Linux (utility programs)
+
+unicon-imc2/jammy 3.0.4+dfsg1-4 amd64
+  Chinese Input Method Library
+
+urlextractor/jammy 0.2.0-2 all
+  Information gathering and website reconnaissance
+
+uuu/jammy 1.4.193-1 amd64
+  Freescale/NXP I.MX Chip image deploy tools
+
+uwsgi-core/jammy 2.0.20-4 amd64
+  fast, self-healing application container server (core)
+
+valgrind/jammy 1:3.18.1-1ubuntu2 amd64
+  instrumentation framework for building dynamic analysis tools
+
+vboot-utils/jammy 0~R99-14469.B-1 amd64
+  Chrome OS verified u-boot utilities
+
+verilator/jammy 4.038-1 amd64
+  fast free Verilog simulator
+
+victoria-metrics/jammy-updates,jammy-security 1.71.0+ds1-1ubuntu0.3 amd64
+  fast, cost-effective and scalable time series database
+
+vienna-rna/jammy 2.4.17+dfsg-2build2 amd64
+  RNA sequence analysis
+
+wifi-qr/jammy 0.2-1 all
+  WiFi Share and Connect with QR
+
+winrmcp/jammy-updates,jammy-security 0.0~git20180921.c76d91c-1ubuntu0.22.04.3 amd64
+  tool for copying files to remote Windows machines using WinRM
+
+wmcalc/jammy 0.7-2 amd64
+  dockable calculator application
+
+wmcalclock/jammy 1.25-18 amd64
+  dock.app which simply tells time and date
+
+wmcdplay/jammy 1.1-3 amd64
+  CD player based on ascd designed for WindowMaker
+
+wmcliphist/jammy 2.1-4 amd64
+  Dockapp which provides a history for X11 selections
+
+wmclock/jammy 1.0.16-2 amd64
+  dockable clock applet for Window Maker
+
+wmclockmon/jammy 0.8.1-5 amd64
+  Displays a clock in 12/24h mode with alarm mode
+
+wmcoincoin/jammy 2.6.5.git+23.411d4a3-1 amd64
+  Humourous dockapp for browsing DaCode sites' news and board
+
+wmcore/jammy 0.0.4-2 amd64
+  Dockapp that shows the usage of each core in the system
+
+wmcpu/jammy 1.4-4build1 amd64
+  Window Maker docking app similar to xosview
+
+wmcpuload/jammy 1.1.1-2 amd64
+  Dockapp that displays the current CPU usage
+
+wmctrl/jammy 1.07-7build1 amd64
+  control an EWMH/NetWM compatible X Window Manager
+
+wmcube/jammy 1.0.2-4 amd64
+  spinning 3D object that shows the current CPU load
+
+wmmemload/jammy 0.1.8-3 amd64
+  WindowMaker dockapp to monitor memory and swap usage
+
+xdm/jammy 1:1.1.11-3ubuntu2 amd64
+  X display manager
+
+xfaces/jammy 3.3-29ubuntu1 amd64
+  Displays an image for each piece of mail in your mailbox
+
+xfce4-settings/jammy-updates,jammy-security 4.16.2-1ubuntu2.22.04.1 amd64
+  graphical application for managing Xfce settings
+
+xineliboutput-sxfe/jammy 2.2.0+git20211212-2.1 amd64
+  Remote X-Server frontend for vdr-plugin-xineliboutput
+
+xli/jammy 1.17.0+20061110-6 amd64
+  command line tool for viewing images in X11
+
+xloadimage/jammy 4.1-25 amd64
+  Graphics file viewer under X11
+
+xmms2-plugin-gme/jammy-updates 0.8+dfsg-22ubuntu0.1 amd64
+  XMMS2 - gme plug-in
+
+xmpuzzles/jammy 7.7.1-1.1 amd64
+  collection of puzzles for X (Motif version)
+
+xserver-xorg-video-intel/jammy 2:2.99.917+git20210115-1 amd64
+  X.Org X server -- Intel i8xx, i9xx display driver
+
+xtermcontrol/jammy 3.8-4 amd64
+  dynamic configuration of xterm properties
+
+yasat/jammy 848-1.1 all
+  simple stupid audit tool
+
+youtube-dl/jammy 2021.12.17-1 all
+  downloader of videos from YouTube and other sites
+
+yrmcds/jammy 1.1.9-1 amd64
+  memcached compatible KVS with master/slave replication
+
+yt-dlp/jammy 2022.04.08-1 all
+  downloader of videos from YouTube and other sites
+
+z-push-ipc-memcached/jammy 2.6.0-1 all
+  open source implementation of the ActiveSync protocol - IPC memory management
+
+zalign/jammy 0.9.1-5 amd64
+  parallel local alignment of biological sequences
+
+zam-plugins/jammy 3.14~repack3-1 amd64
+  Collection of LV2, LADSPA, LINUX-VST and JACK plugins
+
+zvmcloudconnector-api/jammy 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 all
+  z/VM Development SDK for managing z/VM - z/VM SDK API Server
+
+zvmcloudconnector-common/jammy 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 all
+  z/VM Development SDK for managing z/VM - Common Files
+
+root@DESKTOP-J4GQQ0C/root $ apt show mc
+Package: mc
+Version: 3:4.8.27-1
+Priority: optional
+Section: universe/utils
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1574 kB
+Provides: mcedit
+Depends: libc6 (>= 2.34), libext2fs2 (>= 1.37), libglib2.0-0 (>= 2.59.2), libgpm2 (>= 1.20.7), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.8), mc-data (= 3:4.8.27-1)
+Recommends: mime-support, perl, unzip, sensible-utils
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, epub-utils, file, genisoimage, gv, imagemagick, libaspell-dev, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, unar, wimtools, xpdf | pdf-viewer, zip
+Homepage: https://www.midnight-commander.org
+Download-Size: 547 kB
+APT-Sources: http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages
+Description: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+
+root@DESKTOP-J4GQQ0C/root $ apt install mc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bzip2 libssh2-1 mailcap mc-data mime-support unzip
+Suggested packages:
+  bzip2-doc arj catdvi | texlive-binaries dbview djvulibre-bin epub-utils genisoimage gv imagemagick libaspell-dev
+  links | w3m | lynx odt2txt poppler-utils python python-boto python-tz unar wimtools xpdf | pdf-viewer zip
+The following NEW packages will be installed:
+  bzip2 libssh2-1 mailcap mc mc-data mime-support unzip
+0 upgraded, 7 newly installed, 0 to remove and 96 not upgraded.
+Need to get 2321 kB of archives.
+After this operation, 8820 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libssh2-1 amd64 1.10.0-3 [109 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 mailcap all 3.70+nmu1ubuntu1 [23.8 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 mc-data all 3:4.8.27-1 [1427 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 mc amd64 3:4.8.27-1 [547 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 mime-support all 3.66 [3696 B]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 unzip amd64 6.0-26ubuntu3.2 [175 kB]
+Fetched 2321 kB in 2s (1445 kB/s)
+Selecting previously unselected package bzip2.
+(Reading database ... 49817 files and directories currently installed.)
+Preparing to unpack .../0-bzip2_1.0.8-5build1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5build1) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../1-libssh2-1_1.10.0-3_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3) ...
+Selecting previously unselected package mailcap.
+Preparing to unpack .../2-mailcap_3.70+nmu1ubuntu1_all.deb ...
+Unpacking mailcap (3.70+nmu1ubuntu1) ...
+Selecting previously unselected package mc-data.
+Preparing to unpack .../3-mc-data_3%3a4.8.27-1_all.deb ...
+Unpacking mc-data (3:4.8.27-1) ...
+Selecting previously unselected package mc.
+Preparing to unpack .../4-mc_3%3a4.8.27-1_amd64.deb ...
+Unpacking mc (3:4.8.27-1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../5-mime-support_3.66_all.deb ...
+Unpacking mime-support (3.66) ...
+Selecting previously unselected package unzip.
+Preparing to unpack .../6-unzip_6.0-26ubuntu3.2_amd64.deb ...
+Unpacking unzip (6.0-26ubuntu3.2) ...
+Setting up unzip (6.0-26ubuntu3.2) ...
+Setting up bzip2 (1.0.8-5build1) ...
+Setting up mc-data (3:4.8.27-1) ...
+Setting up libssh2-1:amd64 (1.10.0-3) ...
+Setting up mailcap (3.70+nmu1ubuntu1) ...
+Setting up mime-support (3.66) ...
+Setting up mc (3:4.8.27-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+/sbin/ldconfig.real: Can't link /usr/lib/wsl/lib/libnvoptix_loader.so.1 to libnvoptix.so.1
+
+root@DESKTOP-J4GQQ0C/root $ dpkg -l 'm*' | grep '^ii'
+ii  mailcap              3.70+nmu1ubuntu1    all          Debian's mailcap system, and support programs
+ii  man-db               2.10.2-1            amd64        tools for reading manual pages
+ii  manpages             5.10-1ubuntu1       all          Manual pages about using a GNU/Linux system
+ii  manpages-dev         5.10-1ubuntu1       all          Manual pages about using GNU/Linux for development
+ii  mawk                 1.3.4.20200120-3    amd64        Pattern scanning and text processing language
+ii  mc                   3:4.8.27-1          amd64        Midnight Commander - a powerful file manager
+ii  mc-data              3:4.8.27-1          all          Midnight Commander - a powerful file manager -- data files
+ii  media-types          7.0.0               all          List of standard media types and their usual file extension
+ii  mime-support         3.66                all          transitional package
+ii  mkdocs               1.1.2+dfsg-2ubuntu1 all          Static site generator geared towards building project documentation
+ii  motd-news-config     12ubuntu4.7         all          Configuration for motd-news shipped in base-files
+ii  mount                2.37.2-4ubuntu3.4   amd64        tools for mounting and manipulating filesystems
+ii  mtr-tiny             0.95-1              amd64        Full screen ncurses traceroute tool
+
+root@DESKTOP-J4GQQ0C/root $ apt remove cowsay
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages will be REMOVED:
+  cowsay
+0 upgraded, 0 newly installed, 1 to remove and 96 not upgraded.
+After this operation, 93.2 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 50334 files and directories currently installed.)
+Removing cowsay (3.03+dfsg2-8) ...
+Processing triggers for man-db (2.10.2-1) ...
