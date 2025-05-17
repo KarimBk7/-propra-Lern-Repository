@@ -1,0 +1,13 @@
+root@DESKTOP-BKSGFB3/home/venv $ which python
+/usr/bin/python
+
+root@DESKTOP-BKSGFB3/home/venv $ source propra/bin/activate
+
+(propra) root@DESKTOP-BKSGFB3/home/venv $ which python
+/home/venv/propra/bin/python
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ init_propra
+(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $
+
+(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ which python
+/root/venv/propra/bin/python
