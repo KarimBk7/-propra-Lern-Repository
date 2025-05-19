@@ -1,0 +1,20 @@
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ python -c "import colorama as c; print('Ich bin ein' + c.Fore.RED + ' rotes ' + c.Style.RESET_ALL + 'Wort')"
+Ich bin ein rotes Wort
+(propra)
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
+colorama==0.4.4
+(propra)
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip uninstall colorama
+Found existing installation: colorama 0.4.6
+Uninstalling colorama-0.4.6:
+  Would remove:
+    /root/venv/propra/lib/python3.11/site-packages/colorama-0.4.6.dist-info/*
+    /root/venv/propra/lib/python3.11/site-packages/colorama/*
+Proceed (Y/n)? y
+  Successfully uninstalled colorama-0.4.6
+(propra)
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
+(propra)
