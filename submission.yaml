@@ -10,5 +10,6 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
+pip: CHECK
 requires-assumes: CHECK
 venv: CHECK
