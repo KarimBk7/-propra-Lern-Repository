@@ -1,23 +1,20 @@
-Script started on 2025-05-19 19:00:23+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="28"]
-[?2004h
-[0;32mroot@DESKTOP-J4GQQ0C[0;31m/mnt/c/Users/abdil/ws/propra[1;33m[0;33m $ python -c "import [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython -c "import colorama as c; print('Ich bin ein' + c.Fore.RED + '  rotes ' + c.Style.RESET_ALL + 'Wort')"
-[?2004lIch bin ein[31m rotes [0mWort
-[?2004h
-[0;32mroot@DESKTOP-J4GQQ0C[0;31m/mnt/c/Users/abdil/ws/propra[1;33m[0;33m $ pip freeze
-[?2004lcolorama==0.4.6
-[?2004h
-[0;32mroot@DESKTOP-J4GQQ0C[0;31m/mnt/c/Users/abdil/ws/propra[1;33m[0;33m $ pip uninstall colorama
-[?2004lFound existing installation: colorama 0.4.6
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ python -c "import colorama as c; print('Ich bin ein' + c.Fore.RED + ' rotes ' + c.Style.RESET_ALL + 'Wort')"
+Ich bin ein rotes Wort
+(propra)
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
+colorama==0.4.4
+(propra)
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip uninstall colorama
+Found existing installation: colorama 0.4.6
 Uninstalling colorama-0.4.6:
   Would remove:
     /root/venv/propra/lib/python3.11/site-packages/colorama-0.4.6.dist-info/*
     /root/venv/propra/lib/python3.11/site-packages/colorama/*
 Proceed (Y/n)? y
   Successfully uninstalled colorama-0.4.6
-[?2004h
-[0;32mroot@DESKTOP-J4GQQ0C[0;31m/mnt/c/Users/abdil/ws/propra[1;33m[0;33m $ pip freeze
-[?2004l[?2004h
-[0;32mroot@DESKTOP-J4GQQ0C[0;31m/mnt/c/Users/abdil/ws/propra[1;33m[0;33m $ exit
-[?2004lexit
+(propra)
 
-Script done on 2025-05-19 19:01:51+02:00 [COMMAND_EXIT_CODE="0"]
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
+(propra)
