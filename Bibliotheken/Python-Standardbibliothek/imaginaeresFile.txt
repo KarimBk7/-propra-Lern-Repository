@@ -1,0 +1,1 @@
+Inhalt einer temprären Datein um '-c' zu veranschaulichen.
