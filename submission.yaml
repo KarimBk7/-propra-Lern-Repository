@@ -10,6 +10,7 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
+html-erste-Schritte: CHECK
 m_argparse: CHECK
 pip: CHECK
 requires-assumes: CHECK
