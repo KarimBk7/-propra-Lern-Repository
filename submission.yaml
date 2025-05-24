@@ -12,6 +12,7 @@ Zeiterfassung: CHECK
 apt: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
+html-Tabellen: CHECK
 html-erste-Schritte: CHECK
 m_argparse: CHECK
 pip: CHECK
