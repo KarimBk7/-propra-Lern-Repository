@@ -10,11 +10,8 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
-<<<<<<< HEAD
-=======
 html-Medien: CHECK
 html-Semantik: CHECK
->>>>>>> 1ad950f692a27fb307759c9d4f3405537c30633c
 html-erste-Schritte: CHECK
 m_argparse: CHECK
 pip: CHECK
