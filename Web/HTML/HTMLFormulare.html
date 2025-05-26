@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<h1>HTML Formulare - </h1>
+		<h1>HTML Formulare - Softwareschmiede Auftrag erstellen</h1>
 
 		<ul>
 			<li><a href="HTMLErsteSchritte.html">Hauptseite</a></li>
@@ -16,18 +16,63 @@
 			<li><a href="HTMLSemantik.html">Semantik Zitate</a></li>
 			<li><a href="HTMLTabellen.html">Tabellen</a></li>
 		</ul>
+		
+		<br>
+		<br>
 
+<textarea id="story" name="story" rows="5" cols="33">
+Bitte geben sie Ihren Namen, Mail-Adresse und Art von Auftrag in das untere Formular ein.
+Eine Antwort auf Ihren Auftrag kann 2-3 Werktage dauern.
+</textarea>
+
+		<br>
+		<br>
 
 		<form>
-				<label for="mail">E-Mail:</label>
-				<input type="search" id="mail" name="user-email">
-				<button name="fulltext" value="1">Submit</button>
+			<label for="mail">E-Mail:</label>
+			<input type="search" id="mail" name="user-email">
+			<label for="name">Name:</label>
+			<input type="search" id="name" name="user-name">
+
+			<br>
+			<br>
+
+			<fieldset>
+				<p>Geben sie bitte die Art Ihres Auftrages an.</p>
+				<input type="radio" id="ne" name="Auftrag" value="Neuentwicklung">
+				<label for="ne">Neuentwicklung</label>
+
+				<input type="radio" id="st" name="Auftrag" value="Softwaretest">
+				<label for="st">Softwaretest</label>
+
+				<input type="radio" id="de" name="Auftrag" value="Debugging">
+				<label for="de">Debugging</label>
+
+				<input type="radio" id="pm" name="Auftrag" value="Projektmanagement">
+				<label for="pm">Projektmanagement</label>
+			</fieldset>
+
+			<br>
+			
+			<fieldset>
+				<legend>Datenschutzbedingungen</legend>
+				<input type="checkbox" name="datenschutz" value="zustimmenDs" id="check1">
+				<label for="check1">Datenschutzrichtlinien zustimmen</label>
+				<br>
+				<br>
+				<input type="radio" id="ds" name="datenschutz" value="zustimmenDs">
+				<label for="ds">Ich habe die Datenschutzrichtlinien gelesen</label>
+				<br>
+				<input type="radio" id="ds2" name="datenschutz" value="zustimmenDs">
+				<label for="ds2">Datenschutzrichtlinien akzeptieren</label>
+			</fieldset>
+
+			<br>
+			<br>
+
+			<button name="fulltext" value="1">Submit</button>
 		</form>
 
-		<textarea id="story" name="story" rows="5" cols="33"
-			
-		</textarea>
-
-
 	</body>
+
 </html>
