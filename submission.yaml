@@ -1,3 +1,4 @@
+CLI-Windows-WSL: CHECK
 Einreichungen: CHECK
 Git101: CHECK
 IDE-First-Steps: CHECK
@@ -10,6 +11,7 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
+html-Formulare: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
 html-Tabellen: CHECK
