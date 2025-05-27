@@ -1,0 +1,122 @@
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ wc -l /etc/passwd
+27 /etc/passwd
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ wc -l < /etc/passwd
+27
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Hallo Welt" > redirect_hallo.txt
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
+Hallo Welt
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Das ist neu" > redirect_hallo.txt
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
+Das ist neu
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Hallo Welt!" >> redirect_hallo.txt
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
+Das ist neu
+Hallo Welt!
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls /nicht_existent 2> redirect_fehler.txt
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_fehler.txt
+ls: cannot access '/nicht_existent': No such file or directory
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls /tmp /nicht_existent > redirect_ausgabe_und_fehler.txt 2>&1
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_ausgabe_und_fehler.txt
+ls: cannot access '/nicht_existent': No such file or directory
+/tmp:
+snap-private-tmp
+systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-logind.service-OvGNr7
+systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-resolved.service-uhZ7DZ
+systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-timesyncd.service-WpgG8X
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls -l /usr/bin | grep grep
+lrwxrwxrwx 1 root root           6 Mar 23  2022 bzegrep -> bzgrep
+lrwxrwxrwx 1 root root           6 Mar 23  2022 bzfgrep -> bzgrep
+-rwxr-xr-x 1 root root        3775 Mar 23  2022 bzgrep
+-rwxr-xr-x 1 root root          28 Mar 23  2022 egrep
+-rwxr-xr-x 1 root root          28 Mar 23  2022 fgrep
+-rwxr-xr-x 1 root root      182728 Mar 23  2022 grep
+lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-aptavail -> grep-dctrl
+lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-available -> grep-dctrl
+-rwxr-xr-x 1 root root       49232 Mar 23  2022 grep-dctrl
+lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-debtags -> grep-dctrl
+lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-status -> grep-dctrl
+lrwxrwxrwx 1 root root          25 Sep 27  2024 lzegrep -> /etc/alternatives/lzegrep
+lrwxrwxrwx 1 root root          25 Sep 27  2024 lzfgrep -> /etc/alternatives/lzfgrep
+lrwxrwxrwx 1 root root          24 Sep 27  2024 lzgrep -> /etc/alternatives/lzgrep
+-rwxr-xr-x 1 root root       30968 Oct 31  2023 pgrep
+lrwxrwxrwx 1 root root           5 Oct 31  2023 pkill -> pgrep
+-rwxr-xr-x 1 root root        4395 Nov 23  2023 ptargrep
+-rwxr-xr-x 1 root root          30 Jan 29  2020 rgrep
+lrwxrwxrwx 1 root root           6 Apr  8  2022 xzegrep -> xzgrep
+lrwxrwxrwx 1 root root           6 Apr  8  2022 xzfgrep -> xzgrep
+-rwxr-xr-x 1 root root        6015 Apr  8  2022 xzgrep
+-rwxr-xr-x 1 root root          29 Sep  5  2022 zegrep
+-rwxr-xr-x 1 root root          29 Sep  5  2022 zfgrep
+-rwxr-xr-x 1 root root        8103 Sep  5  2022 zgrep
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ wc -l /*
+wc: /bin: Is a directory
+      0 /bin
+wc: /boot: Is a directory
+      0 /boot
+wc: /dev: Is a directory
+      0 /dev
+wc: /etc: Is a directory
+      0 /etc
+wc: /home: Is a directory
+      0 /home
+   8074 /init
+wc: /lib: Is a directory
+      0 /lib
+wc: /lib32: Is a directory
+      0 /lib32
+wc: /lib64: Is a directory
+      0 /lib64
+wc: /libx32: Is a directory
+      0 /libx32
+wc: /lost+found: Is a directory
+      0 /lost+found
+wc: /media: Is a directory
+      0 /media
+wc: /mnt: Is a directory
+      0 /mnt
+wc: /opt: Is a directory
+      0 /opt
+wc: /proc: Is a directory
+      0 /proc
+wc: /root: Is a directory
+      0 /root
+wc: /run: Is a directory
+      0 /run
+wc: /sbin: Is a directory
+      0 /sbin
+wc: /snap: Is a directory
+      0 /snap
+wc: /srv: Is a directory
+      0 /srv
+wc: /sys: Is a directory
+      0 /sys
+wc: /tmp: Is a directory
+      0 /tmp
+wc: /usr: Is a directory
+      0 /usr
+wc: /var: Is a directory
+      0 /var
+wc: /wslCcnHGn: Is a directory
+      0 /wslCcnHGn
+wc: /wslKGFiCn: Is a directory
+      0 /wslKGFiCn
+wc: /wslKOdCGn: Is a directory
+      0 /wslKOdCGn
+wc: /wslOdeLGn: Is a directory
+      0 /wslOdeLGn
+wc: /wslkKfipm: Is a directory
+      0 /wslkKfipm
+   8074 total
+
+root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls -l /tmp | tee redirect_tmp.txt
+total 16
+drwx------ 2 root root 4096 May 27 16:27 snap-private-tmp
+drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-logind.service-OvGNr7
+drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-resolved.service-uhZ7DZ
+drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-timesyncd.service-WpgG8X
