@@ -1,0 +1,27 @@
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Web/HTTP $ apt list netcat
+Listing... Done
+netcat/jammy,now 1.218-4ubuntu1 all [installed]
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Web/HTTP $ cat HTTP-GET-request.crlf
+GET /index.html HTTP/1.1 \r\n
+Host: https://www.inf.fu-berlin.de/inst/ag-se/teaching/K-ProPra-2025-04 \r\n
+\r\n
+
+root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Web/HTTP $ nc www.inf.fu-berlin.de 80 < HTTP-GET-request.crlf
+HTTP/1.1 400 Bad Request
+Date: Tue, 27 May 2025 17:28:00 GMT
+Server: Apache
+Content-Length: 296
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache Server at agsi.mi.fu-berlin.de Port 80</address>
+</body></html>
