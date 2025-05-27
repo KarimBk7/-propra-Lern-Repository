@@ -16,6 +16,7 @@ html-Medien: CHECK
 html-Semantik: CHECK
 html-Tabellen: CHECK
 html-erste-Schritte: CHECK
+http-GET: CHECK
 m_argparse: CHECK
 pip: CHECK
 redirect: CHECK
