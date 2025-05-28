@@ -1,17 +1,17 @@
 body {
-	background-color: rgb(200, 188, 20);
+	background-color: rgb(153, 229, 158);
 }
 
 h2 {
-	color: red
+	color: rgb(190, 95, 95)
 }
 
 h3 {
-	color: pink
+	color: rgb(226, 103, 124)
 }
 
 h4 {
-	color: purple
+	color: rgb(227, 82, 227)
 }
 
 ol {
