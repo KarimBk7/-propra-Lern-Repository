@@ -11,6 +11,8 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
+"css-Einf\xFChrung": CHECK
+css-Selektoren: CHECK
 html-Formulare: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
