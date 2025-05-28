@@ -1,0 +1,2 @@
+### F1: Welche Selektor-Art würde man im realen Leben benutzen und wie bekommtn man damit eine Unterscheidung der vier Quadrate hin?
+Meiner Meinung nach klingt die Verwendung der Klassenselektoren mit dem 'class'-Attribut am sinvollsten und einfachsten, da man damit jedes Quadrat durch selbst erstellte Namen unterscheiden kann. <br>Ähnlich wäre eigentlich auch die Verwendung des 'id'-Attributs, da man da auch eigene Namen verwenden kann, um die Quadrate zu unterscheiden.
