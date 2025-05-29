@@ -1,0 +1,2 @@
+### F1: Erkläre warum nur zwei Artikel je Zeile sichtbar sind und nicht drei.
+Die drei Boxen werden nicht nebeneinander dargestellt, weil die Spalten aus den Boxen mit ihrem drittel an platz auch noch zusätzlich eine Randlinie, eine Innen- und Außenrand haben welche auch noch miteinbezogen werden muss. Margin und Padding gehören dazu.
