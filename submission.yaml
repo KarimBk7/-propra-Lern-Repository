@@ -11,6 +11,7 @@ Shellprompt: CHECK
 Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
+argparse_subcommand: CHECK
 css-Box-Modell: CHECK
 "css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
