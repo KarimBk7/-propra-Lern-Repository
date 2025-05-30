@@ -16,3 +16,23 @@ Namespace(subcommand='gitac', message=None, file=['file1'])
 
 (propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac file1 file2
 Namespace(subcommand='gitac', message=None, file=['file1', 'file2'])
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac -m "my commit message" file1 file2
+Namespace(subcommand='gitac', message='my commit message', file=['file1', 'file2'])
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac --message "other msg" file1 file2 file3
+Namespace(subcommand='gitac', message='other msg', file=['file1', 'file2', 'file3'])
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac
+usage: mlh gitac [-h] [-m MESSAGE] file [file ...]
+mlh gitac: error: the following arguments are required: file
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac -m file1
+usage: mlh gitac [-h] [-m MESSAGE] file [file ...]
+mlh gitac: error: the following arguments are required: file
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh lsnew file1
+Namespace(subcommand='lsnew', age='48', file=['file1'])
+
+(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh lsnew -age 30s file1 file2
+Namespace(subcommand='lsnew', age='30s', file=['file1', 'file2'])
