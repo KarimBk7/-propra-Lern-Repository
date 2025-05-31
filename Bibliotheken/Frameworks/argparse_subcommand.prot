@@ -1,38 +1,35 @@
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 20:56:00  1274
+$ python mlh
 usage: mlh [-h] {gitac,lsnew} ...
 mlh: error: the following arguments are required: subcommand
-
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac
-
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 20:56:02  1275
+$ python mlh gitac
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 20:57:58  1276
+$ python mlh gitac
 Namespace(subcommand='gitac')
-
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac file1
-usage: mlh gitac [-h] -m MESSAGE file [file ...]
-mlh gitac: error: the following arguments are required: -m/--message
-
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac file1
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 20:59:17  1276
+$ python mlh gitac file1
 Namespace(subcommand='gitac', message=None, file=['file1'])
-
-(propra) root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac file1 file2
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:00:00  1277
+$ python mlh gitac file1 file2
 Namespace(subcommand='gitac', message=None, file=['file1', 'file2'])
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac -m "my commit message" file1 file2
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:00:29  1278
+$ python mlh gitac -m "my commit message" file1 file2
 Namespace(subcommand='gitac', message='my commit message', file=['file1', 'file2'])
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac --message "other msg" file1 file2 file3
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:00:48  1279
+$ python mlh gitac --message "other msg" file1 file2 file3
 Namespace(subcommand='gitac', message='other msg', file=['file1', 'file2', 'file3'])
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:01:09  1280
+$ python mlh gitac
 usage: mlh gitac [-h] [-m MESSAGE] file [file ...]
 mlh gitac: error: the following arguments are required: file
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh gitac -m file1
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:01:34  1281
+$ python mlh gitac -m file1
 usage: mlh gitac [-h] [-m MESSAGE] file [file ...]
 mlh gitac: error: the following arguments are required: file
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh lsnew file1
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:02:33  1283
+$ python mlh lsnew file1
 Namespace(subcommand='lsnew', age='48', file=['file1'])
-
-(propra) root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh $ python mlh lsnew -age 30s file1 file2
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Frameworks/mlh 21:04:33  1283
+$ python mlh lsnew --age 30s file1 file2
 Namespace(subcommand='lsnew', age='30s', file=['file1', 'file2'])
