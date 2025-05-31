@@ -1,0 +1,15 @@
+root@DESKTOP-BKSGFB3 /mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh 20:38:34  1026
+$ python mlh lsnew --age 365000d *.md
+2025-05-31 19:23:52      file.md
+2025-05-31 18:54:41     file2.md
+2025-05-31 18:54:50     file3.md
+root@DESKTOP-BKSGFB3 /mnt/c/Users/Karim/ws/propra/Bibliotheken/Frameworks/mlh 20:38:00  1025
+$ touch file2; sleep 5; touch file1; sleep 5; touch file3; python mlh lsnew --age 2s file?; echo; python mlh lsnew --age 7s file?; echo; python mlh lsnew --age 1m nonsense file?; rm file{1,2,3}
+2025-05-31 20:38:34        file3
+
+2025-05-31 20:38:30        file1
+2025-05-31 20:38:34        file3
+
+2025-05-31 20:38:30        file1
+2025-05-31 20:38:25        file2
+2025-05-31 20:38:34        file3
