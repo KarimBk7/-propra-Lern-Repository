@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="sedrila.css" rel="stylesheet">
+    <link href="local.css" rel="stylesheet">
+    <link href="codehilite.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Python-Standardbibliothek</title>
+</head>
+<body>
+  <script src="sidebar.js" defer></script>
+  <div id="preheader"></div>
+
+  <header role="banner" class="header">
+    <div class="header_in">
+      <button type="button" class="toggle" id="toggle">
+        <span class="toggle"></span>
+      </button>
+      <a href="index.html">Programmierpraktikum SoSe 2025, Bachelor Informatik, FU Berlin</a>
+    </div>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+      
+  <div class='indent0 no-stage'><a href='chapter-Basis.html' title="Basis: Unverzichtbare Arbeitsgrundlagen">Basis</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Sprachen.html' title="Programmiersprachen">Sprachen</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Bibliotheken.html' title="Programm-Bibliotheken (Libraries, Frameworks)">Bibliotheken</a></div>
+    <div class='indent1 no-stage'><a href='Python-Standardbibliothek.html' title="Python-Standardbibliothek">Python-Standardbibliothek</a></div>
+      <div class='indent2 stage-beta'><a href='encoding-and-open.html' title="open, decode: Dateien lesen oder schreiben und Encodings verstehen">encoding-and-open</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: Passwortgenerator, m_hashlib, m_pprint, m_subprocess, m_tempfile, tdd_pp'></span><span class='required-by-decoration' title='required by: m_json2'></span></div>
+      <div class='indent2 stage-beta'><a href='m_datetime.html' title="datetime: Datum, Uhrzeit und Zeitdifferenzen">m_datetime</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.5 hours'>1.5</span></div>
+      <div class='indent2 stage-beta'><a href='m_json1.html' title="Grundlagen JSON-Objekt">m_json1</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: Passwortgenerator, m_requests, pytest_mocking, tdd_pp, ResponseApi'></span><span class='required-by-decoration' title='required by: jsonPerformance, m_json2'></span></div>
+      <div class='indent2 stage-beta'><a href='m_os.path.html' title="os.path: mit Pfadangaben arbeiten">m_os.path</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.5 hours'>1.5</span><span class='assumed-by-decoration' title='assumed by: mlh-rename, m_glob, m_shutil, m_tempfile'></span></div>
+      <div class='indent2 stage-beta'><a href='m_random.html' title="random - Pseudo-Zufallsgenerator">m_random</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: Passwortgenerator, m_itertools, m_subprocess2'></span></div>
+      <div class='indent2 stage-beta'><a href='m_sys.html' title="sys: Der Python-Interpretierer (Abfragen, Steuerung)">m_sys</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 0.75 hours'>0.75</span><span class='assumed-by-decoration' title='assumed by: m_requests'></span></div>
+      <div class='indent2 stage-beta'><a href='sorted-and-sort.html' title="Sortieren in Python">sorted-and-sort</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: mlh-gitmeister'></span></div>
+      <div class='indent2 stage-beta'><a href='m_argparse.html' title="argparse: Kommandozeilenparameter analysieren">m_argparse</a> <span class='difficulty3' title='Difficulty: medium'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.5 hours'>1.5</span><span class='assumed-by-decoration' title='assumed by: Passwortgenerator, linkcheck-getlinks, m_sqlite3, argparse_subcommand'></span></div>
+      <div class='indent2 stage-beta'><a href='m_glob.html' title="glob, fnmatch: Verzeichnisse mit Pattern durchsuchen">m_glob</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumes-decoration' title='assumes: m_os.path, py-Iterators'></span></div>
+      <div class='indent2 stage-beta'><a href='m_hashlib.html' title="hashlib: Hashes und Prüfsummen erzeugen">m_hashlib</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: m_subprocess2'></span><span class='assumes-decoration' title='assumes: encoding-and-open'></span></div>
+      <div class='indent2 stage-beta'><a href='m_subprocess.html' title="subprocess: Unterprozesse starten und ihre Ausgaben lesen">m_subprocess</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: mlh-gitac, mlh-gitmeister, m_shutil, m_subprocess2'></span><span class='assumes-decoration' title='assumes: encoding-and-open'></span></div>
+      <div class='indent2 stage-beta'><a href='m_tempfile.html' title="tempfile: temporäre Dateien anlegen und verwenden">m_tempfile</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: mlh-rename'></span><span class='assumes-decoration' title='assumes: py-Context-Managers, encoding-and-open, m_os.path'></span></div>
+      <div class='indent2 stage-beta'><a href='m_json2.html' title="Python JSON-Objekte manipulieren">m_json2</a> <span class='difficulty3' title='Difficulty: medium'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: jsonPerformance, m_pprint, m_sqlite3'></span><span class='requires-decoration' title='requires: encoding-and-open, m_json1'></span></div>
+      <div class='indent2 stage-beta'><a href='m_pprint.html' title="pprint - Daten leserlich formatiert ausgeben">m_pprint</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: py-Funktionale-Programmierung, m_sqlite3'></span><span class='assumes-decoration' title='assumes: m_json2, encoding-and-open'></span></div>
+      <div class='indent2 stage-beta'><a href='m_sqlite3.html' title="sqlite3: lokales Datenbanksystem">m_sqlite3</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.5 hours'>1.5</span><span class='assumes-decoration' title='assumes: m_argparse, m_pprint, m_json2'></span></div>
+      <div class='indent2 stage-beta'><a href='m_shutil.html' title="shutil: Operationen auf Dateien und Verzeichnissen">m_shutil</a> <span class='difficulty2' title='Difficulty: low'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 1.0 hours'>1.0</span><span class='assumed-by-decoration' title='assumed by: mlh-rename'></span><span class='assumes-decoration' title='assumes: m_os.path, m_subprocess, Dateiberechtigungen'></span></div>
+      <div class='indent2 stage-beta'><a href='m_subprocess2.html' title="subprocess: Unterprozess starten, um ein Speicherlimit zu lösen">m_subprocess2</a> <span class='difficulty4' title='Difficulty: high'>&#x26ab;&#xfe0e;</span> <span class='timevalue-decoration' title='Timevalue: 2.0 hours'>2.0</span><span class='assumes-decoration' title='assumes: m_random, m_subprocess, pytest_parametrize, m_hashlib'></span></div>
+    <div class='indent1 no-stage'><a href='pip-popular.html' title="Ein paar populäre Python-Bibliotheken">pip-popular</a></div>
+    <div class='indent1 no-stage'><a href='Frameworks.html' title="Rahmenwerke (Frameworks)">Frameworks</a></div>
+    <div class='indent1 no-stage'><a href='Dokumentation.html' title="Dokumentation zu Bibliotheken">Dokumentation</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Testen.html' title="Testen">Testen</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Debugging.html' title="Defektlokalisierung (Debugging)">Debugging</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Bestandscode.html' title="Arbeiten mit Bestandscode">Bestandscode</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Web.html' title="Web-Entwicklung">Web</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Werkzeuge.html' title="Sonstige Werkzeuge">Werkzeuge</a></div>
+  <div class='indent0 no-stage'><a href='chapter-Feedback.html' title="Rückmeldungen von Ihnen an uns über das ProPra">Feedback</a></div>
+  <div class='indent0 no-stage'><a href='glossary.html'>Begriffsverzeichnis</a></div>
+  </nav>
+  <div class="main" id="main">
+   
+      
+        <nav><span class="breadcrumbs"><a href='index.html' title="Programmierpraktikum SoSe 2025, Bachelor Informatik, FU Berlin">ProPra2025</a> &gt; <a href='chapter-Bibliotheken.html' title="Programm-Bibliotheken (Libraries, Frameworks)">Bibliotheken</a> &gt; <a href='Python-Standardbibliothek.html' title="Python-Standardbibliothek">Python-Standardbibliothek</a></span></nav>
+      
+   
+   <main>
+    
+      
+        <h1>Python-Standardbibliothek</h1>
+      
+    
+    
+       <!--linkslist_top appears only in tasks-->
+    
+    
+  <div class="pagetype-taskgroup">
+      <p>Zu jeder Python-Installation gehören Dutzende von Bibliotheksmodulen,
+die immer fest dabei sind &ndash; und mit jeder neuen Python-Version werden es mehr.
+Diese Sammlung heißt die <a href="https://docs.python.org/3/library/">Python-Standardbibliothek</a>
+(standard library, stdlib).
+Sich darin auszukennen ist von enormem Wert.</p>
+<p>Man muss dabei weitaus nicht jede Einzelheit im Kopf haben, sondern vor allem
+ungefähr wissen, was es so alles gibt und wie es heißen könnte, 
+dann kann man den Rest jeweils im Bedarfsfall nachschlagen.</p>
+<p>In dieser Aufgabengruppe gibt es lauter kleine Aufgaben, die sich mit jeweils (meist)
+einem solchen Bibliotheksmodul befassen.
+Ziel ist nur ein Kennenlernen, keine gründliche Beherrschung.
+Aber erst danach kann man sinnvoll sagen: Ich kann Python.</p>
+  </div>
+ 
+    <!--- subsequent tasks: -->
+    
+       <!--linkslist_bottom appears only in tasks-->
+    
+   </main>  
+  
+   <footer>
+      <p class="copyright">Generated by <a href="https://sedrila.readthedocs.io/en/latest/">sedrila</a></p>
+   </footer>
+  
+  </div>
+</body>
+</html>
