@@ -1,20 +1,19 @@
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ python -c "import colorama as c; print('Ich bin ein' + c.Fore.RED + ' rotes ' + c.Style.RESET_ALL + 'Wort')"
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:28:27  1322
+$ python -c "import colorama as c; print('Ich bin ein' + c.Fore.RED + ' rotes ' + c.Style.RESET_ALL + 'Wort')"
 Ich bin ein rotes Wort
-(propra)
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:28:34  1323
+$ pip freeze
+argparse_subcommand==1.2
 colorama==0.4.4
-(propra)
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip uninstall colorama
-Found existing installation: colorama 0.4.6
-Uninstalling colorama-0.4.6:
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:28:48  1324
+$ pip uninstall colorama
+Found existing installation: colorama 0.4.4
+Uninstalling colorama-0.4.4:
   Would remove:
-    /root/venv/propra/lib/python3.11/site-packages/colorama-0.4.6.dist-info/*
+    /root/venv/propra/lib/python3.11/site-packages/colorama-0.4.4.dist-info/*
     /root/venv/propra/lib/python3.11/site-packages/colorama/*
 Proceed (Y/n)? y
-  Successfully uninstalled colorama-0.4.6
-(propra)
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws/propra $ pip freeze
-(propra)
+  Successfully uninstalled colorama-0.4.4
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:29:13  1325
+$ pip freeze
+argparse_subcommand==1.2

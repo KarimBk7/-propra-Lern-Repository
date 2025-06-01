@@ -1,51 +1,81 @@
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ wc -l /etc/passwd
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:31:05  1327
+$ wc -l /etc/passwd
 27 /etc/passwd
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra $ wc -l < /etc/passwd
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:31:07  1328
+$ wc -l < /etc/passwd
 27
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Hallo Welt" > redirect_hallo.txt
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
-Hallo Welt
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Das ist neu" > redirect_hallo.txt
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:31:48  1329
+$ echo "Hallo Welt!" > redirect_hallo.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:32:00  1330
+$ cat redirect_hallo.txt
+Hallo Welt!
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:32:12  1331
+$ echo "Das ist neu" > redirect_hallo.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:32:19  1332
+$ cat redirect_hallo.txt
 Das ist neu
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ echo "Hallo Welt!" >> redirect_hallo.txt
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_hallo.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:32:34  1334
+$ echo "Hallo Welt!" >> redirect_hallo.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:32:43  1335
+$ cat redirect_hallo.txt
 Das ist neu
 Hallo Welt!
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls /nicht_existent 2> redirect_fehler.txt
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_fehler.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:33:58  1340
+$ ls /nicht_existent 2> redirect_fehler.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:34:07  1341
+$ cat redirect_fehler.txt
 ls: cannot access '/nicht_existent': No such file or directory
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls /tmp /nicht_existent > redirect_ausgabe_und_fehler.txt 2>&1
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ cat redirect_ausgabe_und_fehler.txt
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:34:08  1342
+$ ls /tmp /nicht_existent > redirect_ausgabe_und_fehler.txt 2>&1
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:36:14  1343
+$ cat redirect_ausgabe_und_fehler.txt
 ls: cannot access '/nicht_existent': No such file or directory
 /tmp:
-snap-private-tmp
-systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-logind.service-OvGNr7
-systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-resolved.service-uhZ7DZ
-systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-timesyncd.service-WpgG8X
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls -l /usr/bin | grep grep
+get-pip.py
+pyright-1879-jv4ToKhP834x
+python-languageserver-cancellation
+remote-wsl-loc.txt
+vscode-distro-env.03nYjK
+vscode-distro-env.3d9epu
+vscode-distro-env.KMwTuB
+vscode-distro-env.TVq6zf
+vscode-distro-env.hWds4W
+vscode-distro-env.toRSEU
+vscode-git-27eeb4a3dd.sock
+vscode-git-47eae12b30.sock
+vscode-git-6e71ca0b7b.sock
+vscode-git-7872f7b308.sock
+vscode-git-c9c5673d2b.sock
+vscode-git-f26dbf06ad.sock
+vscode-ipc-04379180-9e59-4c0a-9177-3f67a7d97e3f.sock
+vscode-ipc-067b8fc5-6ddb-4a5d-b3c9-7e09719d5b0e.sock
+vscode-ipc-486b1e56-e378-4705-ae05-29593f676eb0.sock
+vscode-ipc-4c0e9be1-05e7-4238-b50c-46a62dc6de20.sock
+vscode-ipc-5663cb3e-371d-45a5-ad1d-1e0b7d051172.sock
+vscode-ipc-9d27c87d-203f-47c0-8fc2-c2a4269eef3a.sock
+vscode-ipc-a602fcc9-3222-4c21-b786-63f6f86e325c.sock
+vscode-ipc-bd2cca71-5933-4899-bcf6-3c632de72290.sock
+vscode-ipc-c892c523-2567-49d8-bbb9-2b0994a6203b.sock
+vscode-ipc-ce714011-7188-4e2b-9784-08ca6d520795.sock
+vscode-ipc-d2032989-7bd8-496f-9064-4e3025041e07.sock
+vscode-ipc-d6141318-ef1e-4a8d-a8ee-0492a5e238aa.sock
+vscode-ipc-d8244274-be43-4331-b362-73ee5439adbc.sock
+vscode-ipc-ec5adf9d-e648-4c35-8416-401aea4a501f.sock
+vscode-typescript0
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:36:35  1345
+$ ls -l /usr/bin | grep grep
 lrwxrwxrwx 1 root root           6 Mar 23  2022 bzegrep -> bzgrep
 lrwxrwxrwx 1 root root           6 Mar 23  2022 bzfgrep -> bzgrep
 -rwxr-xr-x 1 root root        3775 Mar 23  2022 bzgrep
 -rwxr-xr-x 1 root root          28 Mar 23  2022 egrep
 -rwxr-xr-x 1 root root          28 Mar 23  2022 fgrep
 -rwxr-xr-x 1 root root      182728 Mar 23  2022 grep
-lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-aptavail -> grep-dctrl
-lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-available -> grep-dctrl
--rwxr-xr-x 1 root root       49232 Mar 23  2022 grep-dctrl
-lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-debtags -> grep-dctrl
-lrwxrwxrwx 1 root root          10 Mar 23  2022 grep-status -> grep-dctrl
 lrwxrwxrwx 1 root root          25 Sep 27  2024 lzegrep -> /etc/alternatives/lzegrep
 lrwxrwxrwx 1 root root          25 Sep 27  2024 lzfgrep -> /etc/alternatives/lzfgrep
 lrwxrwxrwx 1 root root          24 Sep 27  2024 lzgrep -> /etc/alternatives/lzgrep
 -rwxr-xr-x 1 root root       30968 Oct 31  2023 pgrep
 lrwxrwxrwx 1 root root           5 Oct 31  2023 pkill -> pgrep
--rwxr-xr-x 1 root root        4395 Nov 23  2023 ptargrep
+-rwxr-xr-x 1 root root        4395 Apr  8 15:21 ptargrep
 -rwxr-xr-x 1 root root          30 Jan 29  2020 rgrep
 lrwxrwxrwx 1 root root           6 Apr  8  2022 xzegrep -> xzgrep
 lrwxrwxrwx 1 root root           6 Apr  8  2022 xzfgrep -> xzgrep
@@ -53,70 +83,42 @@ lrwxrwxrwx 1 root root           6 Apr  8  2022 xzfgrep -> xzgrep
 -rwxr-xr-x 1 root root          29 Sep  5  2022 zegrep
 -rwxr-xr-x 1 root root          29 Sep  5  2022 zfgrep
 -rwxr-xr-x 1 root root        8103 Sep  5  2022 zgrep
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ wc -l /*
-wc: /bin: Is a directory
-      0 /bin
-wc: /boot: Is a directory
-      0 /boot
-wc: /dev: Is a directory
-      0 /dev
-wc: /etc: Is a directory
-      0 /etc
-wc: /home: Is a directory
-      0 /home
-   8074 /init
-wc: /lib: Is a directory
-      0 /lib
-wc: /lib32: Is a directory
-      0 /lib32
-wc: /lib64: Is a directory
-      0 /lib64
-wc: /libx32: Is a directory
-      0 /libx32
-wc: /lost+found: Is a directory
-      0 /lost+found
-wc: /media: Is a directory
-      0 /media
-wc: /mnt: Is a directory
-      0 /mnt
-wc: /opt: Is a directory
-      0 /opt
-wc: /proc: Is a directory
-      0 /proc
-wc: /root: Is a directory
-      0 /root
-wc: /run: Is a directory
-      0 /run
-wc: /sbin: Is a directory
-      0 /sbin
-wc: /snap: Is a directory
-      0 /snap
-wc: /srv: Is a directory
-      0 /srv
-wc: /sys: Is a directory
-      0 /sys
-wc: /tmp: Is a directory
-      0 /tmp
-wc: /usr: Is a directory
-      0 /usr
-wc: /var: Is a directory
-      0 /var
-wc: /wslCcnHGn: Is a directory
-      0 /wslCcnHGn
-wc: /wslKGFiCn: Is a directory
-      0 /wslKGFiCn
-wc: /wslKOdCGn: Is a directory
-      0 /wslKOdCGn
-wc: /wslOdeLGn: Is a directory
-      0 /wslOdeLGn
-wc: /wslkKfipm: Is a directory
-      0 /wslkKfipm
-   8074 total
-
-root@DESKTOP-BKSGFB3/mnt/c/Users/Karim/ws/propra/Werkzeuge/Unix-Basiswerkzeuge $ ls -l /tmp | tee redirect_tmp.txt
-total 16
-drwx------ 2 root root 4096 May 27 16:27 snap-private-tmp
-drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-logind.service-OvGNr7
-drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-resolved.service-uhZ7DZ
-drwx------ 3 root root 4096 May 27 16:27 systemd-private-4ea6cb340ed04e228c7889089e35302c-systemd-timesyncd.service-WpgG8X
+-rwxr-xr-x 1 root root        2959 Feb  1  2024 zipgrep
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:37:38  1348
+$ wc -l ~/*
+wc: /root/venv: Is a directory
+0 /root/venv
+(propra) root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra 21:37:44  1349
+$ ls -l /tmp | tee redirect_tmp.txt
+total 2288
+-rw-r--r-- 1 root root 2300175 Apr 16 18:58 get-pip.py
+drwx------ 2 root root    4096 Apr 27 14:42 pyright-1879-jv4ToKhP834x
+drwxr-xr-x 2 root root    4096 Apr 27 16:27 python-languageserver-cancellation
+-rw-r--r-- 1 root root      69 Dec  6 23:25 remote-wsl-loc.txt
+-rw------- 1 root root    3043 Dec  6 23:25 vscode-distro-env.03nYjK
+-rw------- 1 root root    2973 Oct 28  2024 vscode-distro-env.3d9epu
+-rw------- 1 root root    2992 Oct 27  2024 vscode-distro-env.KMwTuB
+-rw------- 1 root root    3043 Dec  6 22:19 vscode-distro-env.TVq6zf
+-rw------- 1 root root    2950 Oct 27  2024 vscode-distro-env.hWds4W
+-rw------- 1 root root    3043 Dec  6 22:48 vscode-distro-env.toRSEU
+srwxr-xr-x 1 root root       0 Apr 27 12:56 vscode-git-27eeb4a3dd.sock
+srwxr-xr-x 1 root root       0 Oct 28  2024 vscode-git-47eae12b30.sock
+srwxr-xr-x 1 root root       0 Dec  6 22:19 vscode-git-6e71ca0b7b.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-git-7872f7b308.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-git-c9c5673d2b.sock
+srwxr-xr-x 1 root root       0 Apr 27 16:37 vscode-git-f26dbf06ad.sock
+srwxr-xr-x 1 root root       0 Apr 27 12:56 vscode-ipc-04379180-9e59-4c0a-9177-3f67a7d97e3f.sock
+srwxr-xr-x 1 root root       0 Oct 28  2024 vscode-ipc-067b8fc5-6ddb-4a5d-b3c9-7e09719d5b0e.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-ipc-486b1e56-e378-4705-ae05-29593f676eb0.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-ipc-4c0e9be1-05e7-4238-b50c-46a62dc6de20.sock
+srwxr-xr-x 1 root root       0 Oct 28  2024 vscode-ipc-5663cb3e-371d-45a5-ad1d-1e0b7d051172.sock
+srwxr-xr-x 1 root root       0 Apr 27 16:29 vscode-ipc-9d27c87d-203f-47c0-8fc2-c2a4269eef3a.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-ipc-a602fcc9-3222-4c21-b786-63f6f86e325c.sock
+srwxr-xr-x 1 root root       0 Dec  6 22:19 vscode-ipc-bd2cca71-5933-4899-bcf6-3c632de72290.sock
+srwxr-xr-x 1 root root       0 Dec  6 22:48 vscode-ipc-c892c523-2567-49d8-bbb9-2b0994a6203b.sock
+srwxr-xr-x 1 root root       0 Apr 27 14:46 vscode-ipc-ce714011-7188-4e2b-9784-08ca6d520795.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-ipc-d2032989-7bd8-496f-9064-4e3025041e07.sock
+srwxr-xr-x 1 root root       0 Apr 27 16:37 vscode-ipc-d6141318-ef1e-4a8d-a8ee-0492a5e238aa.sock
+srwxr-xr-x 1 root root       0 Oct 27  2024 vscode-ipc-d8244274-be43-4331-b362-73ee5439adbc.sock
+srwxr-xr-x 1 root root       0 Apr 27 12:58 vscode-ipc-ec5adf9d-e648-4c35-8416-401aea4a501f.sock
+drwxr-xr-x 2 root root    4096 Apr 27 16:37 vscode-typescript0

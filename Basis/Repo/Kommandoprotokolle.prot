@@ -1,16 +1,17 @@
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ ls
-fu-uni-material  npvp  propra  tmp
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ uptime
- 18:59:49 up 44 min,  0 users,  load average: 0.00, 0.00, 0.00
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ whoami
+root@DESKTOP-J4GQQ0C ~ 20:49:45  1264
+$ ls
+venv
+root@DESKTOP-J4GQQ0C ~ 20:50:02  1265
+$ uptime
+ 20:50:20 up 3 min,  0 users,  load average: 0.02, 0.01, 0.00
+root@DESKTOP-J4GQQ0C ~ 20:50:20  1266
+$ whoami
 root
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ uname -a
+root@DESKTOP-J4GQQ0C ~ 20:50:29  1267
+$ uname -a
 Linux DESKTOP-J4GQQ0C 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ cat /etc/os-release
+root@DESKTOP-J4GQQ0C ~ 20:50:35  1268
+$ cat /etc/os-release
 PRETTY_NAME="Ubuntu 22.04.5 LTS"
 NAME="Ubuntu"
 VERSION_ID="22.04"
@@ -23,7 +24,7 @@ SUPPORT_URL="https://help.ubuntu.com/"
 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 UBUNTU_CODENAME=jammy
-
-root@DESKTOP-J4GQQ0C/mnt/c/Users/abdil/ws $ python -V; pip -V
+root@DESKTOP-J4GQQ0C ~ 20:50:44  1269
+$ python -V; pip -V
 Python 3.11.0rc1
-pip 25.0.1 from /usr/local/lib/python3.11/dist-packages/pip (python 3.11)
+pip 25.1.1 from /usr/local/lib/python3.11/dist-packages/pip (python 3.11)
