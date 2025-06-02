@@ -1,0 +1,21 @@
+root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/pip-popular 22:25:00  1375
+$ python beautifulsoup.py
+number of <span> tags declaring difficulty 1 or 2: 14
+
+Those are the found tags:
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+<span class="difficulty2" title="Difficulty: low">⚫︎</span>
+
+Their total timevalue: 15.2
