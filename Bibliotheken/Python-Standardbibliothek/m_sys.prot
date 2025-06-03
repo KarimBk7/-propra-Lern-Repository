@@ -1,0 +1,14 @@
+root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Python-Standardbibliothek 18:02:57  1401
+$ python m_sys.py a b c >/tmp/a
+Meldung nach stderr:
+
+root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/Python-Standardbibliothek 19:55:45  1405
+$ python m_sys.py falsch richtig falsch falsch
+sys.argv[...]: ['m_sys.py', 'falsch', 'richtig', 'falsch', 'falsch']
+
+Meldung nach stderr:
+Aktuelle Python Version 3.11.0
+
+['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', '_io', 'marshal', 'posix', '_frozen_importlib_external', 'time', 'zipimport', '_codecs', 'codecs', 'encodings.aliases', 'encodings', 'encodings.utf_8', '_signal', '_abc', 'abc', 'io', '__main__', '_stat', 'stat', '_collections_abc', 'genericpath', 'posixpath', 'os.path', 'os', '_sitebuiltins', 'types', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib', 'importlib._abc', 'itertools', 'keyword', '_operator', 'operator', 'reprlib', '_collections', 'collections', '_functools', 'functools', 'contextlib', 'importlib.util', 'importlib.machinery', 'zope', 'apport_python_hook', 'sitecustomize', 'site']
+
+['/mnt/c/Users/abdil/ws/propra/Bibliotheken/Python-Standardbibliothek', '/usr/lib/python311.zip', '/usr/lib/python3.11', '/usr/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/dist-packages', '/usr/lib/python3/dist-packages']

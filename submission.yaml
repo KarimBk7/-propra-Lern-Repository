@@ -12,6 +12,7 @@ Themenauswahl: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
 argparse_subcommand: CHECK
+beautifulsoup: CHECK
 css-Box-Modell: CHECK
 "css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
