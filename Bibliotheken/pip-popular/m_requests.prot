@@ -1,0 +1,45 @@
+root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/pip-popular 20:19:22  1454
+$ python m_requests.py do_get https://www.inf.fu-berlin.de/inst/ag-se/teaching/K-ProPra-2025-04/chapter-Basis.html für
+Status:  200
+received  5043 characters for  https://www.inf.fu-berlin.de/inst/ag-se/teaching/K-ProPra-2025-04/chapter-Basis.html
+Encoding:  utf_8
+Headers:
+         Date:   Mon, 09 Jun 2025 18:29:00 GMT
+         Server:         Apache/2.4.62 (Debian)
+         Last-Modified:  Mon, 19 May 2025 12:53:20 GMT
+         ETag:   "13b3-6357c9ddc8941-gzip"
+         Accept-Ranges:  bytes
+         Vary:   Accept-Encoding
+         Content-Encoding:       gzip
+         Content-Length:         1860
+         Content-Type:   text/html
+         Keep-Alive:     timeout=5, max=100
+         Connection:     Keep-Alive
+search for für
+für die Ergebnisse arbeiten">Repo</a></div>
+    <div class='indent1 no-stage'><a href='IDE.html' title="IDE installieren und in Betrieb nehmen">IDE</a></div>
+    <div class='indent1 no-stage'><a href='Schluss.html' title="Die Struktur des ProPra vers
+root@DESKTOP-J4GQQ0C /mnt/c/Users/abdil/ws/propra/Bibliotheken/pip-popular 21:05:47  1462
+$ python m_requests.py do_post  https://httpbin.org/anything '{"a": "wer A sagt", "b": 255}'
+Status:  200
+{
+    "args": {},
+    "data": "{\"a\": \"wer A sagt\", \"b\": 255}",
+    "files": {},
+    "form": {},
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate",
+        "Content-Length": "29",
+        "Host": "httpbin.org",
+        "User-Agent": "python-requests/2.25.1",
+        "X-Amzn-Trace-Id": "Root=1-684730a9-4ca60576230999832b5abe93"
+    },
+    "json": {
+        "a": "wer A sagt",
+        "b": 255
+    },
+    "method": "POST",
+    "origin": "91.11.80.114",
+    "url": "https://httpbin.org/anything"
+}
