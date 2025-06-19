@@ -1,5 +1,5 @@
 import datetime as dt
-import locale
+import zoneinfo as zf
 
 # A2
 now = dt.datetime.now()
@@ -18,3 +18,24 @@ monate = ["Januar", "Februar", "März", "April", "Mai", "Juni",
 
  
 print("formatierte Zeit;", wochentag[weekid] + dateobj.strftime(f", der %d. {monate[monthid]} %Y, %H:%M Uhr"))
+
+
+# A5
+datestr = "2024-12-15##13:09:44"
+dateexp = dt.datetime.strptime(datestr,"%Y-%m-%d##%H:%M:%S",)
+print("geparste zeit:",  dateexp)
+
+# A6
+berlin_time = dt.datetime(2024,12,15,hour=13,minute=9,second=44, tzinfo=zf.ZoneInfo("Europe/Berlin"))
+print("Berliner Zeit:", berlin_time)
+
+# A7
+caracas_time = dt.datetime(2024,12,15,hour=13,minute=9,second=44, tzinfo=zf.ZoneInfo("America/Caracas"))
+print("Caracas Zeit:", caracas_time)
+
+# A8
+abstand = caracas_time.utcoffset()
+print("UTC-Abstand:", abstand)
+
+new_caracas = abstand
+print("Caracas-nach-UTC:", new_caracas)
