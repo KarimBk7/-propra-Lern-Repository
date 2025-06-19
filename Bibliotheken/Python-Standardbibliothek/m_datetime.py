@@ -37,5 +37,7 @@ print("Caracas Zeit:", caracas_time)
 abstand = caracas_time.utcoffset()
 print("UTC-Abstand:", abstand)
 
-new_caracas = abstand
+# A9
+new_caracas = caracas_time - abstand
+new_caracas = new_caracas.replace(tzinfo=zf.ZoneInfo("UTC"))
 print("Caracas-nach-UTC:", new_caracas)
