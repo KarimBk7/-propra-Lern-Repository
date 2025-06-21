@@ -41,3 +41,38 @@ print("UTC-Abstand:", abstand)
 new_caracas = caracas_time - abstand
 new_caracas = new_caracas.replace(tzinfo=zf.ZoneInfo("UTC"))
 print("Caracas-nach-UTC:", new_caracas)
+
+# A10
+print("+1024d+512m:", new_caracas + dt.timedelta(days=1024, minutes=512))
+
+
+# A11 und A12
+logs = [
+  ('2024-01-01##10:11:14', 1, 'start'),
+  ('2024-01-02##03:01:01', 2, 'start'),
+  ('2024-01-03##00:11:15', 1, 'end'),
+  ('2024-01-03##03:02:02', 2, 'end')
+]
+
+
+
+def time_average(logs: list[tuple[str,int,str]]) -> dt.timedelta:
+    start = {}
+    diffs = []
+
+    # convert strings and calculate difference
+    for timestamp, eventnumber, flag in logs:
+        if flag == 'start':
+            start[eventnumber] = dt.datetime.strptime(timestamp,'%Y-%m-%d##%H:%M:%S')
+        elif flag == 'end':
+            diffs.append(dt.datetime.strptime(timestamp, '%Y-%m-%d##%H:%M:%S') - start[eventnumber])
+
+    # calculate average
+    result = dt.timedelta()
+    for d in diffs:
+        result += d
+
+    return result / len(diffs)
+
+
+print("Durchschnittliche Ausführungszeit:", time_average(logs))
