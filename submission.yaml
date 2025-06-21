@@ -16,6 +16,7 @@ beautifulsoup: CHECK
 css-Box-Modell: CHECK
 "css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
+encoding-and-open: CHECK
 html-Formulare: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
@@ -23,6 +24,7 @@ html-Tabellen: CHECK
 html-erste-Schritte: CHECK
 http-GET: CHECK
 m_argparse: CHECK
+m_datetime: CHECK
 m_json1: CHECK
 m_requests: CHECK
 m_sys: CHECK
