@@ -27,6 +27,7 @@ m_argparse: CHECK
 m_datetime: CHECK
 m_json1: CHECK
 m_os.path: CHECK
+m_random: CHECK
 m_requests: CHECK
 m_sys: CHECK
 mlh-lsnew: CHECK
