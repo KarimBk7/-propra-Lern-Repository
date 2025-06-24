@@ -1,0 +1,13 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 15:53:38  139
+$ python m_os_path.py
+home directory:  /home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/$HOME
+home directory exists:  True
+an entry in my home directory:  /home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/m_datetime.py
+# directories: 1 , # files: 15
+biggest file: 2166
+last created: time.struct_time(tm_year=2025, tm_mon=6, tm_mday=24, tm_hour=15, tm_min=53, tm_sec=41, tm_wday=1, tm_yday=175, tm_isdst=1)
+last changed: time.struct_time(tm_year=2025, tm_mon=6, tm_mday=24, tm_hour=15, tm_min=53, tm_sec=41, tm_wday=1, tm_yday=175, tm_isdst=1)
+most common file extension: .md
+relative path from home to cwd:  ws/propra/Bibliotheken/Python-Standardbibliothek
+path home to cwd and back:  ws/propra/Bibliotheken/Python-Standardbibliothek/../../../..
+relative path normalized: .

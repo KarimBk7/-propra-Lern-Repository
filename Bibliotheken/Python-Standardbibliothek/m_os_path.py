@@ -53,10 +53,14 @@ print("biggest file:", biggestFile, "\nlast created:", lastcreated, "\nlast chan
 cwd = os.getcwd()
 home = os.path.expanduser("~")
 rel_path = os.path.relpath(cwd,home)
-print("relative path from home to cwd: ",cwd)
+print("relative path from home to cwd: ",rel_path)
 
 
 # A8
 back_path = os.path.relpath(home,cwd)
 comb = os.path.join(rel_path, back_path)
 print("path home to cwd and back: ", comb)
+
+# A9
+norm = os.path.normpath(comb)
+print("relative path normalized:", norm)
