@@ -1,0 +1,14 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra/Bibliotheken/Python-Standardbibliothek 15:58:12  1176
+$ python sorted-and-sort.py
+Tupel von Alter, Gewicht, Körpergröße
+[(22, 69, 177), (22, 71, 172), (48, 72, 174), (38, 89, 179), (71, 59, 170)]
+Sortiert:
+[(22, 69, 177), (22, 71, 172), (38, 89, 179), (48, 72, 174), (71, 59, 170)]
+Sortiert nach Körpergröße 1:
+[(71, 59, 170), (22, 71, 172), (48, 72, 174), (22, 69, 177), (38, 89, 179)]
+Sortiert nach Körpergröße 2:
+[(71, 59, 170), (22, 71, 172), (48, 72, 174), (22, 69, 177), (38, 89, 179)]
+Sortiert nach Übergewicht:
+[(38, 89, 179), (22, 71, 172), (48, 72, 174), (22, 69, 177), (71, 59, 170)]
+Sortiert in Gewichtsgruppen:
+[(22, 71, 172), (71, 59, 170), (22, 69, 177), (38, 89, 179), (48, 72, 174)]
