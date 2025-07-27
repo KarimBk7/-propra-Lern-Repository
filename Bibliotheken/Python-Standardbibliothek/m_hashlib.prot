@@ -1,0 +1,8 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 17:41:58  197
+$ python m_hashlib.py
+{'blake2s', 'sha3_256', 'sha512', 'blake2b', 'sha512_256', 'sha224', 'sha512_224', 'sha384', 'sha256', 'sha3_384', 'sha3_224', 'sha1', 'md5-sha1', 'sha3_512', 'sm3', 'shake_256', 'md5', 'shake_128', 'ripemd160'}
+1. ProPra SHA-256:       4dde70259843e8b6a973e6a3141ed9d0d6aaf03fec82686d575c248dcc212170
+2. added a space:        9ac294e50f26b9065a6e4a2d7886954d63e4fe3e4763234f510f26efcef2f34d
+3. identical digits: expected:  4.0 ; found:  7
+4. u(a); u(b) = u(a + b):        True
+5. file checksum:        4dde70259843e8b6a973e6a3141ed9d0d6aaf03fec82686d575c248dcc212170
