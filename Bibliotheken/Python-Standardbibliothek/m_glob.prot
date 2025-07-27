@@ -1,0 +1,11 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 16:13:07  191
+$ python m_glob.py
+all txt files: ['m_glob/uFO.txt', 'm_glob/6.txt']
+all iles with a number: ['m_glob/SjHi1Q0R', 'm_glob/o9', 'm_glob/6.txt']
+all directories ['m_glob/9NQn', 'm_glob/y9KrS1']
+all files in '9NQn' with two numbers: ['m_glob/9NQn/725udZ.txt', 'm_glob/9NQn/I89Hp.json']
+all hidden files: ['m_glob/.JqMDLI.txt']
+all files with '[': ['m_glob/EmT[xV']
+recursive: all json files with 'm': ['m_glob/mCwTq.json', 'm_glob/9NQn/dmYHbh.json', 'm_glob/y9KrS1/7Mn/mk1.json']
+recursive: all txt files in subdirs without uppercase first letter: ['m_glob/9NQn/725udZ.txt', 'm_glob/y9KrS1/r8cj.txt', 'm_glob/y9KrS1/.Iyu/u1priW.txt']
+recursive: all txt files, first 3 results: ['m_glob/uFO.txt', 'm_glob/6.txt', 'm_glob/9NQn/725udZ.txt']
