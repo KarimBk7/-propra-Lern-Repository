@@ -45,5 +45,5 @@ with open("m_hashlib.txt", mode="rb") as f:
     content = f.read()
 
 h3 = hashlib.new("sha256")
-h3.update(b""+content)
+h3.update(b""+content) 
 print("5. file checksum:\t", h3.hexdigest())
