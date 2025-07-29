@@ -31,7 +31,9 @@ m_json1: CHECK
 m_os.path: CHECK
 m_random: CHECK
 m_requests: CHECK
+m_subprocess: CHECK
 m_sys: CHECK
+m_tempfile: CHECK
 mlh-lsnew: CHECK
 pip: CHECK
 redirect: CHECK
