@@ -1,0 +1,12 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 17:14:03  222
+$ python m_tempfile.py
+path of temp dir: /tmp/propra-lajal83r
+OS standard temp dir: /tmp
+temp file: /tmp/propra-lajal83r/propra-p3ir3z6j
+temp file exists after closing: True
+temp file content: b'Das ist der Inhalt meiner temporaeren Datei.'
+temp file exists after with statement: True
+unnamed temp file name: 3
+spooled temp file name: None
+spooled temp file name after reaching 1KB size: 3
+temp dir exist after with statement: False
