@@ -1,0 +1,45 @@
+{
+    "Studenten": [
+        {
+            "Name": "Max",
+            "Faecher": [
+                "Softwaretechnik",
+                "Lineare Algebra",
+                "Programmierpraktikum"
+            ],
+            "FavFach": "Programmierpraktikum",
+            "FavSprache": "Python",
+            "Vorlesungen": {
+                "Softwaretechnik": {
+                    "Tage": [
+                        "Montag",
+                        "Mittwoch"
+                    ],
+                    "von": "10:00",
+                    "bis": "12:00"
+                },
+                "Lineare Algebra": {
+                    "Tage": [
+                        "Dienstag",
+                        "Donnerstag"
+                    ],
+                    "von": "14:00",
+                    "bis": "16:00"
+                },
+                "Programmierpraktikum": {
+                    "Tage": [],
+                    "von": null,
+                    "bis": null
+                }
+            },
+            "Wunschnoten": {
+                "Softwaretechnik": 2.3,
+                "Lineare Algebra": 2.7,
+                "Programmierpraktikum": 0.0
+            }
+        },
+        {
+            "Name": "Karim"
+        }
+    ]
+}
