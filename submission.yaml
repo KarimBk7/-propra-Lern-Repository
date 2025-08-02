@@ -28,7 +28,9 @@ m_datetime: CHECK
 m_glob: CHECK
 m_hashlib: CHECK
 m_json1: CHECK
+m_json2: CHECK
 m_os.path: CHECK
+m_pprint: CHECK
 m_random: CHECK
 m_requests: CHECK
 m_subprocess: CHECK
