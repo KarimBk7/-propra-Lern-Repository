@@ -1,0 +1,5 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 21:59:12  261
+$ python m_sqlite3.py query
+number of entries in 'books': 3
+fantasy books: ('The Lord of The Rings',)
+most common genre(s): [('Monograph', 1), ('Fiction', 1), ('Fantasy', 1)]
