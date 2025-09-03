@@ -1,16 +1,16 @@
 import argparse
 import sqlite3
 import pprint
+import json
 
 dbName = "m_sqlite3.db"
+# A2
+con = sqlite3.connect(dbName)
+# A3
+cur = con.cursor()
 
 def create_db():
 
-	# A2
-	con = sqlite3.connect(dbName)
-
-	# A3 
-	cur = con.cursor()
 	print(f"Datenbank ´{dbName}´ wurde erstellt/verbunden und Cursor angelegt.")
 
 	#A4
@@ -34,10 +34,7 @@ def create_db():
 	con.commit()
 
 
-def query():
-	# Verbinde mit Datenbank
-	con = sqlite3.connect(dbName)
-	cur = con.cursor()
+def query_db():
 	
 	# A7
 	res = cur.execute("SELECT COUNT(*) FROM books")
@@ -46,16 +43,39 @@ def query():
 
 	# A8
 	res = cur.execute("SELECT TITLE FROM books WHERE genre = 'Fantasy'")
-	fantasy = res.fetchone()
+	fantasy = res.fetchall()
 	pp = pprint.PrettyPrinter(indent=2, depth=2, sort_dicts=False)
 	print("fantasy books:", end=" ")
 	pp.pprint(fantasy)
 	
 	# A9
 	res = cur.execute("SELECT genre, COUNT(genre) FROM books GROUP BY genre ORDER BY COUNT(genre) DESC")
-	genre = res.fetchall()
-	print("most common genre(s):", end=" ")
-	pp.pprint(genre)
+	genre = res.fetchone()
+	print("most common genre(s):", genre)
+
+
+def import_db():
+
+	# A10
+	data = []
+	with open("ReadingList.json", mode="rb") as fl:
+		data = json.load(fl)
+	
+
+	# A11
+	values = []
+	for d in data:
+		title = d.get("title")
+		genre = d.get("genre")
+		read = 1 if d.get("dates_read") else 0
+		values.append((title, genre, read))
+
+	cur.executemany("INSERT OR IGNORE INTO books (title, genre, read) VALUES (?, ?, ?)", values)
+	con.commit()
+
+
+	
+
 
 # A1
 def main():
@@ -69,10 +89,13 @@ def main():
 		create_db()
 
 	elif args.aktion == "query":
-		query()
+		query_db()
 
 	elif args.aktion == "import":
-		print("Daten werden importiert...")
+		import_db()
+
+	# A12
+	con.close()
 
 
 if __name__ == "__main__":
