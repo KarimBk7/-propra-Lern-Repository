@@ -1,0 +1,30 @@
+karim@DESKTOP-6681UAP ~ 16:55:19  381
+$ ls ~
+venv  ws
+
+karim@DESKTOP-6681UAP ~ 16:58:07  382
+$ ls -l ~
+total 8
+drwxr-xr-x 3 karim karim 4096 Jun 11 01:01 venv
+drwxr-xr-x 4 karim karim 4096 Sep 11 14:35 ws
+
+karim@DESKTOP-6681UAP ~ 16:58:19  383
+$ mkdir mydir
+
+karim@DESKTOP-6681UAP ~ 16:59:14  388
+$ cd mydir/
+
+karim@DESKTOP-6681UAP ~/mydir 16:59:37  391
+$ cp myfile1 ~/
+
+karim@DESKTOP-6681UAP ~/mydir 17:01:56  396
+$ mv myfile1 myfile2
+
+karim@DESKTOP-6681UAP ~/mydir 17:03:43  398
+$ cd ~
+
+karim@DESKTOP-6681UAP ~ 17:33:36  419
+$ rmdir mydir
+
+karim@DESKTOP-6681UAP ~ 17:34:05  422
+$ rm -r mydir2
