@@ -42,4 +42,5 @@ pip: CHECK
 redirect: CHECK
 requires-assumes: CHECK
 sorted-and-sort: CHECK
+sudo: CHECK
 venv: CHECK
