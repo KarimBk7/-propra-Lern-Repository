@@ -12,6 +12,7 @@ Schwierigkeitsstufen: CHECK
 Sedrila-einrichten: CHECK
 Shellprompt: CHECK
 Themenauswahl: CHECK
+Umgang-mit-Verzeichnissen: CHECK
 Zeiterfassung: CHECK
 apt: CHECK
 argparse_subcommand: CHECK
