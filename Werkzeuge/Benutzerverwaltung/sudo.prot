@@ -1,0 +1,99 @@
+karim@DESKTOP-6681UAP ~ 12:11:32  292
+$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+karim@DESKTOP-6681UAP ~ 12:34:06  296
+$ sudo cat /etc/shadow
+root:*:20134:0:99999:7:::
+daemon:*:20134:0:99999:7:::
+bin:*:20134:0:99999:7:::
+sys:*:20134:0:99999:7:::
+sync:*:20134:0:99999:7:::
+games:*:20134:0:99999:7:::
+man:*:20134:0:99999:7:::
+lp:*:20134:0:99999:7:::
+mail:*:20134:0:99999:7:::
+news:*:20134:0:99999:7:::
+uucp:*:20134:0:99999:7:::
+proxy:*:20134:0:99999:7:::
+www-data:*:20134:0:99999:7:::
+backup:*:20134:0:99999:7:::
+list:*:20134:0:99999:7:::
+irc:*:20134:0:99999:7:::
+_apt:*:20134:0:99999:7:::
+nobody:*:20134:0:99999:7:::
+systemd-network:!*:20134::::::
+systemd-timesync:!*:20134::::::
+dhcpcd:!:20134::::::
+messagebus:!:20134::::::
+syslog:!:20134::::::
+systemd-resolve:!*:20134::::::
+uuidd:!:20134::::::
+landscape:!:20134::::::
+polkitd:!*:20134::::::
+karim:$y$j9T$0ICCBBPtmRMmo9WDf9JEk/$z.LJtdbOhPoWp1Udf7zboABmaUHTwVgFRLgiMHyU3a/:20249:0:99999:7:::
+karim@DESKTOP-6681UAP ~ 12:34:20  297
+$ grep sudo /etc/group
+sudo:x:27:karim
+karim@DESKTOP-6681UAP ~ 12:55:35  301
+$ sudo adduser sudotest
+[sudo] password for karim:
+info: Adding user `sudotest' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `sudotest' (1001) ...
+info: Adding new user `sudotest' (1001) with group `sudotest (1001)' ...
+info: Creating home directory `/home/sudotest' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for sudotest
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `sudotest' to supplemental / extra groups `users' ...
+info: Adding user `sudotest' to group `users' ...
+karim@DESKTOP-6681UAP ~ 13:13:38  292
+$ su sudotest
+Password:
+sudotest@DESKTOP-6681UAP ~ 13:22:26  292
+$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+karim@DESKTOP-6681UAP ~ 13:24:26  293
+$ sudo usermod -aG sudo sudotest
+[sudo] password for karim:
+sudotest@DESKTOP-6681UAP ~ 13:25:26  294
+$ sudo cat /etc/shadow
+[sudo] password for sudotest:
+root:*:20134:0:99999:7:::
+daemon:*:20134:0:99999:7:::
+bin:*:20134:0:99999:7:::
+sys:*:20134:0:99999:7:::
+sync:*:20134:0:99999:7:::
+games:*:20134:0:99999:7:::
+man:*:20134:0:99999:7:::
+lp:*:20134:0:99999:7:::
+mail:*:20134:0:99999:7:::
+news:*:20134:0:99999:7:::
+uucp:*:20134:0:99999:7:::
+proxy:*:20134:0:99999:7:::
+www-data:*:20134:0:99999:7:::
+backup:*:20134:0:99999:7:::
+list:*:20134:0:99999:7:::
+irc:*:20134:0:99999:7:::
+_apt:*:20134:0:99999:7:::
+nobody:*:20134:0:99999:7:::
+systemd-network:!*:20134::::::
+systemd-timesync:!*:20134::::::
+dhcpcd:!:20134::::::
+messagebus:!:20134::::::
+syslog:!:20134::::::
+systemd-resolve:!*:20134::::::
+uuidd:!:20134::::::
+landscape:!:20134::::::
+polkitd:!*:20134::::::
+karim:$y$j9T$0ICCBBPtmRMmo9WDf9JEk/$z.LJtdbOhPoWp1Udf7zboABmaUHTwVgFRLgiMHyU3a/:20249:0:99999:7:::
+sudotest:$y$j9T$o94JA0TchZnRaQ9vmqj5Z0$IlZGzi.fU.oV9hIMFmwzUm65PRDRFEAAqBIIuq4QK9/:20342:0:99999:7:::
