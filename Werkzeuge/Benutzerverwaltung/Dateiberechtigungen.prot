@@ -1,0 +1,52 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 12:32:16  434
+$ touch dateiberechtigungen1
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 12:33:55  437
+$ ls -l dateiberechtigungen1
+-rw-r--r-- 1 karim karim 0 Sep 15 12:32 dateiberechtigungen1
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 12:34:03  438
+$ sudo adduser rechtenutzer
+[sudo] password for karim:
+info: Adding user `rechtenutzer' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `rechtenutzer' (1002) ...
+info: Adding new user `rechtenutzer' (1002) with group `rechtenutzer (1002)' ...
+info: Creating home directory `/home/rechtenutzer' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for rechtenutzer
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `rechtenutzer' to supplemental / extra groups `users' ...
+info: Adding user `rechtenutzer' to group `users' ...
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 12:50:00  439
+$ chmod g+rwx dateiberechtigungen1
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 13:49:10  447
+$ sudo chown rechtenutzer dateiberechtigungen1
+[sudo] password for karim:
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 13:52:10  450
+$ sudo chgrp rechtenutzer dateiberechtigungen1
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 13:52:17  451
+$ ls -l dateiberechtigungen1
+-rw-rwxr-- 1 rechtenutzer rechtenutzer 0 Sep 15 12:32 dateiberechtigungen1
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 14:05:36  454
+$ rm dateiberechtigungen1
+rm: remove write-protected regular empty file 'dateiberechtigungen1'? y
+
+karim@DESKTOP-6681UAP ~/ws/propra/Werkzeuge/Benutzerverwaltung 14:06:08  456
+$ sudo deluser rechtenutzer
+info: Removing crontab ...
+info: Removing user `rechtenutzer' ...
