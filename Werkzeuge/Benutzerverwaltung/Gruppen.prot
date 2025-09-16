@@ -1,0 +1,118 @@
+karim@DESKTOP-6681UAP ~/ws/propra 18:01:31  469
+$ sudo adduser nutzer1
+[sudo] password for karim:
+info: Adding user `nutzer1' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `nutzer1' (1002) ...
+info: Adding new user `nutzer1' (1002) with group `nutzer1 (1002)' ...
+info: Creating home directory `/home/nutzer1' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for nutzer1
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `nutzer1' to supplemental / extra groups `users' ...
+info: Adding user `nutzer1' to group `users' ...
+karim@DESKTOP-6681UAP ~/ws/propra 18:01:46  470
+$ sudo adduser nutzer2
+info: Adding user `nutzer2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `nutzer2' (1003) ...
+info: Adding new user `nutzer2' (1003) with group `nutzer2 (1003)' ...
+info: Creating home directory `/home/nutzer2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for nutzer2
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `nutzer2' to supplemental / extra groups `users' ...
+info: Adding user `nutzer2' to group `users' ...
+
+karim@DESKTOP-6681UAP ~/ws/propra 18:01:56  471
+$ sudo groupadd propra
+
+karim@DESKTOP-6681UAP ~/ws/propra 18:10:15  477
+$ sudo login nutzer1
+Password:
+
+nutzer1@DESKTOP-6681UAP ~ 18:14:21  19
+$ echo "ich bin datei1" > datei1
+
+nutzer1@DESKTOP-6681UAP ~ 18:14:25  21
+$ chmod 770 datei1
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:09:13  468
+$ sudo chgrp propra datei1
+[sudo] password for karim:
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:09:53  470
+$ sudo login nutzer2
+Password:
+
+nutzer2@DESKTOP-6681UAP /home/nutzer1 19:10:37  7
+$ cat datei1
+cat: datei1: Permission denied
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:15:35  472
+$ sudo login nutzer1
+Password:
+
+nutzer1@DESKTOP-6681UAP ~ 19:15:42  35
+$ echo "ich bin date2" > datei2
+
+nutzer1@DESKTOP-6681UAP ~ 19:18:29  37
+$ exit
+logout
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:42:45  474
+$ sudo groupadd standard
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:42:54  475
+$ sudo usermod -g standard nutzer1
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:50:19  477
+$ sudo login nutzer1
+Password:
+
+nutzer1@DESKTOP-6681UAP ~ 19:50:29  38
+$ echo "" > datei3
+
+nutzer1@DESKTOP-6681UAP ~ 19:51:10  41
+$ exit
+logout
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:55:35  480
+$ sudo usermod -g nutzer1 nutzer1
+
+karim@DESKTOP-6681UAP /home/nutzer1 19:55:41  481
+$ sudo deluser --remove-home nutzer1
+info: Looking for files to backup/remove ...
+info: Removing files ...
+info: Removing crontab ...
+info: Removing user `nutzer1' ...
+karim@DESKTOP-6681UAP /home/nutzer1 19:56:50  482
+$ sudo deluser --remove-home nutzer2
+info: Looking for files to backup/remove ...
+info: Removing files ...
+info: Removing crontab ...
+info: Removing user `nutzer2' ...
+
+karim@DESKTOP-6681UAP ~ 19:58:49  465
+$ sudo groupdel propra
+[sudo] password for karim:
+karim@DESKTOP-6681UAP ~ 19:59:05  466
+$ sudo groupdel standard
