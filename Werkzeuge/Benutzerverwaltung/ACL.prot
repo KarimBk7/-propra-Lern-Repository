@@ -1,0 +1,286 @@
+karim@DESKTOP-6681UAP ~ 00:39:16  506
+$ sudo apt update
+[sudo] password for karim:
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [192 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [880 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [195 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.2 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:12 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1411 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [278 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1483 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [298 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1882 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [422 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:23 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7068 B]
+Get:24 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [19.2 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:26 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 9192 kB in 31s (298 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+87 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+karim@DESKTOP-6681UAP ~ 00:39:57  507
+$ sudo apt install -y acl
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+acl is already the newest version (2.3.2-1build1.1).
+0 upgraded, 0 newly installed, 0 to remove and 87 not upgraded.
+
+karim@DESKTOP-6681UAP ~ 00:40:55  508
+$ sudo adduser gf1
+info: Adding user `gf1' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `gf1' (1002) ...
+info: Adding new user `gf1' (1002) with group `gf1 (1002)' ...
+info: Creating home directory `/home/gf1' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for gf1
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `gf1' to supplemental / extra groups `users' ...
+info: Adding user `gf1' to group `users' ...
+karim@DESKTOP-6681UAP ~ 00:42:01  509
+$ sudo adduser gf2
+info: Adding user `gf2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `gf2' (1003) ...
+info: Adding new user `gf2' (1003) with group `gf2 (1003)' ...
+info: Creating home directory `/home/gf2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for gf2
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `gf2' to supplemental / extra groups `users' ...
+info: Adding user `gf2' to group `users' ...
+karim@DESKTOP-6681UAP ~ 00:42:09  510
+$ sudo adduser rewe1
+info: Adding user `rewe1' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `rewe1' (1004) ...
+info: Adding new user `rewe1' (1004) with group `rewe1 (1004)' ...
+info: Creating home directory `/home/rewe1' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for rewe1
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `rewe1' to supplemental / extra groups `users' ...
+info: Adding user `rewe1' to group `users' ...
+karim@DESKTOP-6681UAP ~ 00:42:38  511
+$ sudo adduser rewe2
+info: Adding user `rewe2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `rewe2' (1005) ...
+info: Adding new user `rewe2' (1005) with group `rewe2 (1005)' ...
+info: Creating home directory `/home/rewe2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for rewe2
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `rewe2' to supplemental / extra groups `users' ...
+info: Adding user `rewe2' to group `users' ...
+
+karim@DESKTOP-6681UAP ~ 00:43:27  513
+$ sudo groupadd geschaeftsfuehrer
+karim@DESKTOP-6681UAP ~ 00:44:01  514
+$ sudo groupadd rechnungswesen
+
+karim@DESKTOP-6681UAP ~ 00:44:45  516
+$ sudo usermod -g geschaeftsfuehrer gf1
+karim@DESKTOP-6681UAP ~ 00:45:40  517
+$ sudo usermod -g geschaeftsfuehrer gf2
+karim@DESKTOP-6681UAP ~ 00:45:42  518
+$ sudo usermod -g rechnungswesen rewe1
+karim@DESKTOP-6681UAP ~ 00:45:56  519
+$ sudo usermod -g rechnungswesen rewe2
+
+karim@DESKTOP-6681UAP ~ 00:47:56  522
+$ mkdir /tmp/rechnungen/
+karim@DESKTOP-6681UAP ~ 00:48:15  523
+$ mkdir /tmp/rechnungen/aktuell/
+karim@DESKTOP-6681UAP ~ 00:48:25  524
+$ mkdir /tmp/rechnungen/neu/
+
+karim@DESKTOP-6681UAP /tmp/rechnungen/aktuell 00:50:04  526
+$ echo "dies ist rechnung1" > rechnung1
+karim@DESKTOP-6681UAP /tmp/rechnungen/aktuell 00:50:28  527
+$ echo "dies ist rechnung2" > rechnung2
+
+karim@DESKTOP-6681UAP /tmp/rechnungen/neu 00:51:12  530
+$ echo "dies ist rechnung17" > rechnung17
+karim@DESKTOP-6681UAP /tmp/rechnungen/neu 00:51:27  531
+$ echo "dies ist rechnung18" > rechnung18
+
+karim@DESKTOP-6681UAP /tmp 16:44:45  558
+$ sudo chown -R "karim":rechnungswesen rechnungen
+karim@DESKTOP-6681UAP /tmp 17:03:08  569
+$ sudo chmod -R u=rwx,g=rwx,o= /tmp/rechnungen
+[sudo] password for karim:
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 21:45:38  571
+$ getfacl /tmp/rechnungen
+getfacl: Removing leading '/' from absolute path names
+# file: tmp/rechnungen
+# owner: karim
+# group: rechnungswesen
+user::rwx
+group::rwx
+other::---
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 21:54:41  573
+$ sudo chown -R :rechnungswesen /tmp/rechnungen
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:00:17  574
+$ sudo setfacl -m g:geschaeftsfuehrer:rx /tmp/rechnungen
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:01:19  576
+$ sudo setfacl -m g:geschaeftsfuehrer:rwx /tmp/rechnungen/neu
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:02:44  579
+$ getfacl /tmp/rechnungen
+getfacl: Removing leading '/' from absolute path names
+# file: tmp/rechnungen
+# owner: karim
+# group: rechnungswesen
+user::rwx
+group::rwx
+group:geschaeftsfuehrer:r-x
+mask::rwx
+other::---
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:02:58  580
+$ getfacl /tmp/rechnungen/aktuell/
+getfacl: Removing leading '/' from absolute path names
+# file: tmp/rechnungen/aktuell/
+# owner: karim
+# group: rechnungswesen
+user::rwx
+group::rwx
+other::---
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:03:07  581
+$ getfacl /tmp/rechnungen/neu
+getfacl: Removing leading '/' from absolute path names
+# file: tmp/rechnungen/neu
+# owner: karim
+# group: rechnungswesen
+user::rwx
+group::rwx
+group:geschaeftsfuehrer:rwx
+mask::rwx
+other::---
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:04:11  583
+$ sudo login gf1
+Password:
+
+gf1@DESKTOP-6681UAP ~ 22:05:14  5
+$ echo "Dies ist Rechnung 19" > /tmp/rechnungen/neu/rechnung19
+
+gf1@DESKTOP-6681UAP /tmp/rechnungen/neu 22:06:25  9
+$ cat /tmp/rechnungen/aktuell/rechnung17
+cat: /tmp/rechnungen/aktuell/rechnung17: Permission denied
+
+gf1@DESKTOP-6681UAP /tmp/rechnungen/neu 22:06:53  10
+$ cd /tmp/rechnungen/aktuell/
+-bash: cd: /tmp/rechnungen/aktuell/: Permission denied
+
+gf1@DESKTOP-6681UAP /tmp/rechnungen/neu 22:07:09  11
+$ exit
+logout
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:10:35  587
+$ sudo setfacl -R -m g:geschaeftsfuehrer:rwx /tmp/rechnungen/neu
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:11:15  588
+$ sudo login gf1
+Password:
+
+gf1@DESKTOP-6681UAP ~ 22:11:50  12
+$ echo "von gf1 bearbeitet" >> /tmp/rechnungen/neu/rechnung17
+
+gf1@DESKTOP-6681UAP ~ 22:13:23  13
+$ getfacl /tmp/rechnungen/neu
+getfacl: Removing leading '/' from absolute path names
+# file: tmp/rechnungen/neu
+# owner: karim
+# group: rechnungswesen
+user::rwx
+group::rwx
+group:geschaeftsfuehrer:rwx
+mask::rwx
+other::---
+
+gf1@DESKTOP-6681UAP ~ 22:13:51  14
+$ exit
+logout
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:14:31  589
+$ sudo setfacl -b -R /tmp/rechnungen
+
+karim@DESKTOP-6681UAP /tmp/rechnungen 22:14:54  590
+$ sudo rm -r /tmp/rechnungen
+
+karim@DESKTOP-6681UAP /tmp 22:16:42  597
+$ sudo userdel -r gf1
+
+karim@DESKTOP-6681UAP /tmp 22:16:42  598
+$ sudo userdel -r gf2
+
+karim@DESKTOP-6681UAP /tmp 22:17:37  602
+$ sudo userdel -r rewe1
+
+karim@DESKTOP-6681UAP /tmp 22:17:37  604
+$ sudo userdel -r rewe2
+
+karim@DESKTOP-6681UAP /tmp 22:18:34  608
+$ sudo groupdel rechnungswesen
+
+karim@DESKTOP-6681UAP /tmp 22:18:41  609
+$ sudo groupdel geschaeftsfuehrer
