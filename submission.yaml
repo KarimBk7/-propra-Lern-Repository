@@ -40,6 +40,7 @@ m_os.path: CHECK
 m_pprint: CHECK
 m_random: CHECK
 m_requests: CHECK
+m_shutil: CHECK
 m_sqlite3: CHECK
 m_subprocess: CHECK
 m_sys: CHECK
