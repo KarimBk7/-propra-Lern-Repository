@@ -1,0 +1,22 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Python-Standardbibliothek 19:09:54  680
+$ python m_shutil.py
+
+this is 'file1' in '/home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/m_shutil/destination'
+
+this is 'file2' in '/home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/m_shutil/destination'
+
+all files in /home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/m_shutil/destination/dir
+total 12
+-rwxrwxrwx 1 karim karim 72 Apr  8 15:29 a
+-rwxrwxrwx 1 karim karim  0 Apr  8 15:29 b
+-rwxrwxrwx 1 karim karim  0 Apr  8 15:29 c
+-rwxrwxrwx 1 karim karim 69 Oct  2 19:10 file1
+-rwxrwxrwx 1 karim karim 69 Oct  2 19:10 file2
+
+all files in /home/karim/ws/propra/Bibliotheken/Python-Standardbibliothek/m_shutil/destination/unpacked
+total 12
+-rwxrwxrwx 1 karim karim 72 Apr  8 15:29 a
+-rwxrwxrwx 1 karim karim  0 Apr  8 15:29 b
+-rwxrwxrwx 1 karim karim  0 Apr  8 15:29 c
+-rwxrwxrwx 1 karim karim 69 Oct  2 19:10 file1
+-rwxrwxrwx 1 karim karim 69 Oct  2 19:10 file2
