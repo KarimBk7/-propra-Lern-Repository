@@ -1,0 +1,10 @@
+karim@DESKTOP-6681UAP ~/ws 01:53:29  671
+$ git clone https://git.imp.fu-berlin.de/abdilkarib03/propra-spielwiese.git
+Cloning into 'propra-spielwiese'...
+Username for 'https://git.imp.fu-berlin.de': abdilkarib03
+Password for 'https://abdilkarib03@git.imp.fu-berlin.de':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
