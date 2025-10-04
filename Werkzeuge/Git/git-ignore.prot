@@ -1,0 +1,48 @@
+$ git -P show HEAD
+commit b9143f6081c0fb2faffc1ad5b18cf26bcc4512ad (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Oct 4 01:59:12 2025 +0200
+
+    gitignore datei für git-ignore aufgabe
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..e69de29
+
+karim@DESKTOP-6681UAP ~/ws/propra 02:09:40  683
+$ git -P show HEAD
+commit c7f2db30274c1a0f89378509675ac65ee65fcf79 (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Oct 4 02:09:40 2025 +0200
+
+    K2: gitignore datei für git-ignore aufgabe
+
+diff --git a/.gitignore b/.gitignore
+index e69de29..029519e 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -0,0 +1,2 @@
++__pycache__/
++*.py[cod]
+\ No newline at end of file
+
+karim@DESKTOP-6681UAP ~/ws/propra 02:19:24  686
+$ git -P show HEAD
+commit 699441c8e4d94c82ba88f0068714a6ab38cce872 (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Oct 4 02:19:24 2025 +0200
+
+    K3: gitignore datei für git-ignore aufgabe
+
+diff --git a/.gitignore b/.gitignore
+index 029519e..1736a6b 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,2 +1,4 @@
+ __pycache__/
+-*.py[cod]
+\ No newline at end of file
++*.py[cod]
++
++.vscode/*
+\ No newline at end of file
