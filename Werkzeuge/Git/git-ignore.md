@@ -5,3 +5,11 @@
 
 
 ### F2: Recherchieren Sie, was die Einträge von vscode.gitignore bedeuten. Welche davon sollten Sie übernehmen? Erklären Sie nur deren Bedeutung in je einem Satz.
++ vscode/*: Ignoriere alle Datein und Unterordner im .vscode-Verzeichnis
++ !.vsode/settings.json: Hebt die Ignorierung für .vscode/settings.json auf
++ !.vsode/tasks.json: Hebt die Ignorierung für .vscode/tasks.json auf
++ !.vsode/launch.json: Hebt die Ignorierung für .vscode/launch.json auf
++ !.vsode/extension.json: Hebt die Ignorierung für .vscode/extension.json auf
++ !.vscode/*.code-snippets: Hebt die Ignorierung für alle .code-snippets in .vscode auf
++ !*.code-workspace: Hebt die Ignorierung für .code-workspace-Dateien im Projekt-Root auf
++ *.vsix: Ignoriere alle .vsix-Dateien, da das Binärartefakte sind
