@@ -24,6 +24,9 @@ css-Box-Modell: CHECK
 "css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
 encoding-and-open: CHECK
+git-Funktionsweise: CHECK
+git-Zweitrepo: CHECK
+git-ignore: CHECK
 html-Formulare: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
