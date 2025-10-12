@@ -1,0 +1,70 @@
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:13:36  708
+$ echo "zweite zeile" >> amend.md
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:13:43  710
+$ git add amend.md
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:15:40  711
+$ git commit --amend --no-edit
+[main 3d66c6c] K1: Ich bin Commit amend.md
+ Date: Sun Oct 12 23:02:54 2025 +0200
+ 1 file changed, 2 insertions(+)
+ create mode 100644 amend.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:13:43  710
+$ git add amend.md
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:15:40  711
+$ git commit --amend --no-edit
+[main 3d66c6c] K1: Ich bin Commit amend.md
+ Date: Sun Oct 12 23:02:54 2025 +0200
+ 1 file changed, 2 insertions(+)
+ create mode 100644 amend.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:35:41  721
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   add.md
+        new file:   remove.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:35:48  722
+$ git restore --staged remove.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:37:17  723
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   add.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        remove.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:37:20  724
+$ git commit -m "Dies ist der Commit für add.md und ohne remove.md"
+[main edcdff9] Dies ist der Commit für add.md und ohne remove.md
+ 1 file changed, 2 insertions(+)
+ create mode 100644 add.md
+
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:45:41  728
+$ git commit -m "Commit von remove.md"
+[main 6f26654] Commit von remove.md
+ 1 file changed, 2 insertions(+)
+ create mode 100644 remove.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:54:38  745
+$ git checkout checkout.md
+Updated 1 path from the index
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 23:56:32  753
+$ git restore restore.md
+
+karim@DESKTOP-6681UAP ~/ws/propra-spielwiese 00:02:20  761
+$ git restore --source a775e8ad05cb23577ff62a88696e1b077a1ef3f0 --staged --worktree restore.md
