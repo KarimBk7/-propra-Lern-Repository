@@ -54,5 +54,6 @@ pip: CHECK
 redirect: CHECK
 requires-assumes: CHECK
 sorted-and-sort: CHECK
+ssh: CHECK
 sudo: CHECK
 venv: CHECK
