@@ -1,0 +1,17 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra 00:38:54  1235
+$ ssh -T git@git.imp.fu-berlin.de
+Welcome to GitLab, @abdilkarib03!
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 00:46:41  1236
+$ git remote -v
+origin  git@git.imp.fu-berlin.de:abdilkarib03/propra.git (fetch)
+origin  git@git.imp.fu-berlin.de:abdilkarib03/propra.git (push)
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 01:16:34  1237
+$ ssh -T git@git.imp.fu-berlin.de
+
+Welcome to GitLab, @abdilkarib03!
+root@DESKTOP-BKSGFB3 ~/ws/propra 01:21:57  1238
+$ git ls-remote --heads origin
+
+892a767e3ba7d5f6f8bff7e4a7b94d3ae9083adc        refs/heads/main
