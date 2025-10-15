@@ -26,6 +26,7 @@ css-Selektoren: CHECK
 encoding-and-open: CHECK
 git-Fehlerbehebung: CHECK
 git-Funktionsweise: CHECK
+git-SSH: CHECK
 git-Zweitrepo: CHECK
 git-ignore: CHECK
 html-Formulare: CHECK
