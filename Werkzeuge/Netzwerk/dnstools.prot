@@ -1,0 +1,94 @@
+root@DESKTOP-BKSGFB3 ~ 12:07:55  1244
+$ sudo apt update && sudo apt upgrade
+Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  apport-symptoms bc distro-info gir1.2-packagekitglib-1.0 libappstream4 libdw1 libglib2.0-bin libgstreamer1.0-0
+  libpackagekit-glib2-18 libstemmer0d libxmlb2 linux-headers-5.15.0-138 linux-headers-5.15.0-138-generic packagekit
+  packagekit-tools python3-distro-info python3-gdbm python3-httplib2 python3-jeepney python3-keyring
+  python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-problem-report python3-secretstorage
+  python3-systemd python3-wadllib
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+root@DESKTOP-BKSGFB3 ~ 12:25:19  1245
+$ sudo apt install dnsutils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apport-symptoms bc distro-info gir1.2-packagekitglib-1.0 libappstream4 libdw1 libglib2.0-bin libgstreamer1.0-0
+  libpackagekit-glib2-18 libstemmer0d libxmlb2 linux-headers-5.15.0-138 linux-headers-5.15.0-138-generic packagekit
+  packagekit-tools python3-distro-info python3-gdbm python3-httplib2 python3-jeepney python3-keyring
+  python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-problem-report python3-secretstorage
+  python3-systemd python3-wadllib
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  dnsutils
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3916 B of archives.
+After this operation, 62.5 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 dnsutils all 1:9.18.39-0ubuntu0.22.04.1 [3916 B]
+Fetched 3916 B in 0s (10.8 kB/s)
+Selecting previously unselected package dnsutils.
+(Reading database ... 107803 files and directories currently installed.)
+Preparing to unpack .../dnsutils_1%3a9.18.39-0ubuntu0.22.04.1_all.deb ...
+Unpacking dnsutils (1:9.18.39-0ubuntu0.22.04.1) ...
+Setting up dnsutils (1:9.18.39-0ubuntu0.22.04.1) ...
+
+
+root@DESKTOP-BKSGFB3 ~ 12:25:52  1246
+$ ping -c 5 -i 2 fu-berlin.de
+PING fu-berlin.de (160.45.170.10) 56(84) bytes of data.
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=1 ttl=59 time=5.98 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=2 ttl=59 time=6.42 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=3 ttl=59 time=7.18 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=4 ttl=59 time=15.0 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=5 ttl=59 time=6.44 ms
+
+--- fu-berlin.de ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 8382ms
+rtt min/avg/max/mdev = 5.980/8.200/14.980/3.411 ms
+
+root@DESKTOP-BKSGFB3 ~ 13:16:50  1247
+$ ping -w 10 fu-berlin.de
+PING fu-berlin.de (160.45.170.10) 56(84) bytes of data.
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=1 ttl=59 time=4.72 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=2 ttl=59 time=4.24 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=3 ttl=59 time=4.59 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=4 ttl=59 time=6.24 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=5 ttl=59 time=7.90 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=6 ttl=59 time=6.20 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=7 ttl=59 time=6.71 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=8 ttl=59 time=5.38 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=9 ttl=59 time=5.97 ms
+64 bytes from www.fu-berlin.de (160.45.170.10): icmp_seq=10 ttl=59 time=6.45 ms
+
+--- fu-berlin.de ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 10005ms
+rtt min/avg/max/mdev = 4.244/5.839/7.902/1.060 ms
+
+root@DESKTOP-BKSGFB3 ~ 19:42:27  1252
+$ host fu-berlin.de
+fu-berlin.de has address 160.45.170.10
+fu-berlin.de mail is handled by 10 mail.fu-berlin.de.
+root@DESKTOP-BKSGFB3 ~ 19:51:47  1253
+$ host -t MX fu-berlin.de
+fu-berlin.de mail is handled by 10 mail.fu-berlin.de.
+
+root@DESKTOP-BKSGFB3 ~ 19:58:31  1254
+$ dig +short fu-berlin.de
+160.45.170.10
+root@DESKTOP-BKSGFB3 ~ 20:00:10  1255
+$ dig +short MX fu-berlin.de
+10 mail.fu-berlin.de.
