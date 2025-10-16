@@ -23,6 +23,7 @@ beautifulsoup: CHECK
 css-Box-Modell: CHECK
 "css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
+dnstools: CHECK
 encoding-and-open: CHECK
 git-Fehlerbehebung: CHECK
 git-Funktionsweise: CHECK
