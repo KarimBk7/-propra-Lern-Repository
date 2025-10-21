@@ -1,8 +1,8 @@
-"css-Einf\xFChrung": CHECK
-css-Selektoren: CHECK
-dig: CHECK
-html-Formulare: CHECK
-html-Medien: CHECK
-html-Semantik: CHECK
-html-Tabellen: CHECK
-ssh-Tunnel: CHECK
+"css-Einf\xFChrung": ACCEPT
+css-Selektoren: ACCEPT
+dig: ACCEPT
+html-Formulare: ACCEPT
+html-Medien: ACCEPT
+html-Semantik: ACCEPT
+html-Tabellen: ACCEPT
+ssh-Tunnel: ACCEPT
