@@ -1,0 +1,88 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra 13:16:37  1263
+$ ssh -L 9009:localhost:9007 abdilkarib03@andorra.imp.fu-berlin.de
+Linux andorra 6.1.0-39-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.148-1 (2025-08-26) x86_64
+#################################################################
+
+Welcome to Freie Universität Berlin
+
+#################################################################
+
+!!! Please don't run compute-jobs on this host !!!
+
+This host is for office work only.
+
+compute-jobs RUNNING on this host WILL BE KILLED without further notice.
+
+
+!!! Bitte keine Rechenjobs auf diesem Rechner laufen lassen !!!
+
+Er dient nur als remote Office-Server.
+
+RECHENJOBS WERDEN ohne Rückfrage GEKILLED.
+
+
+https://www.mi.fu-berlin.de/w/IT/ComputeServer
+
+your
+support@mi.fu-berlin.de
+
+Last login: Tue Oct 14 17:39:14 2025 from 87-77-16-190.mna.fu-berlin.de
+
+
+abdilkarib03@andorra ~ 13:20:56  152
+$ python -m http.server 9007
+Serving HTTP on 0.0.0.0 port 9007 (http://0.0.0.0:9007/) ...
+
+
+127.0.0.1 - - [21/Oct/2025 13:25:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Oct/2025 13:25:49] code 404, message File not found
+127.0.0.1 - - [21/Oct/2025 13:25:49] "GET /favicon.ico HTTP/1.1" 404 -
+^C
+Keyboard interrupt received, exiting.
+abdilkarib03@andorra ~ 13:26:27  153
+$ exit
+Abgemeldet
+Connection to andorra.imp.fu-berlin.de closed.
+
+
+root@DESKTOP-BKSGFB3 ~/venv/test 13:29:16  1271
+$ python -m http.server 9007
+Serving HTTP on 0.0.0.0 port 9007 (http://0.0.0.0:9007/) ...
+127.0.0.1 - - [21/Oct/2025 13:31:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Oct/2025 13:35:31] "GET /test.txt HTTP/1.1" 200 -
+
+
+root@DESKTOP-BKSGFB3 ~ 13:31:27  1262
+$ ssh -R 10007:localhost:9007 abdilkarib03@andorra.imp.fu-berlin.de
+Linux andorra 6.1.0-39-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.148-1 (2025-08-26) x86_64
+#################################################################
+
+Welcome to Freie Universität Berlin
+
+#################################################################
+
+!!! Please don't run compute-jobs on this host !!!
+
+This host is for office work only.
+
+compute-jobs RUNNING on this host WILL BE KILLED without further notice.
+
+
+!!! Bitte keine Rechenjobs auf diesem Rechner laufen lassen !!!
+
+Er dient nur als remote Office-Server.
+
+RECHENJOBS WERDEN ohne Rückfrage GEKILLED.
+
+
+https://www.mi.fu-berlin.de/w/IT/ComputeServer
+
+your
+support@mi.fu-berlin.de
+
+Last login: Tue Oct 21 13:20:56 2025 from 87-77-118-71.mna.fu-berlin.de
+
+
+abdilkarib03@andorra ~ 13:35:04  156
+$ curl http://localhost:10007/test.txt
+dies ist eine Datei zum testen der SSH-Tunnel.
