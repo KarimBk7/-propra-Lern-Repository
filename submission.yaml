@@ -1,6 +1,8 @@
-"css-Einf\xFChrung": REJECT
+"css-Einf\xFChrung": CHECK
 css-Selektoren: CHECK
+dig: CHECK
 html-Formulare: CHECK
 html-Medien: CHECK
 html-Semantik: CHECK
 html-Tabellen: CHECK
+ssh-Tunnel: CHECK
