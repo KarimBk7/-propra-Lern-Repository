@@ -1,0 +1,157 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:08:02  1295
+$ dig fu-berlin.de +short
+160.45.170.10
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:10:34  1296
+$ dig fu-berlin.de AAAA
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.1-Ubuntu <<>> fu-berlin.de AAAA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4798
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 8ea462e0d9360dda0100000068f7a2cc62f2a002ef654ff3 (good)
+;; QUESTION SECTION:
+;fu-berlin.de.                  IN      AAAA
+
+;; AUTHORITY SECTION:
+fu-berlin.de.           3600    IN      SOA     ns1.fu-berlin.de. hostmaster.zedat.fu-berlin.de. 2025101702 10800 3600 2419200 3600
+
+;; Query time: 18 msec
+;; SERVER: 172.17.64.1#53(172.17.64.1) (UDP)
+;; WHEN: Tue Oct 21 17:12:12 CEST 2025
+;; MSG SIZE  rcvd: 126
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:12:12  1297
+$ dig NS fu-berlin.de
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.1-Ubuntu <<>> NS fu-berlin.de
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62606
+;; flags: qr rd ad; QUERY: 1, ANSWER: 12, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;fu-berlin.de.                  IN      NS
+
+;; ANSWER SECTION:
+fu-berlin.de.           0       IN      NS      atalante.stanford.edu.
+fu-berlin.de.           0       IN      NS      ns2.fu-berlin.de.
+fu-berlin.de.           0       IN      NS      dns-2.dfn.de.
+fu-berlin.de.           0       IN      NS      ns3.fu-berlin.de.
+fu-berlin.de.           0       IN      NS      ns1.fu-berlin.de.
+ns1.fu-berlin.de.       0       IN      A       160.45.8.8
+ns2.fu-berlin.de.       0       IN      A       160.45.10.12
+ns3.fu-berlin.de.       0       IN      A       130.133.1.57
+dns-2.dfn.de.           0       IN      A       193.174.75.54
+atalante.stanford.edu.  0       IN      A       171.64.7.61
+dns-2.dfn.de.           0       IN      AAAA    2001:638:d:b102::1
+atalante.stanford.edu.  0       IN      AAAA    2607:f6d0:0:d32::ab40:73d
+
+;; Query time: 11 msec
+;; SERVER: 172.17.64.1#53(172.17.64.1) (UDP)
+;; WHEN: Tue Oct 21 17:20:38 CEST 2025
+;; MSG SIZE  rcvd: 443
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:20:38  1298
+$ dig SOA fu-berlin.de
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.1-Ubuntu <<>> SOA fu-berlin.de
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38525
+;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;fu-berlin.de.                  IN      SOA
+
+;; ANSWER SECTION:
+fu-berlin.de.           0       IN      SOA     ns1.fu-berlin.de. hostmaster.zedat.fu-berlin.de. 2025101702 10800 3600 2419200 3600
+
+;; Query time: 7 msec
+;; SERVER: 172.17.64.1#53(172.17.64.1) (UDP)
+;; WHEN: Tue Oct 21 17:21:38 CEST 2025
+;; MSG SIZE  rcvd: 123
+
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:21:38  1299
+$ dig AAAA google.com
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.1-Ubuntu <<>> AAAA google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17542
+;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;google.com.                    IN      AAAA
+
+;; ANSWER SECTION:
+google.com.             0       IN      AAAA    2a00:1450:4005:801::200e
+
+;; Query time: 26 msec
+;; SERVER: 172.17.64.1#53(172.17.64.1) (UDP)
+;; WHEN: Tue Oct 21 17:22:48 CEST 2025
+;; MSG SIZE  rcvd: 66
+
+root@DESKTOP-BKSGFB3 ~/ws/propra 17:23:25  1301
+$ dig +trace fu-berlin.de
+
+; <<>> DiG 9.18.39-0ubuntu0.22.04.1-Ubuntu <<>> +trace fu-berlin.de
+;; global options: +cmd
+.                       374980  IN      NS      d.root-servers.net.
+.                       374980  IN      NS      k.root-servers.net.
+.                       374980  IN      NS      h.root-servers.net.
+.                       374980  IN      NS      e.root-servers.net.
+.                       374980  IN      NS      a.root-servers.net.
+.                       374980  IN      NS      g.root-servers.net.
+.                       374980  IN      NS      j.root-servers.net.
+.                       374980  IN      NS      b.root-servers.net.
+.                       374980  IN      NS      f.root-servers.net.
+.                       374980  IN      NS      c.root-servers.net.
+.                       374980  IN      NS      i.root-servers.net.
+.                       374980  IN      NS      m.root-servers.net.
+.                       374980  IN      NS      l.root-servers.net.
+.                       439729  IN      RRSIG   NS 8 0 518400 20251102050000 20251020040000 61809 . h2xMZvqgH2plyUYWh3Vf0bkfaDiHLhsCq4N8a4/1iddVJUgjvXNcxL1j Qeejm3SIKcAkXNdjUQln4BGdNY5BihcYFZCgJGjtbyA7AVJBKaUi2Xto AY/lXAPaEvFP4j04xYztsjgW0z4Nl602uNxQ8FmCemgOI+9BUzg4AgaE FEvdd6OX3wZsbDwReCQXjo3BkCRO/VcOI/igPpSb67sMU/UFwo5wqYlW vTKBGclzhtXZyZM4s/pBBvUJDwTVfKZIeSTBDxq+54qYYwIFISF/+Vwz LylL3qJ+1W1mO5byfOldLn1KYlDb9X/aCQf7nD4i+jisRLuPBOYdpczW nPclZg==
+;; Received 1125 bytes from 172.17.64.1#53(172.17.64.1) in 811 ms
+
+de.                     172800  IN      NS      a.nic.de.
+de.                     172800  IN      NS      f.nic.de.
+de.                     172800  IN      NS      l.de.net.
+de.                     172800  IN      NS      n.de.net.
+de.                     172800  IN      NS      s.de.net.
+de.                     172800  IN      NS      z.nic.de.
+de.                     86400   IN      DS      26755 8 2 F341357809A5954311CCB82ADE114C6C1D724A75C0395137AA397803 5425E78D
+de.                     86400   IN      RRSIG   DS 8 1 86400 20251103050000 20251021040000 61809 . HO4GD74lHP1kJkFpNktrGJLSAjceSAo7YsWH/m4cUABs7Ke3fzjRuqx5 UZ273wo2/uo7Hxl1Xf+HqrJKa576O8s1o1tmO4vCr0je7yKE7U66+p6I XYGio0L6XjVpF+PwwgblEsiqEg1kPooO5aswHWEVaNRsTve/yRqQ+73O nwB74BbL9je7SW2HcU2EORNWqTXoAIff/D9zUlhA5GErjGDsGnjt4S5r MM0ae212dGsKAJEuWy9D7PzIu6WrGQZKIvcCRLLlYvG/+XQ8JCqBFXoD 19fqddze9Y34XCvjbV2UYe4nEwSV6cOSE9Xh04rg6YKf/76jFyAsY5fD lZxsFQ==
+;; Received 746 bytes from 192.203.230.10#53(e.root-servers.net) in 7 ms
+
+fu-berlin.de.           86400   IN      NS      ns1.fu-berlin.de.
+fu-berlin.de.           86400   IN      NS      ns2.fu-berlin.de.
+fu-berlin.de.           86400   IN      NS      ns3.fu-berlin.de.
+fu-berlin.de.           86400   IN      NS      dns-2.dfn.de.
+fu-berlin.de.           86400   IN      NS      atalante.stanford.edu.
+tjlb7qbojvmlf1s6gdriru7vsms1lg16.de. 7200 IN NSEC3 1 1 15 CA12B74ADB90591A TJLCSJAT4LJTVO0TJNCRRDF6KF6ONEFB NS SOA RRSIG DNSKEY NSEC3PARAM
+v36uhnffs910n9sl8me52b7nll7gmujo.de. 7200 IN NSEC3 1 1 15 CA12B74ADB90591A V3746DFCBIGFUHBPF0AMJ6BSONA2U36P A RRSIG
+tjlb7qbojvmlf1s6gdriru7vsms1lg16.de. 7200 IN RRSIG NSEC3 8 2 7200 20251104031902 20251021014902 44058 de. pu37K7SpWQYROD5rXNuFX45C48CzY0s153ZEwMklruUJogEUea4rngM/ Yx+HQvHV4+4bWiUEWo0CB5ojpCDnDqJqDTqIcXklmU0yb5a1OhiAo7SB LLw56lK+ldDxTCAbD6svx8Ivu8yZfyoiy3++JecGks7gXLAxCIZd0X49 0XE=
+v36uhnffs910n9sl8me52b7nll7gmujo.de. 7200 IN RRSIG NSEC3 8 2 7200 20251103094155 20251020081155 44058 de. XHDpR86SJsv6T/HGMsa+jNSEO+L0tJj/qTUY3v3yunXIFrvLM4IAahjy qcmOUzFd8GLJrYnO9iCyinQ7phLvo72yTRov2q9oeRIgW9M7HcFvbMdD ybpuaXofkdfwe8PDGK6N87Su4cMh6A+NyFP0wdyBg9UKlHK2MrmZa0ee O20=
+;; Received 701 bytes from 195.243.137.26#53(s.de.net) in 22 ms
+
+;; UDP setup with 2607:f6d0:0:d32::ab40:73d#53(2607:f6d0:0:d32::ab40:73d) for fu-berlin.de failed: network unreachable.
+;; no servers could be reached
+;; UDP setup with 2607:f6d0:0:d32::ab40:73d#53(2607:f6d0:0:d32::ab40:73d) for fu-berlin.de failed: network unreachable.
+;; no servers could be reached
+;; UDP setup with 2607:f6d0:0:d32::ab40:73d#53(2607:f6d0:0:d32::ab40:73d) for fu-berlin.de failed: network unreachable.
+;; UDP setup with 2607:f6d0:0:d32::ab40:73d#53(2607:f6d0:0:d32::ab40:73d) for fu-berlin.de failed: network unreachable.
+fu-berlin.de.           86400   IN      A       160.45.170.10
+fu-berlin.de.           86400   IN      NS      dns-2.dfn.de.
+fu-berlin.de.           86400   IN      NS      ns3.fu-berlin.de.
+fu-berlin.de.           86400   IN      NS      ns1.fu-berlin.de.
+fu-berlin.de.           86400   IN      NS      atalante.stanford.edu.
+fu-berlin.de.           86400   IN      NS      ns2.fu-berlin.de.
+;; Received 624 bytes from 130.133.1.57#53(ns3.fu-berlin.de) in 3 ms
