@@ -1,0 +1,49 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra/Werkzeuge/Unix-Basiswerkzeuge 09:18:48  1341
+$ echo "" > Unix-Editoren-nano.txt
+root@DESKTOP-BKSGFB3 ~/ws/propra/Werkzeuge/Unix-Basiswerkzeuge 09:20:09  1343
+$ echo "" > Unix-Editoren-vim.txt
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Werkzeuge/Unix-Basiswerkzeuge 09:20:19  1344
+$ sudo apt update
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3059 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [472 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [4824 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [895 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [2776 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1241 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [307 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [57.6 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [403 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [4623 kB]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [859 kB]
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1008 kB]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [220 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [50.5 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [10.2 kB]
+Fetched 21.2 MB in 7s (3137 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@DESKTOP-BKSGFB3 ~/ws/propra/Werkzeuge/Unix-Basiswerkzeuge 09:21:18  1345
+$ sudo apt install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+nano is already the newest version (6.2-1ubuntu0.1).
+The following packages were automatically installed and are no longer required:
+  apport-symptoms bc distro-info gir1.2-packagekitglib-1.0 libappstream4 libdw1 libglib2.0-bin
+  libgstreamer1.0-0 libpackagekit-glib2-18 libstemmer0d libxmlb2 linux-headers-5.15.0-138
+  linux-headers-5.15.0-138-generic packagekit packagekit-tools python3-distro-info python3-gdbm
+  python3-httplib2 python3-jeepney python3-keyring python3-launchpadlib python3-lazr.restfulclient
+  python3-lazr.uri python3-problem-report python3-secretstorage python3-systemd python3-wadllib
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Werkzeuge/Unix-Basiswerkzeuge 09:27:34  1349
+$ nano  Unix-Editoren-nano.txt
+
