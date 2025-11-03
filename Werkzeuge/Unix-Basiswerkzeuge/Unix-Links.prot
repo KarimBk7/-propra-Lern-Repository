@@ -1,0 +1,56 @@
+karim@DESKTOP-6681UAP ~/ws/tmp 21:20:08  977
+$ mkdir physical
+
+karim@DESKTOP-6681UAP ~/ws/tmp/physical 21:21:53  988
+$ echo "Ich bin harddata" > harddata && echo "Ich bin softdata" > softdata
+
+karim@DESKTOP-6681UAP ~/ws/tmp 21:23:00  993
+$ mkdir links
+
+karim@DESKTOP-6681UAP ~/ws/tmp 21:23:05  994
+$ ln -s ~/ws/tmp/physical/softdata ~/ws/tmp/links/symlink1
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:24:10  999
+$ ln ~/ws/tmp/physical/harddata ~/ws/tmp/links/hardlink
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:28:30  1001
+$ ls -li ~/ws/tmp/physical && ls -li ~/ws/tmp/links
+total 8
+13974 -rw-r--r-- 2 karim karim 17 Nov  3 21:22 harddata
+13978 -rw-r--r-- 1 karim karim 17 Nov  3 21:22 softdata
+total 4
+13974 -rw-r--r-- 2 karim karim 17 Nov  3 21:22 hardlink
+13983 lrwxrwxrwx 1 karim karim 36 Nov  3 21:23 symlink1 -> /home/karim/ws/tmp/physical/softdata
+13986 lrwxrwxrwx 1 karim karim 20 Nov  3 21:23 symlink2 -> ../physical/softdata
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:31:30  1005
+$ mv ~/ws/tmp/links/symlink1 /tmp/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:33:01  1006
+$ mv ~/ws/tmp/links/symlink2 /tmp/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:39:54  1007
+$ mv ~/ws/tmp/links/hardlink /tmp/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:45:27  1008
+$ mv /tmp/symlink1 /tmp/symlink2 /tmp/hardlink ~/ws/tmp/links/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:48:02  1010
+$ mv ~/ws/tmp/physical/softdata /tmp/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/links 21:49:04  1011
+$ mv ~/ws/tmp/physical/harddata /tmp/
+
+karim@DESKTOP-6681UAP /tmp 21:55:11  1014
+$ mv /tmp/harddata /tmp/softdata  ~/ws/tmp/physical/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/physical 21:55:59  1022
+$ rm softdata
+
+karim@DESKTOP-6681UAP ~/ws/tmp/physical 21:57:00  1024
+$ rm harddata
+
+karim@DESKTOP-6681UAP ~/ws/tmp 22:07:53  1026
+$ rm -r physical/
+karim@DESKTOP-6681UAP ~/ws/tmp 22:07:59  1027
+$ rm -r links/
