@@ -1,0 +1,103 @@
+karim@DESKTOP-6681UAP ~ 22:22:50  1043
+$ cd ws/tmp/propra_etc/
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:31:01  1050
+$ find -name "common-password"
+./pam.d/common-password
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:31:46  1053
+$ find -name "*.py"
+./fail2ban/action.d/smtp.py
+./python3.11/sitecustomize.py
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:32:49  1056
+$ find -type f -iname "default"
+./dpkg/origins/default
+./gdm3/PostSession/Default
+./gdm3/Init/Default
+./gdm3/PreSession/Default
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:33:38  1058
+$ find -type d -name "config"
+./texmf/tex/generic/config
+./texmf/dvips/config
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:33:45  1059
+$ find -type f -name "config"
+./mono/config
+./xdg/lxpanel/default/config
+./xdg/lxpanel/LXDE/config
+./xdg/lxpanel/two_panels/config
+./subversion/config
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:35:26  1060
+$ find -type f -size 0
+./sv/ssh/.meta/installed
+./xdg/lxpanel/default/config
+./xdg/lxpanel/two_panels/config
+./.java/.systemPrefs/.system.lock
+./.java/.systemPrefs/.systemRootModFile
+./environment
+./odbcinst.ini
+./java/security/security.d/2000-org.bouncycastle.jce.provider.BouncyCastleProvider
+./odbc.ini
+./sensors.d/.placeholder
+./apparmor.d/local/sbin.dhclient
+./apparmor.d/local/lsb_release
+./apparmor.d/local/usr.sbin.cups-browsed
+./apparmor.d/local/mysqld_akonadi
+./apparmor.d/local/nvidia_modprobe
+./apparmor.d/local/usr.lib.libreoffice.program.oosplash
+./apparmor.d/local/usr.sbin.ntpd
+./apparmor.d/local/usr.sbin.sssd
+./apparmor.d/local/usr.sbin.cupsd
+./apparmor.d/local/usr.bin.akonadiserver
+./apparmor.d/local/usr.bin.thunderbird
+./apparmor.d/local/usr.bin.man
+./apparmor.d/local/usr.lib.libreoffice.program.senddoc
+./apparmor.d/local/usr.lib.libreoffice.program.xpdfimport
+./apparmor.d/local/mariadbd_akonadi
+./apparmor.d/local/usr.bin.evince
+./apparmor.d/local/postgresql_akonadi
+./apparmor.d/local/usr.lib.libreoffice.program.soffice.bin
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:37:40  1068
+$ find apt -type f -newer apt/sources.list
+apt/trusted.gpg.d/debian-archive-bullseye-security-automatic.asc
+apt/trusted.gpg.d/debian-archive-bookworm-automatic.asc
+apt/trusted.gpg.d/debian-archive-bullseye-stable.asc
+apt/trusted.gpg.d/debian-archive-bookworm-stable.asc
+apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg
+apt/trusted.gpg.d/debian-archive-bullseye-automatic.asc
+apt/trusted.gpg.d/debian-archive-trixie-security-automatic.asc
+apt/trusted.gpg.d/debian-archive-trixie-stable.asc
+apt/trusted.gpg.d/debian-archive-bookworm-security-automatic.asc
+apt/trusted.gpg.d/debian-archive-trixie-automatic.asc
+apt/sources.list.d/geogebra.list
+apt/sources.list.d/imp.list
+apt/sources.list.d/rbase-stable.list
+apt/sources.list.d/imp-backports.list
+apt/trusted.gpg
+apt/trusted.gpg~
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:40:04  1073
+$ find -type f -name "*.conf" -exec ls -lh {} \; | head -10
+-rwxrwxr-x 1 karim karim 2.4K Sep 11 14:35 ./apparmor/parser.conf
+-rwxrwxr-x 1 karim karim 15K Sep 11 14:35 ./ltrace.conf
+-rwxrwxr-x 1 karim karim 694 Sep 11 14:35 ./fuse.conf
+-rwxrwxr-x 1 karim karim 627 Sep 11 14:35 ./fail2ban/paths-debian.conf
+-rwxrwxr-x 1 karim karim 738 Sep 11 14:35 ./fail2ban/paths-opensuse.conf
+-rwxrwxr-x 1 karim karim 2.7K Sep 11 14:35 ./fail2ban/paths-common.conf
+-rwxrwxr-x 1 karim karim 22 Sep 11 14:35 ./fail2ban/jail.d/defaults-debian.conf
+-rwxrwxr-x 1 karim karim 534 Sep 11 14:35 ./fail2ban/filter.d/exim-common.conf
+-rwxrwxr-x 1 karim karim 1.6K Sep 11 14:35 ./fail2ban/filter.d/apache-common.conf
+-rwxrwxr-x 1 karim karim 7.7K Sep 11 14:35 ./fail2ban/filter.d/sshd.conf
+
+karim@DESKTOP-6681UAP ~/ws/tmp/propra_etc 22:40:21  1074
+$ find -type f -name "*.conf" -mindepth 4
+find: warning: you have specified the global option -mindepth after the argument -type, but global options are not positional, i.e., -mindepth affects tests specified before it as well as those specified after it.  Please specify global options before other arguments.
+./xdg/pcmanfm/default/pcmanfm.conf
+./xdg/pcmanfm/LXDE/pcmanfm.conf
+./xdg/lxsession/LXDE/desktop.conf
+./systemd/system/snmpd.service.d/50-log.conf
+./systemd/system/rpc-gssd.service.d/override.conf
