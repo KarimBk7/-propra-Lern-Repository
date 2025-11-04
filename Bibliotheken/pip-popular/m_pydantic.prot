@@ -1,0 +1,22 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/pip-popular 22:36:39  1146
+$ python m_pydantic.py
+
+A1:
+GradeEntry(name='Alan Turing', course='ALP-1', grade=2.0, date=datetime.datetime(2025, 5, 5, 11, 30))
+
+A2:
+{'name': 'Alan Turing', 'course': 'ALP-1', 'grade': 2.0, 'date': datetime.datetime(2025, 5, 5, 11, 30)}
+
+A3:
+{"name": "Alan Turing", "course": "ALP-1", "grade": 2.0, "date": "2025-05-05 11:30:00"}
+
+A4:
+GradeEntry(name='Alan Turing', course='ALP-1', grade=2.0, date='2025-05-05T11:30:00')
+<class 'str'>
+
+A7:
+{"name": "Alan Turing", "course": "ALP-1", "grade": 2.0, "date": "2025-05-05T11:30:00"}
+
+A8:
+name='Alan Turing' course='ALP-1' grade=2.0 date=datetime.datetime(2025, 5, 5, 11, 30)
+<class '__main__.GradeEntry2'>

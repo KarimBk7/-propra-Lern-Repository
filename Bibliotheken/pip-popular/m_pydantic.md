@@ -1,0 +1,2 @@
+### F1: Wann ist es sinnvoller, ``Pydantic`` zu benutzen, als ``dataclasses.dataclass`` aus der Python Standardbibliothek?
+Pydantic ist sinvoller, sobald Daten von außen kommen wie z.B. externe JSON-Datein, da man diese dann einfacher validieren kann.

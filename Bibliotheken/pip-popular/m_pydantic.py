@@ -39,7 +39,6 @@ print(type(a_parsed.date))
 
 
 # A5
-@dataclass
 class GradeEntry2(BaseModel):
     name: str
     course: str
@@ -47,11 +46,16 @@ class GradeEntry2(BaseModel):
     date: datetime
 
 # A6
-c = GradeEntry(name="Alan Turing", course="ALP-1", grade=2.0, date=date)
+c = GradeEntry2(name="Alan Turing", course="ALP-1", grade=2.0, date="2025-05-05T11:30:00")
 
 # A7
 print("\nA7:")
-c_dict = asdict(c)
-c_dict["date"] = str(c_dict["date"])
-c_json = loads(str(c_dict))
+c_json = c.json()
 print(c_json)
+
+# A8 
+print("\nA8:")
+c_parsed = GradeEntry2.parse_raw(c_json)
+
+print(c_parsed)
+print(type(c_parsed))

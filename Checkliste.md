@@ -6,7 +6,7 @@
 + Sprachen
 + Bibliotheken
     + Python-Standardbibliothek *Angefangen* 17/18
-    + pip-popular *Angefangen* 2/3
+    + pip-popular **Check**
 	+ Frameworks *Angefangen* 1/3
 	+ Dokumentation
     + Pandas
