@@ -1,0 +1,23 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra/Bibliotheken/Python-Standardbibliothek 19:31:05  1404 
+$ python m_dataclasses.py
+
+A3:
+Learning Python
+
+A4:
+['Learning Python', 'Head First Python', 'Python Crash Course']
+['Head First Python', 'Learning Python', 'Python Crash Course']
+
+A5:
+[('Head First Python', 2010), ('Learning Python', 2013), ('Python Crash Course', 2015)]
+[('Head First Python', 2025), ('Learning Python', 2013), ('Python Crash Course', 2015)]
+
+A7
+Objekt_Error: Objekt ist unveränderbar.
+
+A9
+Duden, en
+Duden, de
+
+A10
+Book(title='Head First Python', authors=[], year='Zweitausendsechzehn', isbn='', language='en')
