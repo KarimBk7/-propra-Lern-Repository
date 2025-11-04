@@ -5,7 +5,7 @@
     + Schluss **Check**
 + Sprachen
 + Bibliotheken
-    + Python-Standardbibliothek *Angefangen* 16/18
+    + Python-Standardbibliothek *Angefangen* 17/18
     + pip-popular *Angefangen* 2/3
 	+ Frameworks *Angefangen* 1/3
 	+ Dokumentation
