@@ -1,0 +1,38 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Frameworks 22:50:12  1184
+$ fastapi dev FastAPI-GET.py
+
+   FastAPI   Starting development server 🚀
+
+             Searching for package file structure from directories with __init__.py files
+             Importing from /home/karim/ws/propra/Bibliotheken/Frameworks
+
+    module   🐍 FastAPI-GET.py
+
+      code   Importing the FastAPI app object from the module with the following code:
+
+             from FastAPI-GET import app
+
+       app   Using import string: FastAPI-GET:app
+
+    server   Server started at http://127.0.0.1:8000
+    server   Documentation at http://127.0.0.1:8000/docs
+
+       tip   Running in development mode, for production use: fastapi run
+
+             Logs:
+
+      INFO   Will watch for changes in these directories: ['/home/karim/ws/propra/Bibliotheken/Frameworks']
+      INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+      INFO   Started reloader process [6325] using WatchFiles
+      INFO   Started server process [6336]
+      INFO   Waiting for application startup.
+      INFO   Application startup complete.
+      INFO   127.0.0.1:54634 - "GET / HTTP/1.1" 200
+      INFO   127.0.0.1:49676 - "GET /hello?hello=Test HTTP/1.1" 200
+      INFO   127.0.0.1:40438 - "GET /grades HTTP/1.1" 200
+      INFO   127.0.0.1:42860 - "GET /students HTTP/1.1" 200
+      INFO   127.0.0.1:53208 - "GET /courses HTTP/1.1" 200
+      INFO   127.0.0.1:35204 - "GET /students/Alice HTTP/1.1" 200
+      INFO   127.0.0.1:39720 - "GET /students/Bob HTTP/1.1" 200
+      INFO   127.0.0.1:59834 - "GET /courses/Math HTTP/1.1" 200
+      INFO   127.0.0.1:51536 - "GET /courses/Physics HTTP/1.1" 200
