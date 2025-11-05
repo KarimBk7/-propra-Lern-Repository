@@ -7,7 +7,7 @@
 + Bibliotheken
     + Python-Standardbibliothek *Angefangen* 17/18
     + pip-popular **Check**
-	+ Frameworks *Angefangen* 1/3
+	+ Frameworks **Check**
 	+ Dokumentation
     + Pandas
 + Testen

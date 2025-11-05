@@ -1,0 +1,36 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Bibliotheken/Frameworks 23:50:27  1200
+$ fastapi dev FastAPI-CRUD.py
+
+   FastAPI   Starting development server 🚀
+
+             Searching for package file structure from directories with __init__.py files
+             Importing from /home/karim/ws/propra/Bibliotheken/Frameworks
+
+    module   🐍 FastAPI-CRUD.py
+
+      code   Importing the FastAPI app object from the module with the following code:
+
+             from FastAPI-CRUD import app
+
+       app   Using import string: FastAPI-CRUD:app
+
+    server   Server started at http://127.0.0.1:8000
+    server   Documentation at http://127.0.0.1:8000/docs
+
+       tip   Running in development mode, for production use: fastapi run
+
+             Logs:
+
+      INFO   Will watch for changes in these directories: ['/home/karim/ws/propra/Bibliotheken/Frameworks']
+      INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+      INFO   Started reloader process [12410] using WatchFiles
+      INFO   Started server process [12421]
+      INFO   Waiting for application startup.
+      INFO   Application startup complete.
+      INFO   127.0.0.1:50494 - "GET /docs HTTP/1.1" 200
+      INFO   127.0.0.1:50494 - "GET /openapi.json HTTP/1.1" 200
+      INFO   127.0.0.1:54180 - "POST /grade HTTP/1.1" 201
+      INFO   127.0.0.1:54180 - "POST /grade HTTP/1.1" 409
+      INFO   127.0.0.1:58470 - "PATCH /grade HTTP/1.1" 200
+      INFO   127.0.0.1:46792 - "PATCH /grade HTTP/1.1" 404
+      INFO   127.0.0.1:37828 - "DELETE /grade?student_name=Karim&course_name=Propra HTTP/1.1" 204
