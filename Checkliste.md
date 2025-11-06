@@ -8,7 +8,7 @@
     + Python-Standardbibliothek *Angefangen* 17/18
     + pip-popular **Check**
 	+ Frameworks **Check**
-	+ Dokumentation
+	+ Dokumentation *Angefangen* 2/3 <-- mlh-requirements
     + Pandas
 + Testen
 + Debugging
@@ -26,3 +26,4 @@
     + Unix-Diverses 
     + Linter 
 + Programmierpraxis
+    + Python-mlh *Angefangen* 1/9
