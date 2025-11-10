@@ -5,7 +5,7 @@ def main(argv: list[str]):
 
 	explanation = "My Little Helpers: a collection of small utility programs" 
 	parser = ap_sub.ArgumentParser(epilog=explanation)
-	parser.scan("subcmds.gitac", "subcmds.lsnew")
+	parser.scan("subcmds.gitac", "subcmds.lsnew", "subcmds.pythonfraction")
 	args = parser.parse_args(argv[1:])
 	parser.execute_subcommand(args)
 
