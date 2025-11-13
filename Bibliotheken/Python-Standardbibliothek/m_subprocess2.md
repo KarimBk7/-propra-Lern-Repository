@@ -1,0 +1,1 @@
+### F1: Aber warum funktioniert das? Der Unterprozess unterliegt doch derselben Speicherbeschränkung auf 512 MB, in der unsere Daten nicht genug Platz finden! <br> Recherchieren Sie, wie GNU sort das anstellt, und geben Sie für die Antwort eine möglichst vertrauenswürdige Quelle an.
