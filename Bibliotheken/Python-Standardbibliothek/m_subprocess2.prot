@@ -512,3 +512,7 @@ TabError: inconsistent use of tabs and spaces in indentation
 # destroy _codecs
 # destroy builtins
 # clear sys.audit hooks
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Bibliotheken/Python-Standardbibliothek 20:24:22  1595
+$ ulimit -v 512000; python m_subprocess2.py subprocess 5000000
+<generator object sorted_lines_generator_subprocess at 0x797a1d747010>

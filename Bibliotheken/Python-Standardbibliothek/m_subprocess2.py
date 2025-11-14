@@ -12,33 +12,67 @@ def random_line() -> str:
 	digest = hashlib.sha512(byte).hexdigest()
 	return digest + "\n"
 
-def random_lines_generator(n: int) -> [str]:
-	initrandom()
-	collection = []
+def random_lines_generator(n: int):
+	total_lines = 0
+
 	for i in range(n):
-		collection.append(random_line())
-	return collection
+		line = random_line()
+		total_lines += len(line)
+		
+  
+		if i % 200_000 == 0:
+			mb = total_lines / (1024 * 1024)
+			print(f"line {i}: {mb:.1f} MB total output", file=sys.stderr)
 
-def sorted_lines_generator_python(n: int) ->[str]:
-	initrandom()
-	return sorted(random_lines_generator(n))
+		yield line
 
-def median(numlines: int, sorted_lines_iterator: [str]) -> str:
+def sorted_lines_generator_python(n: int):
 	initrandom()
+
+	lines = list(random_lines_generator(n))
+	for line in sorted(lines):
+		yield line
+
+def median(numlines: int, sorted_lines_iterator: [str]) -> str:	
 	n = numlines
 	ind = n // 2
-
-	if ind > len(sorted_lines_iterator):
-		Exception("Index Groesser als Liste! sorted_lines_generator_python()")
+	count = 0
 
 	for i, line in enumerate(sorted_lines_iterator):
+		count += 1
+  
+		if count % 200_000 == 0:
+			print("have read 200k lines", file=sys.stderr)
+   
 		if i == ind:
 			return line
+
+
+def sorted_lines_generator_subprocess(n: int) -> [str]:
+	initrandom()
+
+	proc = subprocess.Popen(
+		["sort"],
+		stdin=subprocess.PIPE,
+		stdout=subprocess.PIPE,
+		text=True,
+	)
+
+	for line in random_lines_generator(n):
+		proc.stdin.write(line)
+	proc.stdin.close()
+
+	for line in proc.stdout:
+		yield line
+
+	proc.stdout.close()
+	proc.wait()
+
+#-------------Tests----------------
 
 def test_random_line():
     initrandom()
     assert random_line().endswith("2ed9f9\n")
-
 
 def test_random_lines():
 	initrandom()
@@ -54,6 +88,8 @@ def test_median4():
     assert res.endswith('d68c77\n')
 '''
 
+
+
 @pytest.mark.parametrize(
     "generator",
     [
@@ -63,42 +99,30 @@ def test_median4():
 )
 
 def test_median(generator):
-	res = median(generator)
+	res = median(4, generator)
 	assert res.startswith("72f436")
- 	assert res.endswith("d68c77\n")
+	assert res.endswith("d68c77\n")
 
 
-def sorted_lines_generator_subprocess(n: int) -> [str]:
-	initrandom()
-	proc = subprocess.Popen(
-		["sort"],
-		stdin=subprocess.PIPE,
-		stdout=subprocess.PIPE,
-		text=True,
-	)
-
-	for line in random_lines_generator(n):
-		proc.stdin.write(line)
-	proc.stdin.close()
-
-	res = []
-	for line in proc.stdout:
-		res.append(line)
-
-	proc.stdout.close()
-	proc.wait()
-	return res
+#--------------------Main------------------
 
 if __name__ == "__main__":
+	if len(sys.argv) != 3:
+		print("Fehlende oder zu viele Argumente")
+		sys.exit(1)
+
+	mode = sys.argv[1]		
 	n = int(sys.argv[2])
+ 
+ 
 	if not isinstance(n, int):
 		Exception("Second argument should be integer.")
 
-	if sys.argv[1] == "local":
+	if mode == "local":
 		print(median(n, sorted_lines_generator_python(n)))
-	elif sys.argv[1] == "print":
+	elif mode == "print":
 		print(random_lines_generator(n))
-	elif sys.argv[1] == "subprocess":
+	elif mode == "subprocess":
 		print(sorted_lines_generator_subprocess(n))
 	else:
 		Exception("Invalid Argument: Use either 'local' or 'print'.")
