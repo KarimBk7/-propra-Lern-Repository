@@ -5,7 +5,7 @@
     + Schluss **Check**
 + Sprachen
 + Bibliotheken
-    + Python-Standardbibliothek *Angefangen* 17/18
+    + Python-Standardbibliothek **Check**
     + pip-popular **Check**
 	+ Frameworks **Check**
 	+ Dokumentation *Angefangen* 2/3 <-- mlh-requirements
