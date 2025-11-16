@@ -11,3 +11,5 @@ m_dataclasses: CHECK
 m_pydantic: CHECK
 m_subprocess2: CHECK
 mlh-pythonfraction: CHECK
+pd-Einführung: CHECK
+pd-Datenstrukturen: CHECK
