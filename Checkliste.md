@@ -9,7 +9,7 @@
     + pip-popular **Check**
 	+ Frameworks **Check**
 	+ Dokumentation *Angefangen* 2/3 <-- mlh-requirements
-    + Pandas *Angefangen* 2/6
+    + Pandas *Angefangen* 5/6
 + Testen
 + Debugging
 + Bestandscode
