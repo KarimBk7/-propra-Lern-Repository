@@ -21,6 +21,13 @@ Die indexierung passiert hier nacheinander in Zeilen und ohne ``.loc``
 
 
 ### F6:  Ändert sich damit was an den genannten Best Practices? Begründen Sie.
-
+Nein, die Best Practices bleiben gleich.
 
 ### F7: Testen Sie beide Beispiele aus dem "Chained Indexing"-Abschnitt mit aktiviertem "Copy On Write". Beschreiben Sie, ob und wie sich das Verhalten ändert.
+1. Ohne Copy-on-Write:
+   1. In beiden Fällen wird über zwei Indexierungsoperationen auf ein Zwischenobjekt geschrieben
+   2. Dieses Zwischenobjekt ist mal View, mal Copy und ist deshalb unklar ob die Änderung im Original ankommt.
+2. Mit Copy-on-Write:
+   1. Jede Selektion verhält sich wie eine Kopie
+   2. Eine Zuweisung über Indexierungsketten verletzt die CoW-Regeln, weil dabei gleichzeitig eine abeleitetes Objekt und das Original geändert wird
+   3. Fazit: Beispiel 1 und 2 ändern ``erstimme_df`` mit aktivierten Copy-on-Write überhaupt nicht mehr.
