@@ -14,9 +14,9 @@
 + Debugging
 + Bestandscode
 + Web
-    + HTTP **Check**
+    + HTTP *Angefangen* 1/4
     + HTML **Check**
-    + CSS **Check**
+    + CSS *Angefangen* 3/5
 + Werkzeuge
     + Unix-Basiswerkzeuge **Check**
     + Paketmanager **Check**
