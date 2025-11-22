@@ -8,7 +8,7 @@
     + Python-Standardbibliothek **Check**
     + pip-popular **Check** 
 	+ Frameworks **Check**
-	+ Dokumentation *Angefangen* 2/3 <- mlh-requirements
+	+ Dokumentation **Check**
     + Pandas **Check**
 + Testen
 + Debugging
