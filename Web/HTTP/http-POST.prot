@@ -1,0 +1,62 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Web/HTTP 21:29:24  1510
+$ nc httpbin.org 80 < http-POST-form.crlf
+HTTP/1.1 200 OK
+Date: Sat, 22 Nov 2025 20:29:28 GMT
+Content-Type: application/json
+Content-Length: 432
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "password": "geheim123",
+    "remember": "on",
+    "username": "testuser"
+  },
+  "headers": {
+    "Content-Length": "48",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "X-Amzn-Trace-Id": "Root=1-69221d28-22be139a0c3b74505f8c1c9d"
+  },
+  "json": null,
+  "origin": "87.173.94.136",
+  "url": "http://httpbin.org/post"
+}
+
+
+karim@DESKTOP-6681UAP ~/ws/propra/Web/HTTP 21:30:28  1511
+$ nc httpbin.org 80 <http-POST-json.crlf
+HTTP/1.1 200 OK
+Date: Sat, 22 Nov 2025 20:38:18 GMT
+Content-Type: application/json
+Content-Length: 487
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {},
+  "data": "{\"username\":\"testuser\",\"password\":\"geheim123\",\"remember\":\"on\"}",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Content-Length": "62",
+    "Content-Type": "application/json",
+    "Host": "httpbin.org",
+    "X-Amzn-Trace-Id": "Root=1-69221f3a-0eca84bb7c9e21693c83120a"
+  },
+  "json": {
+    "password": "geheim123",
+    "remember": "on",
+    "username": "testuser"
+  },
+  "origin": "87.173.94.136",
+  "url": "http://httpbin.org/post"
+}

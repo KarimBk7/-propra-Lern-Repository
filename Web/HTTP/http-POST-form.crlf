@@ -1,0 +1,6 @@
+POST /post HTTP/1.1
+Host: httpbin.org
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 48
+
+username=testuser&password=geheim123&remember=on

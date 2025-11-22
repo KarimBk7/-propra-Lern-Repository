@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Testformular</title>
+</head>
+<body>
+  <h1>Formular-Test mit httpbin</h1>
+  <form action="https://httpbin.org/post" method="POST">
+    <label>Vorname: <input type="text" name="firstname" required></label><br>
+    <label>Nachname: <input type="text" name="lastname" required></label><br>
+    <label>E-Mail: <input type="email" name="email" required></label><br>
+    <label>Geburtsdatum: <input type="date" name="birthdate"></label><br>
+    <label><input type="checkbox" name="newsletter" value="yes"> Newsletter abonnieren</label><br>
+    <button type="submit">Absenden</button>
+  </form>
+</body>
+</html>
