@@ -8,7 +8,7 @@
     + Python-Standardbibliothek **Check**
     + pip-popular **Check** 
 	+ Frameworks **Check**
-	+ Dokumentation **Check**
+	+ Dokumentation *Angefangen* 2/3
     + Pandas **Check**
 + Testen
 + Debugging
@@ -16,7 +16,7 @@
 + Web
     + HTTP *Angefangen* 1/4
     + HTML **Check**
-    + CSS *Angefangen* 3/5
+    + CSS **Check**
 + Werkzeuge
     + Unix-Basiswerkzeuge **Check**
     + Paketmanager **Check**
