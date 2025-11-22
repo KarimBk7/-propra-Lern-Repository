@@ -15,5 +15,6 @@ mlh-pythonfraction: CHECK
 pd-Datenselektion: CHECK
 pd-Datenselektion2: CHECK
 pd-Datenstrukturen: CHECK
+pd-Datenveränderung: CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
