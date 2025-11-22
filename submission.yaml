@@ -6,6 +6,7 @@ Shell-Grundlagen2: CHECK
 Unix-Editoren: CHECK
 Unix-Links: CHECK
 changelog: CHECK
+css-Layout: CHECK
 css-Media-Queries: CHECK
 find: CHECK
 m_dataclasses: CHECK
@@ -15,6 +16,6 @@ mlh-pythonfraction: CHECK
 pd-Datenselektion: CHECK
 pd-Datenselektion2: CHECK
 pd-Datenstrukturen: CHECK
-pd-Datenveränderung: CHECK
+"pd-Datenver\xE4nderung": CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
