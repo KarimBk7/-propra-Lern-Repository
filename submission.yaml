@@ -11,6 +11,7 @@ css-Media-Queries: CHECK
 find: CHECK
 http-POST: CHECK
 http-State: CHECK
+http-Status: CHECK
 m_dataclasses: CHECK
 m_pydantic: CHECK
 m_subprocess2: CHECK
