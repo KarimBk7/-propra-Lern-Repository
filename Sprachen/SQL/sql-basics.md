@@ -1,0 +1,2 @@
+### F1: Warum kann eine PRIMARY KEY-Spalte nicht zugleich einen DEFAULT haben?
+Alle Primary Keys müssen unterschiedlich zueinander sein. Es dürfen keine Datensätze existieren die den selben Primary Key haben.
