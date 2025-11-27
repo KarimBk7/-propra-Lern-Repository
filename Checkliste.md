@@ -4,6 +4,7 @@
     + IDE **Check** 
     + Schluss **Check**
 + Sprachen
+  + SQL *Angefangen* 2/7
 + Bibliotheken
     + Python-Standardbibliothek **Check**
     + pip-popular **Check** 
