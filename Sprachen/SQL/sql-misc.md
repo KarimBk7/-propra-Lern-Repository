@@ -1,0 +1,2 @@
+## F1: Recherchieren Sie in der SQLite-Dokumentation, wie man eine neue SQLite-Datenbankdatei erstellt.
+Eine neue SQLite-Datenbankdatei wird erzeugt, indem man sie einfach öffnet etwa mit sqlite3 meine_db.db im CLI oder sqlite3_open("meine_db.db", &db).
