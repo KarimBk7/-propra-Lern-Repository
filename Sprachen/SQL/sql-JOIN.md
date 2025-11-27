@@ -1,0 +1,1 @@
+### F1: Sehen Sie den Bedarf der LEFT, RIGHT und FULL JOINS, oder können Sie sich vorstellen, lediglich mit dem INNER JOIN auszukommen?
