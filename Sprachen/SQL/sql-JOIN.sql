@@ -96,5 +96,15 @@ SELECT id
 FROM courses;
 
 -- A12 
-SELECT s.name FROM students as s 
-LEFT JOIN courses AS c 
+SELECT s.name, c.name FROM students AS s 
+LEFT JOIN courses AS c ON s.id = c.id
+UNION
+SELECT s.name, c.name FROM courses AS c
+LEFT JOIN students AS s ON s.id = c.id;
+
+-- A13 
+SELECT s.name, c.prof FROM students AS s
+LEFT JOIN courses AS c ON s.id = c.id
+UNION
+SELECT s.name, c.prof FROM courses AS c 
+LEFT JOIN students AS s ON s.id = c.id;

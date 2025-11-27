@@ -1,1 +1,2 @@
 ### F1: Sehen Sie den Bedarf der LEFT, RIGHT und FULL JOINS, oder können Sie sich vorstellen, lediglich mit dem INNER JOIN auszukommen?
+Ich glaube dass das auskommen nur mit INNER JOINS an manchen stellen etwas kompliziert werden kann, weil es nur Datensätze zeigt, fü+r die auf beiden Seiten eine passende Zeile existiert. Darum seh ich den Bedarf der anderen JOIN-Arten als praktisch.
