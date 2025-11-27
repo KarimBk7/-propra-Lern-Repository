@@ -22,7 +22,10 @@ pd-Datenstrukturen: CHECK
 "pd-Datenver\xE4nderung": CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
+sql-INDEX: CHECK
 sql-JOIN: CHECK
 sql-SELECT: CHECK
 sql-SELECT2: CHECK
+sql-UPDATE-VIEW-CASE: CHECK
 sql-basics: CHECK
+sql-misc: CHECK
