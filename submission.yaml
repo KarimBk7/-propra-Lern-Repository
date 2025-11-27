@@ -22,4 +22,5 @@ pd-Datenstrukturen: CHECK
 "pd-Datenver\xE4nderung": CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
+sql-SELECT: CHECK
 sql-basics: CHECK
