@@ -29,5 +29,22 @@ Versagen treten in S4 und S5 auf.<br>
 
 ### F8: Erstellen Sie zu einem der oben entdeckten Versagen einen konkreten und genauen Problembericht.
 **Versagen aus S4:** Weiterleitung auf Admin-Seite statt Profilseite.
++ **Vorbedingung**: 
+  + Es existiert ein registrierter Benutzer
+  + Benutzer befindet sich auf der Login-Seite des Portals
++ **Reproduzieren**:
+  + Gültige E-Mail Adresse eingeben
+  + Gültiges zugehöriges Passwort eingeben
+  + Auf "Anmelden" drücken
++ **Erwartetes Ergebnis**:
+  + Anmeldung Erfolgreich
+  + Weiterleitung auf Nutzer-Profilseite
++ **Tatsächliches Ergebnis**:
+  + Anmeldung Erfolgreich
+  + Der Benutzer wird auf die Portal-Administratorseite weitergeleitet und sieht Admin-Funktionen
 
 ### F9: Was würden Sie tun, wenn Sie 2 Problemberichte bekommen, die wahrscheinlich vom selben Defekt handeln, aber unterschiedlich gut beschrieben sind?
+1. Prüfen, ob beide Berichte wirklich denselben Defekt beschreiben
+2. Einen der Berichte als Haupt-ticket verwenden und den anderen als Duplikat markieren und mit Haupt-Ticket verlinken
+3. Falls Information in einem der Dokumentationen nützlich erscheinen, auch bei der anderen integrieren, damit alle relevanten Infos vorliegen.
+4. Gegebenfalls Rückfragen stellen, falls Detailinformationen fehlen.
