@@ -12,6 +12,7 @@
 	+ Dokumentation *Angefangen* 2/3
     + Pandas **Check**
 + Testen
+  + Testgrundlagen **Check**
 + Debugging
 + Bestandscode
 + Web
