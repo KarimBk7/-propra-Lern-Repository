@@ -1,0 +1,30 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Testen/Unittests 23:04:38  1614
+$ python -m unittest test_unittest.Test
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+
+karim@DESKTOP-6681UAP ~/ws/propra/Testen/Unittests 23:09:58  1617
+$ git -P show HEAD
+commit 43ab211d43c05bfae471d84941d91c36060e7433 (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sun Nov 30 23:09:58 2025 +0100
+
+    Test addition
+
+diff --git a/Testen/Unittests/test_unittest.py b/Testen/Unittests/test_unittest.py
+new file mode 100644
+index 0000000..f2f191d
+--- /dev/null
++++ b/Testen/Unittests/test_unittest.py
+@@ -0,0 +1,6 @@
++import unittest
++
++class Test(unittest.TestCase):
++
++       def test_addition(self):
++               self.assertEqual(1+1, 2)
+\ No newline at end of file
