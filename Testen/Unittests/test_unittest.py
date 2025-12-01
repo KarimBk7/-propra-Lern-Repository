@@ -8,3 +8,4 @@ class Test(unittest.TestCase):
 
 	def test_sqrt(self):
 		self.assertEqual(math.sqrt(10)**10, 10)
+  
