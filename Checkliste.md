@@ -13,6 +13,7 @@
     + Pandas **Check**
 + Testen
   + Testgrundlagen **Check**
+  + Unittest *Angefangen* 1/5
 + Debugging
 + Bestandscode
 + Web
