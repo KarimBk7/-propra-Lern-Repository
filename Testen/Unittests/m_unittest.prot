@@ -28,3 +28,89 @@ index 0000000..f2f191d
 +       def test_addition(self):
 +               self.assertEqual(1+1, 2)
 \ No newline at end of file
+
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:07:03  1724
+$ python -m unittest test_unittest.Test
+.F
+======================================================================
+FAIL: test_sqrt (test_unittest.Test.test_sqrt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/ws/propra/Testen/Unittests/test_unittest.py", line 10, in test_sqrt
+    self.assertEqual(math.sqrt(10)**10, 10)
+AssertionError: 100000.00000000006 != 10
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (failures=1)
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:09:44  1728
+$ git -P show HEAD
+commit 4688f6d439951a1f23eceea88dab3159837aa17c (HEAD -> main)
+Author: Abdil-Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Mon Dec 1 11:09:44 2025 +0100
+
+    Teste sqrt
+
+diff --git a/Testen/Unittests/test_unittest.py b/Testen/Unittests/test_unittest.py
+index 05b4f5c..ff533b4 100644
+--- a/Testen/Unittests/test_unittest.py
++++ b/Testen/Unittests/test_unittest.py
+@@ -7,4 +7,5 @@ class Test(unittest.TestCase):
+                self.assertEqual(1+1, 2)
+
+        def test_sqrt(self):
+-               self.assertEqual(math.sqrt(10)**10, 10)
+\ No newline at end of file
++               self.assertEqual(math.sqrt(10)**10, 10)
++
+\ No newline at end of file
+
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:09:51  1729
+$ python -m unittest test_unittest.Test
+.x
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK (expected failures=1)
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:31:54  1732
+$ git -P show HEAD
+commit 8633b96fa40b5abd724a83bb98bcce9277360b72 (HEAD -> main)
+Author: Abdil-Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Mon Dec 1 11:31:54 2025 +0100
+
+    unittest
+
+diff --git a/Testen/Unittests/test_unittest.py b/Testen/Unittests/test_unittest.py
+index ff533b4..0300c05 100644
+--- a/Testen/Unittests/test_unittest.py
++++ b/Testen/Unittests/test_unittest.py
+@@ -6,6 +6,7 @@ class Test(unittest.TestCase):
+        def test_addition(self):
+                self.assertEqual(1+1, 2)
+
++       @unittest.expectedFailure
+        def test_sqrt(self):
+                self.assertEqual(math.sqrt(10)**10, 10)
+
+\ No newline at end of file
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:34:36  1734
+$ python -m unittest test_unittest.Test
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 12:17:57  1734
+$ python -m unittest test_unittest.Test
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
