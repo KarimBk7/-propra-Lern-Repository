@@ -114,3 +114,40 @@ $ python -m unittest test_unittest.Test
 Ran 3 tests in 0.000s
 
 OK
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 12:19:52  1736
+$ git -P show HEAD
+commit fb4cd2d67211a2491c0532517c0e4cec25e0dd5f (HEAD -> main)
+Author: Abdil-Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Mon Dec 1 12:19:52 2025 +0100
+
+    %m_unittest 1.5 h
+diff --git a/Testen/Unittests/m_unittest.py b/Testen/Unittests/m_unittest.py
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/Testen/Unittests/test_unittest.py b/Testen/Unittests/test_unittest.py
+index 0300c05..199fc4f 100644
+--- a/Testen/Unittests/test_unittest.py
++++ b/Testen/Unittests/test_unittest.py
+@@ -3,10 +3,16 @@ import math
+
+ class Test(unittest.TestCase):
+
++       # A1
+        def test_addition(self):
+                self.assertEqual(1+1, 2)
+
+-       @unittest.expectedFailure
++       # A2 - A4
++       #@unittest.expectedFailure
+        def test_sqrt(self):
+-               self.assertEqual(math.sqrt(10)**10, 10)
+-
+\ No newline at end of file
++               self.assertAlmostEqual(math.sqrt(10)**2, 10)
++
++       # A5
++       def test_sqrt_of_negative_value(self):
++               with self.assertRaises(ValueError):
++                       math.sqrt(-1)
+\ No newline at end of file
