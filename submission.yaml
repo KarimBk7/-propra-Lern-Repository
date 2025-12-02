@@ -15,6 +15,7 @@ http-State: CHECK
 http-Status: CHECK
 m_dataclasses: CHECK
 m_pydantic: CHECK
+m_pytest: CHECK
 m_subprocess2: CHECK
 m_unittest: CHECK
 mlh-pythonfraction: CHECK
