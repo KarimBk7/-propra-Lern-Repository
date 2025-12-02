@@ -17,3 +17,11 @@ def test_sqrt():
 def test_sqrt_of_negative_value():
 	with pytest.raises(ValueError):
 		sqrt(-1)
+  
+def test_failure1():
+    print("lots\nof\nstuff")
+    assert False
+
+def test_failure2(self):
+    print("still\nmore\nstuff")
+    assert False

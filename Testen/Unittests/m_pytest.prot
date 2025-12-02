@@ -1,0 +1,179 @@
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 18:22:10  1769
+$ pip install pytest
+Requirement already satisfied: pytest in /root/venv/propra/lib/python3.11/site-packages (9.0.1)
+Requirement already satisfied: pluggy<2,>=1.5 in /root/venv/propra/lib/python3.11/site-packages (from pytest) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /root/venv/propra/lib/python3.11/site-packages (from pytest) (2.19.2)
+Requirement already satisfied: packaging>=22 in /root/venv/propra/lib/python3.11/site-packages (from pytest) (25.0)
+Requirement already satisfied: iniconfig>=1.0.1 in /root/venv/propra/lib/python3.11/site-packages (from pytest) (2.3.0)
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 18:41:01  1770
+$ pytest testm_pytest.py
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.0rc1, pytest-9.0.1, pluggy-1.6.0
+rootdir: /root/ws/propra/Testen/Unittests
+collected 3 items
+
+testm_pytest.py ...                                                                                              [100%]
+
+================================================== 3 passed in 0.03s ===================================================
+
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:17:17  1781
+$ git -P show HEAD
+commit dca5f15cc1f2ac08f41d28d44abe80ca405d17d4 (HEAD -> main)
+Author: Abdil-Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Tue Dec 2 19:17:17 2025 +0100
+
+    pytest commit
+
+diff --git a/Testen/Unittests/testm_pytest.py b/Testen/Unittests/testm_pytest.py
+new file mode 100644
+index 0000000..fb3adcc
+--- /dev/null
++++ b/Testen/Unittests/testm_pytest.py
+@@ -0,0 +1,19 @@
++import math
++import pytest
++
++# A1
++def add(x,y):
++       return x + y
++
++def test_addition():
++       assert add(1, 1)== 2
++
++def sqrt(x):
++    return math.sqrt(x)
++
++def test_sqrt():
++       assert sqrt(10)**2 == pytest.approx(10)
++
++def test_sqrt_of_negative_value():
++       with pytest.raises(ValueError):
++               sqrt(-1)
+\ No newline at end of file
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:25:46  1784
+$ git -P show HEAD
+commit dca5f15cc1f2ac08f41d28d44abe80ca405d17d4 (HEAD -> main)
+Author: Abdil-Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Tue Dec 2 19:17:17 2025 +0100
+
+    pytest commit
+
+diff --git a/Testen/Unittests/testm_pytest.py b/Testen/Unittests/testm_pytest.py
+new file mode 100644
+index 0000000..fb3adcc
+--- /dev/null
++++ b/Testen/Unittests/testm_pytest.py
+@@ -0,0 +1,19 @@
++import math
++import pytest
++
++# A1
++def add(x,y):
++       return x + y
++
++def test_addition():
++       assert add(1, 1)== 2
++
++def sqrt(x):
++    return math.sqrt(x)
++
++def test_sqrt():
++       assert sqrt(10)**2 == pytest.approx(10)
++
++def test_sqrt_of_negative_value():
++       with pytest.raises(ValueError):
++               sqrt(-1)
+\ No newline at end of file
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:25:57  1785
+$ pytest testm_pytest.py
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.0rc1, pytest-9.0.1, pluggy-1.6.0
+rootdir: /root/ws/propra/Testen/Unittests
+collected 3 items
+
+testm_pytest.py ...                                                                                              [100%]
+
+================================================== 3 passed in 0.03s ===================================================
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:26:27  1786
+$ pytest -v testm_pytest.py
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.0rc1, pytest-9.0.1, pluggy-1.6.0 -- /root/venv/propra/bin/python
+cachedir: .pytest_cache
+rootdir: /root/ws/propra/Testen/Unittests
+collected 3 items
+
+testm_pytest.py::test_addition PASSED                                                                            [ 33%]
+testm_pytest.py::test_sqrt PASSED                                                                                [ 66%]
+testm_pytest.py::test_sqrt_of_negative_value PASSED                                                              [100%]
+
+================================================== 3 passed in 0.02s ===================================================
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:26:36  1787
+$ pytest testm_pytest.py
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.0rc1, pytest-9.0.1, pluggy-1.6.0
+rootdir: /root/ws/propra/Testen/Unittests
+collected 5 items
+
+testm_pytest.py ...FE                                                                                            [100%]
+
+======================================================== ERRORS ========================================================
+___________________________________________ ERROR at setup of test_failure2 ____________________________________________
+file /root/ws/propra/Testen/Unittests/testm_pytest.py, line 25
+  def test_failure2(self):
+E       fixture 'self' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, subtests, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/root/ws/propra/Testen/Unittests/testm_pytest.py:25
+======================================================= FAILURES =======================================================
+____________________________________________________ test_failure1 _____________________________________________________
+
+    def test_failure1():
+        print("lots\nof\nstuff")
+>       assert False
+E       assert False
+
+testm_pytest.py:23: AssertionError
+------------------------------------------------- Captured stdout call -------------------------------------------------
+lots
+of
+stuff
+=============================================== short test summary info ================================================
+FAILED testm_pytest.py::test_failure1 - assert False
+ERROR testm_pytest.py::test_failure2
+========================================= 1 failed, 3 passed, 1 error in 0.15s =========================================
+
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 19:30:11  1789
+$ python -m unittest testm_unittest.py
+.lots
+of
+stuff
+Fstill
+more
+stuff
+F..
+======================================================================
+FAIL: test_failure1 (testm_unittest.Test.test_failure1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/ws/propra/Testen/Unittests/testm_unittest.py", line 22, in test_failure1
+    self.assertTrue(False)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_failure2 (testm_unittest.Test.test_failure2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/ws/propra/Testen/Unittests/testm_unittest.py", line 26, in test_failure2
+    self.assertTrue(False)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (failures=2)
