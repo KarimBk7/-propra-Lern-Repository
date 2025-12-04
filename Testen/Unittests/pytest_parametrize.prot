@@ -1,0 +1,10 @@
+(propra) root@DESKTOP-BKSGFB3 ~/ws/propra/Testen/Unittests 11:55:01  1911
+$ pytest test_pytest_parametrize.py
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.0rc1, pytest-9.0.1, pluggy-1.6.0
+rootdir: /root/ws/propra/Testen/Unittests
+collected 4 items
+
+test_pytest_parametrize.py ....                                                                                  [100%]
+
+================================================== 4 passed in 0.01s ===================================================
