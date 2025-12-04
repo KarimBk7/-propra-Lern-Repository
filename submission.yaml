@@ -25,6 +25,7 @@ pd-Datenstrukturen: CHECK
 "pd-Datenver\xE4nderung": CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
+pytest_call: CHECK
 sql-INDEX: CHECK
 sql-JOIN: CHECK
 sql-SELECT: CHECK
