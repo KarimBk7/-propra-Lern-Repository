@@ -2,6 +2,7 @@ FastAPI-CRUD: CHECK
 FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
 LICENSE: CHECK
+PEP8: CHECK
 Shell-Grundlagen: CHECK
 Shell-Grundlagen2: CHECK
 Unix-Editoren: CHECK
