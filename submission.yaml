@@ -28,6 +28,7 @@ pd-Datenstrukturen: CHECK
 "pd-Einf\xFChrung": CHECK
 py-Function-Arguments-Basic: CHECK
 py-List-Comprehensions: CHECK
+py-Variablen: CHECK
 pytest-Methodik-Blackbox: CHECK
 pytest_call: CHECK
 sql-INDEX: CHECK
