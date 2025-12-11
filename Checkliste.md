@@ -4,7 +4,7 @@
     + IDE **Check** 
     + Schluss **Check**
 + Sprachen
-  + Python *Angefangen* 2/5
+  + Python *Angefangen* 3/5
   + SQL **Check**
 + Bibliotheken
     + Python-Standardbibliothek **Check**
