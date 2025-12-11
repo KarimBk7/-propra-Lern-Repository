@@ -1,0 +1,24 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Sprachen/Python 19:47:33  1667
+$ python py-Funktionale-Programmierung.py
+sorted by last letters: ['banana', 'orange', 'apple', 'peach', 'pear', 'blueberry']
+
+8 times 3 = 24
+10 minus 4 = 6
+15 divided by 3 = 5.0
+9 plus 7 = 16
+
+first three words: ['Generatoren', 'sind', 'sehr']
+
+divisible by 2 [0, 2, 4, 6, 8]
+divisible by 7 [0, 7]
+
+position of all words with letter 'y': [(10, 'nonumy')]
+
+products with prices
+[{'product': 'Laptop', 'price': 999.0},
+ {'product': 'Smartphone', 'price': 599.59},
+ {'product': 'Tablet', 'price': 299.95},
+ {'product': 'Monitor', 'price': 199.99}]
+
+The Laptop costs 1128.87 USD
+product not in stock: {'product': 'Smartphone', 'price': 599.59, 'stock': 0}
