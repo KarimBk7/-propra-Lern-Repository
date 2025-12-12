@@ -1,0 +1,85 @@
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:34:25  1719
+$ mkdir rsync_copy_data
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp/rsync_copy_data 02:35:50  1724
+$ touch ~/ws/tmp/rsync_copy_data/datei{1..5}
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:37:08  1730
+$ mkdir rsync_destination
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:37:34  1732
+$ rsync -a ~/ws/tmp/rsync_copy_data ~/ws/tmp/rsync_destination/
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:38:39  1739
+$ rsync -a ~/ws/tmp/rsync_copy_data/ ~/ws/tmp/rsync_destination/
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:41:10  1745
+$ mkdir rsync_destination2
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:41:21  1747
+$ rsync -a ~/ws/tmp/rsync_copy_data/ ~/ws/tmp/rsync_destination2/
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp/rsync_copy_data 02:42:44  1749
+$ echo "Ich wurde verändert" > datei1
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:44:02  1751
+$ rsync -avun rsync_copy_data/ rsync_destination2/
+sending incremental file list
+datei1
+
+sent 139 bytes  received 19 bytes  316.00 bytes/sec
+total size is 21  speedup is 0.13 (DRY RUN)
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:44:05  1752
+$ rsync -avu rsync_copy_data/ rsync_destination2/
+sending incremental file list
+datei1
+
+sent 204 bytes  received 35 bytes  478.00 bytes/sec
+total size is 21  speedup is 0.09
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:46:39  1753
+$ echo "Ich wurde veraendert" >> rsync_copy_data/datei2
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:51:29  1754
+$ rsync -avucn rsync_copy_data/ rsync_destination2/
+sending incremental file list
+datei2
+
+sent 226 bytes  received 19 bytes  490.00 bytes/sec
+total size is 42  speedup is 0.17 (DRY RUN)
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:51:42  1755
+$ rsync -avuc rsync_copy_data/ rsync_destination2/
+sending incremental file list
+datei2
+
+sent 287 bytes  received 35 bytes  644.00 bytes/sec
+total size is 42  speedup is 0.13
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:55:04  1759
+$ rsync -av rsync_copy_data/ abdilkarib03@andorra.imp.fu-berlin.de
+sending incremental file list
+created directory abdilkarib03@andorra.imp.fu-berlin.de
+./
+datei1
+datei2
+datei3
+datei4
+datei5
+
+sent 391 bytes  received 174 bytes  1,130.00 bytes/sec
+total size is 42  speedup is 0.07
+
+(propra) karim@DESKTOP-6681UAP ~/ws/tmp 02:55:49  1762
+$ rsync -av abdilkarib03@andorra.imp.fu-berlin.de rsync_destination3/
+sending incremental file list
+abdilkarib03@andorra.imp.fu-berlin.de/
+abdilkarib03@andorra.imp.fu-berlin.de/datei1
+abdilkarib03@andorra.imp.fu-berlin.de/datei2
+abdilkarib03@andorra.imp.fu-berlin.de/datei3
+abdilkarib03@andorra.imp.fu-berlin.de/datei4
+abdilkarib03@andorra.imp.fu-berlin.de/datei5
+
+sent 438 bytes  received 115 bytes  1,106.00 bytes/sec
+total size is 42  speedup is 0.08

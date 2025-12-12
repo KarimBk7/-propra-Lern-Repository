@@ -26,6 +26,7 @@ pd-Datenstrukturen: CHECK
 "pd-Datenver\xE4nderung": CHECK
 "pd-Daten\xFCberblick": CHECK
 "pd-Einf\xFChrung": CHECK
+pd-Transformationen: CHECK
 py-Function-Arguments-Basic: CHECK
 py-Funktionale-Programmierung: CHECK
 py-List-Comprehensions: CHECK
