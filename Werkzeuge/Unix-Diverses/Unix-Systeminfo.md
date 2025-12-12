@@ -1,0 +1,2 @@
+### F1: Starten Sie htop und geben Sie an, welche Informationen htop Ihnen für einen Prozess gibt.
+In ``htop`` werden für jeden Projess die PID, Benutzer, CPU-Last, RAM-Nutzung, Laufzeit, usw. angezeigt.
