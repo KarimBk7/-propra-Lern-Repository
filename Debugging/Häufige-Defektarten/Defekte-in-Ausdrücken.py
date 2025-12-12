@@ -37,9 +37,21 @@ def draw_card(name: str, deck: list, player_hand: dict) -> None:
         if card_rank in player_hand:
             # append this suit to the list
             player_hand[card_rank].append(card_suit)
-            if len(player_hand) == 4:
+            if len(player_hand[card_rank]) == 4:
                 print(f"{name} lays down {card_rank}")
                 del player_hand[card_rank]
         else:
             # first of this suit, create a list with one element
             player_hand[card_rank] = [card_suit]
+            
+
+deck = [("3", "hearts")]  # Liste von (Rang, Farbe)-Tupeln
+
+hand1 = {"2": ["hearts", "spades"]}
+hand2 = {"2": ["hearts", "spades"],
+         "3": ["diamonds"]}
+hand3 = {"2": ["hearts", "spades"],
+         "3": ["diamonds", "clubs", "spades"]}
+
+
+print(draw_card("karim", deck, hand3))
