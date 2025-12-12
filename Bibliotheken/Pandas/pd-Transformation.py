@@ -43,6 +43,5 @@ bezirke_dict = {
 print(erststimmen_df["Bezirksname"].apply(lambda x : bezirke_dict[x]))
 
 
-
 # A6
 print(erststimmen_df["Bezirksname"].map(lambda x : bezirke_dict[x]))
