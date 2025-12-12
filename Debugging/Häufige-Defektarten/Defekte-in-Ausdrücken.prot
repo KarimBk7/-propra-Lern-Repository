@@ -1,0 +1,55 @@
+(propra) karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 03:32:03  1791
+$ git add Defekte-in-Ausdrücken.py
+
+(propra) karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 03:32:08  1792
+$ git commit -m"Defekte-in-Ausdrücken.py Basisversion"
+[main ee7d3f7] Defekte-in-Ausdrücken.py Basisversion
+ 1 file changed, 45 insertions(+)
+ create mode 100644 "Debugging/H\303\244ufige-Defektarten/Defekte-in-Ausdr\303\274cken.py"
+
+(propra) karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 04:00:17  1798
+$ git add Defekte-in-Ausdrücken.py
+
+(propra) karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 04:01:29  1799
+$ git commit -m"Defekte-in-Ausdrücken.py Defektkorrektur"
+[main f3c0a54] Defekte-in-Ausdrücken.py Defektkorrektur
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+
+(propra) karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 04:01:46  1800
+$ git -P show HEAD
+commit f3c0a5433ba59f5219819dd91925e19287c3308a (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Fri Dec 12 04:01:46 2025 +0100
+
+    Defekte-in-Ausdrücken.py Defektkorrektur
+
+diff --git "a/Debugging/H\303\244ufige-Defektarten/Defekte-in-Ausdr\303\274cken.py" "b/Debugging/H\303\244ufige-Defektarten/Defekte-in-Ausdr\303\274cken.py"
+index 0f9366f..0b35b4e 100644
+--- "a/Debugging/H\303\244ufige-Defektarten/Defekte-in-Ausdr\303\274cken.py"
++++ "b/Debugging/H\303\244ufige-Defektarten/Defekte-in-Ausdr\303\274cken.py"
+@@ -37,9 +37,21 @@ def draw_card(name: str, deck: list, player_hand: dict) -> None:
+         if card_rank in player_hand:
+             # append this suit to the list
+             player_hand[card_rank].append(card_suit)
+-            if len(player_hand) == 4:
++            if len(player_hand[card_rank]) == 4:
+                 print(f"{name} lays down {card_rank}")
+                 del player_hand[card_rank]
+         else:
+             # first of this suit, create a list with one element
+-            player_hand[card_rank] = [card_suit]
+\ No newline at end of file
++            player_hand[card_rank] = [card_suit]
++
++
++deck = [("3", "hearts")]  # Liste von (Rang, Farbe)-Tupeln
++
++hand1 = {"2": ["hearts", "spades"]}
++hand2 = {"2": ["hearts", "spades"],
++         "3": ["diamonds"]}
++hand3 = {"2": ["hearts", "spades"],
++         "3": ["diamonds", "clubs", "spades"]}
++
++
++print(draw_card("karim", deck, hand3))
+\ No newline at end of file
