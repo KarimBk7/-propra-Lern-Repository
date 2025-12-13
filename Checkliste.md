@@ -16,8 +16,8 @@
   + Testgrundlagen **Check**
   + Unittest **Check**
 + Debugging
-  + Häufige-Defektarten *Angefangen* 5/7
-  + 
+  + Häufige-Defektarten **Check**
+  + Debugging-Denken 
 + Bestandscode
 + Web
     + HTTP **Check**
