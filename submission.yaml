@@ -1,11 +1,13 @@
 Anordnungsdefekte: CHECK
 Defekte-bei-Variablen: CHECK
+Defekte-in-Ausdrücken: CHECK
 FastAPI-CRUD: CHECK
 FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
 Indexierungsdefekte: CHECK
 LICENSE: CHECK
 Logikdefekte: CHECK
+Off-by-1-Defekte: CHECK
 PEP8: CHECK
 Shell-Grundlagen: CHECK
 Shell-Grundlagen2: CHECK
