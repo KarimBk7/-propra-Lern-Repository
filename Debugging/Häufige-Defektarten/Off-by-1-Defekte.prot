@@ -1,0 +1,39 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 16:59:14  1861
+$ git add Off-by-1-Defekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 16:59:18  1862
+$ git commit -m"Off-by-1-Defekte.py Basisversion"
+[main d87d8dc] Off-by-1-Defekte.py Basisversion
+ 1 file changed, 49 insertions(+)
+ create mode 100644 "Debugging/H\303\244ufige-Defektarten/Off-by-1-Defekte.py"
+
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 20:45:12  1864
+$ git add Off-by-1-Defekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 20:45:33  1865
+$ git commit -m"Off-by-1-Defekte.py Defektkorrektur"
+[main 2f118f1] Off-by-1-Defekte.py Defektkorrektur
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 20:45:40  1866
+$ git -P show HEAD
+commit 2f118f1b8e94cfa9e465672694ddf09768fac332 (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Dec 13 20:45:40 2025 +0100
+
+    Off-by-1-Defekte.py Defektkorrektur
+
+diff --git "a/Debugging/H\303\244ufige-Defektarten/Off-by-1-Defekte.py" "b/Debugging/H\303\244ufige-Defektarten/Off-by-1-Defekte.py"
+index 1d92571..67bbcce 100644
+--- "a/Debugging/H\303\244ufige-Defektarten/Off-by-1-Defekte.py"
++++ "b/Debugging/H\303\244ufige-Defektarten/Off-by-1-Defekte.py"
+@@ -41,9 +41,9 @@ def showday(daynumber: int, isleapyear: bool) -> (str, int):
+     # now do the computation:
+     if daynumber > 0:
+         for month in months:
+-            if daynumber < month.days:  # the right month
++            if daynumber <= month.days:  # the right month
+                 return month.name, daynumber
+             daynumber = daynumber - month.days  # not the right month, subtract it and continue
+     raise ValueError("invalid daynumber")
+
+-print(showday(1, False))
+\ No newline at end of file
++print(showday(1, False))
