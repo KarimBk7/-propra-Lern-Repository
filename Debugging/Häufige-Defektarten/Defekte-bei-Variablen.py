@@ -101,7 +101,7 @@ def do_turn(
         """ ...and use the rank of the card at that index as the one to ask for.
         """
         rank_to_check = list(player_hand.keys())[index]
-        found = check_card(hand_name, opponent_hand, rank_to_check, player_hand)
+        found = check_card(hand_name, player_hand, rank_to_check, opponent_hand)
 
         if not found:
             break
