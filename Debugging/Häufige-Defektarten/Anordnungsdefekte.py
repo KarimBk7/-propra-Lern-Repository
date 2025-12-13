@@ -13,27 +13,27 @@ def check_card(
     Returns: True if a card is transferred, False otherwise
     """
 
-    if rank_of_card in hand_of_opponent:
-        transfer_cards: list = hand_of_opponent[rank_of_card]
-        # transfer_cards is a list!
-        del hand_of_opponent[rank_of_card]
-        if rank_of_card in hand_of_player:
-            hand_of_player[rank_of_card].extend(transfer_cards)
-        else:  # shouldn't happen, but handle it
-            hand_of_player[rank_of_card] = transfer_cards
+    if rank_of_card not in hand_of_opponent:
+        return False
+    
+    transfer_cards: list = hand_of_opponent[rank_of_card]
+    # transfer_cards is a list!
+    #del hand_of_opponent[rank_of_card]
+    if rank_of_card in hand_of_player:
+        hand_of_player[rank_of_card].extend(transfer_cards)
+    else:  # shouldn't happen, but handle it
+        hand_of_player[rank_of_card] = transfer_cards
 
-        if len(hand_of_player[rank_of_card]) == 4:
-            print(f"{name_of_hand} lays down {rank_of_card}")
-            del hand_of_player[rank_of_card]
+    if len(hand_of_player[rank_of_card]) == 4:
+        print(f"{name_of_hand} lays down {rank_of_card}")
+        del hand_of_player[rank_of_card]
 
-            return True
-        else:
-            return False
-
+    return True
+       
 
 hand_name = "HAND"
 player_hand = {"5": ["spades", "hearts"]}
-card_rank = "5"	
+card_rank = "6"	
 opponent_hand = {"6": ["diamonds"], "10": ["clubs"]}
 
 print(f"hand -> {player_hand}")
