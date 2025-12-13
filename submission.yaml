@@ -1,4 +1,5 @@
 Anordnungsdefekte: CHECK
+Defekte-bei-Variablen: CHECK
 FastAPI-CRUD: CHECK
 FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
