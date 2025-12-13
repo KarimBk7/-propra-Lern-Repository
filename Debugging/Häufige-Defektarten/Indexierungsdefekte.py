@@ -15,6 +15,10 @@ def find_substring(outer_string: str, sub_string:str) -> (str, str):
 
     for i in range(outer_len):
         for j in range(sub_len):
+            # break if we reach out of outer_string
+            if i+j > outer_len-1:
+                break
+            
             if outer_string[i+j] != sub_string[j]:
                 break
         else:
