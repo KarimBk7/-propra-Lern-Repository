@@ -26,13 +26,12 @@ def secret_santa(input_list: list[str]) -> dict[str, str]:
         """
 
         if len(receivers_list) == 2 and input_list[-1] in receivers_list:
-            if receivers_list.count(input_list[-1]) == 1:
-                last = input_list[-1]
-                other = receivers_list[0] if receivers_list[1] == last else receivers_list[1]
+            last = input_list[-1]
+            other = receivers_list[0] if receivers_list[1] == last else receivers_list[1]
 
-                return_dict[person] = input_list[-1]
-                return_dict[input_list[-1]] = person
-                break
+            return_dict[person] = last
+            return_dict[last] = other
+            break
 
         """ The typical situation, just randomly pick
             someone out of receivers_list and give them to
