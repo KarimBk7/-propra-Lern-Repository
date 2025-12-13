@@ -3,6 +3,7 @@ FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
 Indexierungsdefekte: CHECK
 LICENSE: CHECK
+Logikdefekte: CHECK
 PEP8: CHECK
 Shell-Grundlagen: CHECK
 Shell-Grundlagen2: CHECK
