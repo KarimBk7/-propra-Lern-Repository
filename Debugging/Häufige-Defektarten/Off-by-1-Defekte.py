@@ -41,7 +41,7 @@ def showday(daynumber: int, isleapyear: bool) -> (str, int):
     # now do the computation:
     if daynumber > 0:
         for month in months:
-            if daynumber < month.days:  # the right month
+            if daynumber <= month.days:  # the right month
                 return month.name, daynumber
             daynumber = daynumber - month.days  # not the right month, subtract it and continue
     raise ValueError("invalid daynumber")
