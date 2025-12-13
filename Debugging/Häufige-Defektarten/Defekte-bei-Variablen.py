@@ -1,5 +1,19 @@
 import random
 
+def get_card(deck: list) -> tuple:
+    """Randomly remove a single card from the deck and return it.
+    Assumes the deck is not empty.
+
+    deck: A deck as described above.
+
+    Returns: a single card, which is a tuple with
+    two elements, the rank and the suit.
+    """
+
+    index = int(len(deck) * random.random())
+    new_card = deck[index]
+    del deck[index]
+    return new_card
 
 def draw_card(name: str, deck: list, player_hand: dict) -> None:
     """Draw a new card from the deck and add it to
@@ -13,10 +27,23 @@ def draw_card(name: str, deck: list, player_hand: dict) -> None:
 
     Returns: None.
     """
+    if len(deck) > 0:  # guard against an empty deck
+        new_card = get_card(deck)
+        card_rank, card_suit = new_card[0], new_card[1]
 
+        if card_rank in player_hand:
+            # append this suit to the list
+            player_hand[card_rank].append(card_suit)
+            if len(player_hand[card_rank]) == 4:
+                print(f"{name} lays down {card_rank}")
+                del player_hand[card_rank]
+        else:
+            # first of this suit, create a list with one element
+            player_hand[card_rank] = [card_suit]
+	
 
 def check_card(
-    hand_name: str, player_hand: dict, card_rank: str, opponent_hand: dict
+    name_of_hand: str, hand_of_player: dict, rank_of_card: str, hand_of_opponent: dict
 ) -> bool:
     """Check if opponent_hand contains any cards of the
     specified rank, if it does, transfer them to player_hand.
@@ -29,6 +56,22 @@ def check_card(
 
     Returns: True if a card is transferred, False otherwise
     """
+    if rank_of_card not in hand_of_opponent:
+        return False
+    
+    transfer_cards: list = hand_of_opponent[rank_of_card]
+    # transfer_cards is a list!
+    #del hand_of_opponent[rank_of_card]
+    if rank_of_card in hand_of_player:
+        hand_of_player[rank_of_card].extend(transfer_cards)
+    else:  # shouldn't happen, but handle it
+        hand_of_player[rank_of_card] = transfer_cards
+
+    if len(hand_of_player[rank_of_card]) == 4:
+        print(f"{name_of_hand} lays down {rank_of_card}")
+        del hand_of_player[rank_of_card]
+
+    return True
 
 
 def do_turn(
