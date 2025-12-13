@@ -1,6 +1,6 @@
 Anordnungsdefekte: CHECK
 Defekte-bei-Variablen: CHECK
-Defekte-in-Ausdrücken: CHECK
+"Defekte-in-Ausdr\xFCcken": CHECK
 FastAPI-CRUD: CHECK
 FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
@@ -19,6 +19,7 @@ changelog: CHECK
 css-Layout: CHECK
 css-Media-Queries: CHECK
 find: CHECK
+go-IDE: CHECK
 http-POST: CHECK
 http-State: CHECK
 http-Status: CHECK
