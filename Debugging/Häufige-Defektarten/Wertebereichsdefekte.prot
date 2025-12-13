@@ -1,0 +1,36 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 23:31:13  1892
+$ git add Wertebereichsdefekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 23:32:51  1893
+$ git commit -m"Wertebereichsdefekte.py Basisversion"
+[main ffd540b] Wertebereichsdefekte.py Basisversion
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 23:30:15  1889
+$ git add Wertebereichsdefekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 23:31:05  1890
+$ git commit -m"Wertebereichsdefekte.py Defektkorrektur"
+[main eab4d44] Wertebereichsdefekte.py Defektkorrektur
+ 1 file changed, 18 insertions(+)
+ create mode 100644 "Debugging/H\303\244ufige-Defektarten/Wertebereichsdefekte.py"
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 23:34:09  1898
+$ git -P show HEAD
+commit 9c566644ed952fa48bc55c5919379c2b3a37341d (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Dec 13 23:34:09 2025 +0100
+
+    Wertebereichsdefekte.py Defektkorrektur
+
+diff --git "a/Debugging/H\303\244ufige-Defektarten/Wertebereichsdefekte.py" "b/Debugging/H\303\244ufige-Defektarten/Wertebereichsdefekte.py"
+index ae722f0..86753c1 100644
+--- "a/Debugging/H\303\244ufige-Defektarten/Wertebereichsdefekte.py"
++++ "b/Debugging/H\303\244ufige-Defektarten/Wertebereichsdefekte.py"
+@@ -10,7 +10,7 @@ def is_prime(number: int) -> bool:
+     if number <= 1:
+         return False
+
+-    for i in range(2, int(number * 0.5)):
++    for i in range(2, int(number)):
+         if number % i == 0:
+             return False
+     return True
