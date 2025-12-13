@@ -1,0 +1,72 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 20:46:38  1871
+$ git add Anordnungsdefekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 22:34:01  1872
+$ git commit -m"Anordnungsdefekte.py Basisversion"
+[main f56daba] Anordnungsdefekte.py Basisversion
+ 1 file changed, 41 insertions(+)
+ create mode 100644 "Debugging/H\303\244ufige-Defektarten/Anordnungsdefekte.py"
+
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 22:59:02  1877
+$ git add Anordnungsdefekte.py
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 22:59:14  1878
+$ git commit -m"Anordnungsdefekte.py Defektkorrektur"
+[main f4829f0] Anordnungsdefekte.py Defektkorrektur
+ 1 file changed, 18 insertions(+), 18 deletions(-)
+karim@DESKTOP-6681UAP ~/ws/propra/Debugging/Häufige-Defektarten 22:59:19  1879
+$ git -P show HEAD
+commit f4829f0960ea147247ab6ff5e7e2ff63b5f98bb8 (HEAD -> main)
+Author: Abdil Karim Bakir <abdilkarib03@zedat.fu-berlin.de>
+Date:   Sat Dec 13 22:59:19 2025 +0100
+
+    Anordnungsdefekte.py Defektkorrektur
+
+diff --git "a/Debugging/H\303\244ufige-Defektarten/Anordnungsdefekte.py" "b/Debugging/H\303\244ufige-Defektarten/Anordnungsdefekte.py"
+index 300ccb5..575c0c2 100644
+--- "a/Debugging/H\303\244ufige-Defektarten/Anordnungsdefekte.py"
++++ "b/Debugging/H\303\244ufige-Defektarten/Anordnungsdefekte.py"
+@@ -13,27 +13,27 @@ def check_card(
+     Returns: True if a card is transferred, False otherwise
+     """
+
+-    if rank_of_card in hand_of_opponent:
+-        transfer_cards: list = hand_of_opponent[rank_of_card]
+-        # transfer_cards is a list!
+-        del hand_of_opponent[rank_of_card]
+-        if rank_of_card in hand_of_player:
+-            hand_of_player[rank_of_card].extend(transfer_cards)
+-        else:  # shouldn't happen, but handle it
+-            hand_of_player[rank_of_card] = transfer_cards
+-
+-        if len(hand_of_player[rank_of_card]) == 4:
+-            print(f"{name_of_hand} lays down {rank_of_card}")
+-            del hand_of_player[rank_of_card]
+-
+-            return True
+-        else:
+-            return False
+-
++    if rank_of_card not in hand_of_opponent:
++        return False
++
++    transfer_cards: list = hand_of_opponent[rank_of_card]
++    # transfer_cards is a list!
++    #del hand_of_opponent[rank_of_card]
++    if rank_of_card in hand_of_player:
++        hand_of_player[rank_of_card].extend(transfer_cards)
++    else:  # shouldn't happen, but handle it
++        hand_of_player[rank_of_card] = transfer_cards
++
++    if len(hand_of_player[rank_of_card]) == 4:
++        print(f"{name_of_hand} lays down {rank_of_card}")
++        del hand_of_player[rank_of_card]
++
++    return True
++
+
+ hand_name = "HAND"
+ player_hand = {"5": ["spades", "hearts"]}
+-card_rank = "5"
++card_rank = "6"
+ opponent_hand = {"6": ["diamonds"], "10": ["clubs"]}
+
+ print(f"hand -> {player_hand}")
