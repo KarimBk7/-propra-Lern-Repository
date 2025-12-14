@@ -1,0 +1,5 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Sprachen/Go 00:48:39  1856
+$ go run go-functions.go
+2.5 <nil>
+0 division by zero
+1027
