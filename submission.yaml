@@ -20,6 +20,7 @@ css-Layout: CHECK
 css-Media-Queries: CHECK
 find: CHECK
 go-IDE: CHECK
+go-basics: CHECK
 http-POST: CHECK
 http-State: CHECK
 http-Status: CHECK
