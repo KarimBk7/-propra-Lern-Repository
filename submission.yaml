@@ -21,6 +21,7 @@ css-Media-Queries: CHECK
 find: CHECK
 go-IDE: CHECK
 go-basics: CHECK
+go-functions: CHECK
 http-POST: CHECK
 http-State: CHECK
 http-Status: CHECK
