@@ -23,6 +23,7 @@ go-IDE: CHECK
 go-basics: CHECK
 go-functions: CHECK
 go-pointers: CHECK
+go-structs1: CHECK
 http-POST: CHECK
 http-State: CHECK
 http-Status: CHECK
