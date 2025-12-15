@@ -20,6 +20,7 @@ css-Layout: CHECK
 css-Media-Queries: CHECK
 find: CHECK
 go-IDE: CHECK
+go-arrays-and-slices: CHECK
 go-basics: CHECK
 go-functions: CHECK
 go-pointers: CHECK
