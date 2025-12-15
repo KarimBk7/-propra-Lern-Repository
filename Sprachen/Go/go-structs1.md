@@ -1,0 +1,2 @@
+### F1: Stellen Sie sich vor, dass eine neue Methode Print auf Employee definiert wurde. Wie ändert sich die Ausgabe der Testfunktion?
+Die Methode ``Print`` auf ``Employee`` überschreibt die ursprüngliche Methode falls das Objekt von Typ ``Employee`` ist.
