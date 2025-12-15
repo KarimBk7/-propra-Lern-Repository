@@ -49,6 +49,7 @@ py-List-Comprehensions: CHECK
 py-Variablen: CHECK
 pytest-Methodik-Blackbox: CHECK
 pytest_call: CHECK
+re-Metazeichen: CHECK
 rsync: CHECK
 sql-INDEX: CHECK
 sql-JOIN: CHECK
