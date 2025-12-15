@@ -23,6 +23,7 @@ go-IDE: CHECK
 go-arrays-and-slices: CHECK
 go-basics: CHECK
 go-functions: CHECK
+go-interfaces: CHECK
 go-pointers: CHECK
 go-structs1: CHECK
 http-POST: CHECK
