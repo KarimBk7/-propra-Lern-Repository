@@ -1,0 +1,7 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Sprachen/Go 22:20:03  1923
+$ go run go-maps.go
+map[0:0 1:1 2:2 3:3 4:4]
+testing positive cases...
+all positive cases passed!
+testing negative cases...
+all negative cases passed!
