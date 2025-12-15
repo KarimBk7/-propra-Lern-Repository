@@ -1,0 +1,12 @@
+karim@DESKTOP-6681UAP ~/ws/propra/Sprachen/Go 21:58:04  1910
+$ go run go-interfaces.go
+Meow!
+Woof!
+created empty string: true
+writing 'hi there'...
+'hi there' has been written: true
+string produced via .String() is correct: true
+every error got a unique message: true
+Speaker ist Cat: Meow!
+Speaker ist Dog: Woof!
+Speaker ist nicht bekannt
