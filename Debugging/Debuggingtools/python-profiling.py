@@ -1,6 +1,7 @@
 import os
 import sqlite3
 import random
+import cProfile
 
 DBNAME = 'profile.db'
 
@@ -59,4 +60,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    cProfile.run("main()")
