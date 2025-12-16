@@ -49,6 +49,7 @@ py-List-Comprehensions: CHECK
 py-Variablen: CHECK
 pytest-Methodik-Blackbox: CHECK
 pytest_call: CHECK
+re-Gruppen: CHECK
 re-Metazeichen: CHECK
 re-Quantoren: CHECK
 rsync: CHECK
