@@ -20,6 +20,7 @@
 + Debugging
   + Häufige-Defektarten **Check**
   + Debugging-Denken 
+  + Debuggingtools *Angefangen* 1/5
 + Bestandscode
 + Web
     + HTTP **Check**
@@ -31,7 +32,7 @@
     + Git **Check**
     + Netzwerk **Check**
     + Benutzerverwaltung **Check**
-    + Unix-Diverses 
+    + Unix-Diverses **Check**
     + Linter 
 + Programmierpraxis
     + Python-mlh *Angefangen* 2/9
