@@ -20,7 +20,7 @@
 + Debugging
   + Häufige-Defektarten **Check**
   + Debugging-Denken 
-  + Debuggingtools *Angefangen* 1/5
+  + Debuggingtools *Angefangen* 2/5
 + Bestandscode
 + Web
     + HTTP **Check**
