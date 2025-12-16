@@ -4,6 +4,7 @@ Defekte-bei-Variablen: CHECK
 FastAPI-CRUD: CHECK
 FastAPI-GET: CHECK
 Fehler-Defekt-Versagen: CHECK
+IDE-Debugging: CHECK
 Indexierungsdefekte: CHECK
 LICENSE: CHECK
 Logikdefekte: CHECK
