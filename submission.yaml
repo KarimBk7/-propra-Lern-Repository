@@ -20,6 +20,7 @@ changelog: CHECK
 css-Layout: CHECK
 css-Media-Queries: CHECK
 find: CHECK
+git-bisect: CHECK
 go-IDE: CHECK
 go-arrays-and-slices: CHECK
 go-basics: CHECK
