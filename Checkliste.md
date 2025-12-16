@@ -6,6 +6,8 @@
 + Sprachen
   + Python **Check**
   + SQL **Check**
+  + GO **Check**
+  + RegExp **Check**
 + Bibliotheken
     + Python-Standardbibliothek **Check**
     + pip-popular **Check** 
