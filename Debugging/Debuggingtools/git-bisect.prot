@@ -1,0 +1,59 @@
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:03:00  1999
+$ git bisect start
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:03:05  2000
+$ git bisect bad
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:04:23  2002
+$ git bisect good 1cc68dd
+Bisecting: 9 revisions left to test after this (roughly 3 steps)
+[3a24c4c81267deea2ff846318b251a0297dfc585] Docstring and version number
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:09:08  2003
+$ python square.py -6
+0
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:09:52  2004
+$ git bisect bad
+Bisecting: 4 revisions left to test after this (roughly 2 steps)
+[ebe7c91e9d7c558a61ebed24b45adf181f5020f7] Multiplication is just repeated addition
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:10:03  2005
+$ python square.py -6
+0
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:10:06  2006
+$ git bisect bad
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[d4281d3c5e7e7a8c448e7a50128857ddc4dc7a5a] What if we don't get a number
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:10:08  2007
+$ python square.py -6
+36
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:10:11  2008
+$ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[59f2008d04542a289e86d18518cb0502221cc460] Check that we get an integer
+
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:11:56  2011
+$ cp test_square.py test_square2.py
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:12:08  2012
+$ git bisect start
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:12:35  2013
+$ git bisect bad
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:12:44  2014
+$ git bisect good 1cc68dd
+Bisecting: 9 revisions left to test after this (roughly 3 steps)
+[3a24c4c81267deea2ff846318b251a0297dfc585] Docstring and version number
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:13:22  2017
+$ git bisect run test_square2.py
+running  'test_square2.py'
+ 'test_square2.py': 1: test_square2.py: not found
+d354ea6845eef4bf970f55deea3149f5d54d7669 is the first bad commit
+commit d354ea6845eef4bf970f55deea3149f5d54d7669
+Author: Thomas Kluyver <thomas@kluyver.me.uk>
+Date:   Wed Nov 29 18:15:56 2017 +0000
+
+    Parse the integer once
+
+ square.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+root@DESKTOP-BKSGFB3 ~/ws/bisect-demo 16:13:38  2018
+$ git bisect reset
+Previous HEAD position was d354ea6 Parse the integer once
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
