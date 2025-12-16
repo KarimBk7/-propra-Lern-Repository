@@ -43,14 +43,16 @@ def generate_full_names():
 
 def profile_this(dbfile: str):
     names = generate_full_names()
-
+    
+    conn = sqlite3.connect(dbfile)
+    c = conn.cursor()
+   
     for name in names:
-        conn = sqlite3.connect(dbfile)
-        c = conn.cursor()
         age = random.randint(18, 65)
         c.execute('INSERT INTO profile VALUES (?, ?)', (name, age))
-        conn.commit()
-        conn.close()
+        
+    conn.commit()
+    conn.close()
 
 
 def main():

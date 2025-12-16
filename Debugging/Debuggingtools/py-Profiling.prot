@@ -1,0 +1,105 @@
+root@DESKTOP-BKSGFB3 ~/ws/propra/Debugging/Debuggingtools 16:53:20  2062
+$ git commit -m "Pythonskript für Aufgabe py-Profiling"
+[main 5733455] Pythonskript für Aufgabe py-Profiling
+ 1 file changed, 62 insertions(+)
+ create mode 100644 Debugging/Debuggingtools/python-profiling.py
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Debugging/Debuggingtools 16:55:00  2065
+$ time python python-profiling.py
+
+real    0m4.996s
+user    0m0.221s
+sys     0m0.330s
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Debugging/Debuggingtools 17:02:47  2067
+$ git commit -m "Pythonskript mit Ergänzung von cProfile."
+[main 76cf5e6] Pythonskript mit Ergänzung von cProfile.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Debugging/Debuggingtools 17:03:07  2068
+$ time python python-profiling.py
+         29973 function calls in 4.988 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    4.988    4.988 <string>:1(<module>)
+     1057    0.008    0.000    0.016    0.000 functools.py:35(update_wrapper)
+     1057    0.004    0.000    0.004    0.000 functools.py:479(lru_cache)
+     1057    0.005    0.000    0.021    0.000 functools.py:518(decorating_function)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:18(generate_first_names)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:23(generate_last_names)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:27(generate_middle_initials)
+        1    0.000    0.000    0.001    0.001 python-profiling.py:31(generate_full_names)
+        1    0.011    0.011    4.977    4.977 python-profiling.py:44(profile_this)
+        1    0.000    0.000    4.988    4.988 python-profiling.py:56(main)
+        1    0.000    0.000    0.010    0.010 python-profiling.py:9(create_table)
+     1056    0.002    0.000    0.002    0.000 random.py:235(_randbelow_with_getrandbits)
+     1056    0.003    0.000    0.006    0.000 random.py:284(randrange)
+     1056    0.001    0.000    0.007    0.000 random.py:358(randint)
+     3168    0.000    0.000    0.000    0.000 {built-in method _operator.index}
+     1057    0.064    0.000    0.090    0.000 {built-in method _sqlite3.connect}
+        1    0.000    0.000    4.988    4.988 {built-in method builtins.exec}
+     7399    0.007    0.000    0.007    0.000 {built-in method builtins.getattr}
+     1057    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+     2114    0.001    0.000    0.001    0.000 {built-in method builtins.setattr}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.unlink}
+     1056    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     1056    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+     1057    0.031    0.000    0.031    0.000 {method 'close' of 'sqlite3.Connection' objects}
+     1057    4.668    0.004    4.668    0.004 {method 'commit' of 'sqlite3.Connection' objects}
+     1057    0.002    0.000    0.002    0.000 {method 'cursor' of 'sqlite3.Connection' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+     1058    0.177    0.000    0.177    0.000 {method 'execute' of 'sqlite3.Cursor' objects}
+     1430    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+     1057    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+
+
+
+real    0m5.138s
+user    0m0.240s
+sys     0m0.375s
+
+root@DESKTOP-BKSGFB3 ~/ws/propra/Debugging/Debuggingtools 17:21:47  2069
+$ time python python-profiling.py
+         10944 function calls in 0.022 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.022    0.022 <string>:1(<module>)
+        2    0.000    0.000    0.000    0.000 functools.py:35(update_wrapper)
+        2    0.000    0.000    0.000    0.000 functools.py:479(lru_cache)
+        2    0.000    0.000    0.000    0.000 functools.py:518(decorating_function)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:18(generate_first_names)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:23(generate_last_names)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:27(generate_middle_initials)
+        1    0.000    0.000    0.000    0.000 python-profiling.py:31(generate_full_names)
+        1    0.001    0.001    0.012    0.012 python-profiling.py:44(profile_this)
+        1    0.000    0.000    0.022    0.022 python-profiling.py:58(main)
+        1    0.000    0.000    0.009    0.009 python-profiling.py:9(create_table)
+     1056    0.001    0.000    0.001    0.000 random.py:235(_randbelow_with_getrandbits)
+     1056    0.001    0.000    0.002    0.000 random.py:284(randrange)
+     1056    0.000    0.000    0.002    0.000 random.py:358(randint)
+     3168    0.000    0.000    0.000    0.000 {built-in method _operator.index}
+        2    0.002    0.001    0.003    0.001 {built-in method _sqlite3.connect}
+        1    0.000    0.000    0.022    0.022 {built-in method builtins.exec}
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.unlink}
+     1056    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     1056    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        2    0.000    0.000    0.000    0.000 {method 'close' of 'sqlite3.Connection' objects}
+        2    0.007    0.004    0.007    0.004 {method 'commit' of 'sqlite3.Connection' objects}
+        2    0.000    0.000    0.000    0.000 {method 'cursor' of 'sqlite3.Connection' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+     1058    0.008    0.000    0.008    0.000 {method 'execute' of 'sqlite3.Cursor' objects}
+     1391    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+
+
+
+real    0m0.144s
+user    0m0.046s
+sys     0m0.009s
