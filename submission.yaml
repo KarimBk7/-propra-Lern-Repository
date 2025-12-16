@@ -47,6 +47,7 @@ py-Function-Arguments-Basic: CHECK
 py-Funktionale-Programmierung: CHECK
 py-List-Comprehensions: CHECK
 py-Variablen: CHECK
+py-pdb: CHECK
 pytest-Methodik-Blackbox: CHECK
 pytest_call: CHECK
 re-Gruppen: CHECK
