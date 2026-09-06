@@ -10,9 +10,12 @@
 	<!-- A1 und A2: Link zur anderen HTML-Seite -->
 	<body>
 		<h1>HTML Medien - Programmierpraktikum</h1>
+
+		<p><a href="#videoplayer">video</a></p>
+
 		<ul>
-			<li><a href="HTMLErsteSchritte.html">Hauptseite</a></li>
-			<li><a href="HTMLMedien.html">Produktbeispiele</a></li>
+			<li><a target="myframe" href="html-erste-Schritte.html">Hauptseite</a></li>
+			<li><a href="html-Formulare.html">Produktbeispiele</a></li>
 			<li><a href="Preise">Preise</a></li>
 			<li><a href="Kontakt">Kontakt</a></li>
 		</ul>
@@ -29,7 +32,7 @@
 		<iframe  
 			width="560" 
 			height="315" 
-			src="https://www.youtube.com/embed/xvFZjo5PgG0?si=1r7PDhWtCUJsxFCX" 
+			src="https://www.youtube.com/watch?v=IxX_QHay02M&list=RDIxX_QHay02M&start_radio=1" 
 			title="YouTube video player" 
 			frameborder="0" 
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -37,7 +40,7 @@
 			allowfullscreen></iframe>
 
 
-		<video controls width="250">  <!-- A5: Video einfügen -->
+		<video id="videoplayer" controls width="250">  <!-- A5: Video einfügen -->
 			<source src="video.mp4"
 			type="video/mp4" /> 
 

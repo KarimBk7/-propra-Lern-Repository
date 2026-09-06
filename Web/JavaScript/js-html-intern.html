@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS direkt im HTML</title>
+    </head>
+    <body>
+
+    <div id="demo"></div>
+    <button id="btn1">knopf</button>
+    <script>
+        const el = document.getElementById("demo");
+
+        // 1. Schreiben mit innerHTML -> HTML wird gerendert
+        el.innerHTML = '<b>Hallo</b> <span style="display:none">versteckt</span>';
+
+        
+        console.log('nach innerHTML-Schreiben:');
+        console.log('innerHTML   =', el.innerHTML);    // enthält <b> und <span>
+        console.log('innerText   =', el.innerText);    // "Hallo" (ohne "versteckt")
+       
+        el.innerText = '<i>Kursiv?</i>';
+
+        console.log('nach innerText-Schreiben:');
+        console.log('innerHTML   =', el.innerHTML);    // zeigt &lt;i&gt;Kursiv?&lt;/i&gt; (escaped)
+        console.log('innerText   =', el.innerText);    // "<i>Kursiv?</i>"
+
+        function func1(){
+            el.innerText = "Es hat geklappt";
+        }
+
+        document.getElementById("btn1").addEventListener("click",func1);
+       
+    </script>
+
+    </body>
+</html>
